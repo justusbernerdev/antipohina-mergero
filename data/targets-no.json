@@ -1,0 +1,2282 @@
+[
+  {
+    "company": {
+      "businessId": "980416976",
+      "name": "MARTHINSEN & DUVHOLT AS",
+      "registered": "1999-01-05",
+      "industry": "43120",
+      "industryName": "Grunnarbeid",
+      "renames": 0,
+      "postCode": "3241",
+      "city": "SANDEFJORD",
+      "website": null,
+      "employer": true
+    },
+    "financials": {
+      "businessId": "980416976",
+      "financialDate": "2025-12-31",
+      "registrationDate": "2025-12-31",
+      "balanceProxy": 1690767220,
+      "balanceProxyPrev": null,
+      "changePct": null,
+      "lineItems": 2
+    },
+    "score": 14,
+    "reasons": [
+      {
+        "label": "27 vuotta vanha",
+        "points": 3
+      },
+      {
+        "label": "Konsolidoituva toimiala: Maarakennus",
+        "points": 2
+      },
+      {
+        "label": "Tilinpäätös rekisteröity juuri",
+        "points": 3
+      },
+      {
+        "label": "Henkilönimi yhtiön nimessä",
+        "points": 2
+      },
+      {
+        "label": "Ei koskaan nimenmuutosta",
+        "points": 1
+      },
+      {
+        "label": "Työnantajarekisterissä",
+        "points": 2
+      },
+      {
+        "label": "Pääkaupunkiseudun ulkopuolella",
+        "points": 1
+      }
+    ],
+    "age": 27,
+    "ownerNamed": true,
+    "matches": []
+  },
+  {
+    "company": {
+      "businessId": "958324014",
+      "name": "TVERÅS MASKIN & TRANSPORT AS",
+      "registered": "1995-02-19",
+      "industry": "43120",
+      "industryName": "Grunnarbeid",
+      "renames": 0,
+      "postCode": "7502",
+      "city": "STJØRDAL",
+      "website": null,
+      "employer": true
+    },
+    "financials": {
+      "businessId": "958324014",
+      "financialDate": "2025-12-31",
+      "registrationDate": "2025-12-31",
+      "balanceProxy": 607340696,
+      "balanceProxyPrev": null,
+      "changePct": null,
+      "lineItems": 2
+    },
+    "score": 14,
+    "reasons": [
+      {
+        "label": "31 vuotta vanha",
+        "points": 3
+      },
+      {
+        "label": "Konsolidoituva toimiala: Maarakennus",
+        "points": 2
+      },
+      {
+        "label": "Tilinpäätös rekisteröity juuri",
+        "points": 3
+      },
+      {
+        "label": "Henkilönimi yhtiön nimessä",
+        "points": 2
+      },
+      {
+        "label": "Ei koskaan nimenmuutosta",
+        "points": 1
+      },
+      {
+        "label": "Työnantajarekisterissä",
+        "points": 2
+      },
+      {
+        "label": "Pääkaupunkiseudun ulkopuolella",
+        "points": 1
+      }
+    ],
+    "age": 31,
+    "ownerNamed": true,
+    "matches": []
+  },
+  {
+    "company": {
+      "businessId": "910402722",
+      "name": "ALF JOHANSEN AS",
+      "registered": "1995-03-12",
+      "industry": "43120",
+      "industryName": "Grunnarbeid",
+      "renames": 0,
+      "postCode": "3840",
+      "city": "SELJORD",
+      "website": null,
+      "employer": true
+    },
+    "financials": {
+      "businessId": "910402722",
+      "financialDate": "2025-12-31",
+      "registrationDate": "2025-12-31",
+      "balanceProxy": 487930869,
+      "balanceProxyPrev": null,
+      "changePct": null,
+      "lineItems": 2
+    },
+    "score": 14,
+    "reasons": [
+      {
+        "label": "31 vuotta vanha",
+        "points": 3
+      },
+      {
+        "label": "Konsolidoituva toimiala: Maarakennus",
+        "points": 2
+      },
+      {
+        "label": "Tilinpäätös rekisteröity juuri",
+        "points": 3
+      },
+      {
+        "label": "Henkilönimi yhtiön nimessä",
+        "points": 2
+      },
+      {
+        "label": "Ei koskaan nimenmuutosta",
+        "points": 1
+      },
+      {
+        "label": "Työnantajarekisterissä",
+        "points": 2
+      },
+      {
+        "label": "Pääkaupunkiseudun ulkopuolella",
+        "points": 1
+      }
+    ],
+    "age": 31,
+    "ownerNamed": true,
+    "matches": []
+  },
+  {
+    "company": {
+      "businessId": "961773490",
+      "name": "INGENIØR IVAR PETTERSEN AS",
+      "registered": "1995-02-20",
+      "industry": "43210",
+      "industryName": "Elektrisk installasjonsarbeid",
+      "renames": 0,
+      "postCode": "3044",
+      "city": "DRAMMEN",
+      "website": null,
+      "employer": true
+    },
+    "financials": {
+      "businessId": "961773490",
+      "financialDate": "2025-12-31",
+      "registrationDate": "2025-12-31",
+      "balanceProxy": 327412444,
+      "balanceProxyPrev": null,
+      "changePct": null,
+      "lineItems": 2
+    },
+    "score": 14,
+    "reasons": [
+      {
+        "label": "31 vuotta vanha",
+        "points": 3
+      },
+      {
+        "label": "Konsolidoituva toimiala: Sähköasennus",
+        "points": 2
+      },
+      {
+        "label": "Tilinpäätös rekisteröity juuri",
+        "points": 3
+      },
+      {
+        "label": "Henkilönimi yhtiön nimessä",
+        "points": 2
+      },
+      {
+        "label": "Ei koskaan nimenmuutosta",
+        "points": 1
+      },
+      {
+        "label": "Työnantajarekisterissä",
+        "points": 2
+      },
+      {
+        "label": "Pääkaupunkiseudun ulkopuolella",
+        "points": 1
+      }
+    ],
+    "age": 31,
+    "ownerNamed": true,
+    "matches": []
+  },
+  {
+    "company": {
+      "businessId": "946054224",
+      "name": "Håkanes Maskin A/S",
+      "registered": "1995-02-19",
+      "industry": "43120",
+      "industryName": "Grunnarbeid",
+      "renames": 0,
+      "postCode": "3658",
+      "city": "MILAND",
+      "website": null,
+      "employer": true
+    },
+    "financials": {
+      "businessId": "946054224",
+      "financialDate": "2024-12-31",
+      "registrationDate": "2024-12-31",
+      "balanceProxy": 318484737,
+      "balanceProxyPrev": null,
+      "changePct": null,
+      "lineItems": 2
+    },
+    "score": 14,
+    "reasons": [
+      {
+        "label": "31 vuotta vanha",
+        "points": 3
+      },
+      {
+        "label": "Konsolidoituva toimiala: Maarakennus",
+        "points": 2
+      },
+      {
+        "label": "Tilinpäätös rekisteröity juuri",
+        "points": 3
+      },
+      {
+        "label": "Henkilönimi yhtiön nimessä",
+        "points": 2
+      },
+      {
+        "label": "Ei koskaan nimenmuutosta",
+        "points": 1
+      },
+      {
+        "label": "Työnantajarekisterissä",
+        "points": 2
+      },
+      {
+        "label": "Pääkaupunkiseudun ulkopuolella",
+        "points": 1
+      }
+    ],
+    "age": 31,
+    "ownerNamed": true,
+    "matches": []
+  },
+  {
+    "company": {
+      "businessId": "979389523",
+      "name": "AUT MASKINENTREPRENØR OLAV MARTIN SØRLI AS",
+      "registered": "1997-12-03",
+      "industry": "43120",
+      "industryName": "Grunnarbeid",
+      "renames": 0,
+      "postCode": "4636",
+      "city": "KRISTIANSAND S",
+      "website": null,
+      "employer": true
+    },
+    "financials": {
+      "businessId": "979389523",
+      "financialDate": "2025-12-31",
+      "registrationDate": "2025-12-31",
+      "balanceProxy": 314353252,
+      "balanceProxyPrev": null,
+      "changePct": null,
+      "lineItems": 2
+    },
+    "score": 14,
+    "reasons": [
+      {
+        "label": "29 vuotta vanha",
+        "points": 3
+      },
+      {
+        "label": "Konsolidoituva toimiala: Maarakennus",
+        "points": 2
+      },
+      {
+        "label": "Tilinpäätös rekisteröity juuri",
+        "points": 3
+      },
+      {
+        "label": "Henkilönimi yhtiön nimessä",
+        "points": 2
+      },
+      {
+        "label": "Ei koskaan nimenmuutosta",
+        "points": 1
+      },
+      {
+        "label": "Työnantajarekisterissä",
+        "points": 2
+      },
+      {
+        "label": "Pääkaupunkiseudun ulkopuolella",
+        "points": 1
+      }
+    ],
+    "age": 29,
+    "ownerNamed": true,
+    "matches": []
+  },
+  {
+    "company": {
+      "businessId": "941163343",
+      "name": "KRØDEREN ELEKTRO AS",
+      "registered": "1995-02-19",
+      "industry": "43210",
+      "industryName": "Elektrisk installasjonsarbeid",
+      "renames": 0,
+      "postCode": "3535",
+      "city": "KRØDEREN",
+      "website": null,
+      "employer": true
+    },
+    "financials": {
+      "businessId": "941163343",
+      "financialDate": "2025-12-31",
+      "registrationDate": "2025-12-31",
+      "balanceProxy": 310918125,
+      "balanceProxyPrev": null,
+      "changePct": null,
+      "lineItems": 2
+    },
+    "score": 14,
+    "reasons": [
+      {
+        "label": "31 vuotta vanha",
+        "points": 3
+      },
+      {
+        "label": "Konsolidoituva toimiala: Sähköasennus",
+        "points": 2
+      },
+      {
+        "label": "Tilinpäätös rekisteröity juuri",
+        "points": 3
+      },
+      {
+        "label": "Henkilönimi yhtiön nimessä",
+        "points": 2
+      },
+      {
+        "label": "Ei koskaan nimenmuutosta",
+        "points": 1
+      },
+      {
+        "label": "Työnantajarekisterissä",
+        "points": 2
+      },
+      {
+        "label": "Pääkaupunkiseudun ulkopuolella",
+        "points": 1
+      }
+    ],
+    "age": 31,
+    "ownerNamed": true,
+    "matches": []
+  },
+  {
+    "company": {
+      "businessId": "881926202",
+      "name": "BERGEN ELEKTROKOMPETANSE AS",
+      "registered": "2000-04-18",
+      "industry": "43210",
+      "industryName": "Engroshandel med maskiner og utstyr ellers",
+      "renames": 0,
+      "postCode": "5257",
+      "city": "KOKSTAD",
+      "website": null,
+      "employer": true
+    },
+    "financials": {
+      "businessId": "881926202",
+      "financialDate": "2025-12-31",
+      "registrationDate": "2025-12-31",
+      "balanceProxy": 262539632,
+      "balanceProxyPrev": null,
+      "changePct": null,
+      "lineItems": 2
+    },
+    "score": 14,
+    "reasons": [
+      {
+        "label": "26 vuotta vanha",
+        "points": 3
+      },
+      {
+        "label": "Konsolidoituva toimiala: Sähköasennus",
+        "points": 2
+      },
+      {
+        "label": "Tilinpäätös rekisteröity juuri",
+        "points": 3
+      },
+      {
+        "label": "Henkilönimi yhtiön nimessä",
+        "points": 2
+      },
+      {
+        "label": "Ei koskaan nimenmuutosta",
+        "points": 1
+      },
+      {
+        "label": "Työnantajarekisterissä",
+        "points": 2
+      },
+      {
+        "label": "Pääkaupunkiseudun ulkopuolella",
+        "points": 1
+      }
+    ],
+    "age": 26,
+    "ownerNamed": true,
+    "matches": []
+  },
+  {
+    "company": {
+      "businessId": "981574036",
+      "name": "XPERT INSTALLASJON AS",
+      "registered": "2000-02-16",
+      "industry": "43210",
+      "industryName": "Elektrisk installasjonsarbeid",
+      "renames": 0,
+      "postCode": "3112",
+      "city": "TØNSBERG",
+      "website": null,
+      "employer": true
+    },
+    "financials": {
+      "businessId": "981574036",
+      "financialDate": "2025-12-31",
+      "registrationDate": "2025-12-31",
+      "balanceProxy": 187140017,
+      "balanceProxyPrev": null,
+      "changePct": null,
+      "lineItems": 2
+    },
+    "score": 14,
+    "reasons": [
+      {
+        "label": "26 vuotta vanha",
+        "points": 3
+      },
+      {
+        "label": "Konsolidoituva toimiala: Sähköasennus",
+        "points": 2
+      },
+      {
+        "label": "Tilinpäätös rekisteröity juuri",
+        "points": 3
+      },
+      {
+        "label": "Henkilönimi yhtiön nimessä",
+        "points": 2
+      },
+      {
+        "label": "Ei koskaan nimenmuutosta",
+        "points": 1
+      },
+      {
+        "label": "Työnantajarekisterissä",
+        "points": 2
+      },
+      {
+        "label": "Pääkaupunkiseudun ulkopuolella",
+        "points": 1
+      }
+    ],
+    "age": 26,
+    "ownerNamed": true,
+    "matches": []
+  },
+  {
+    "company": {
+      "businessId": "982587786",
+      "name": "ELEKTROFAG JÆREN AS",
+      "registered": "2000-11-10",
+      "industry": "43210",
+      "industryName": "Elektrisk installasjonsarbeid",
+      "renames": 0,
+      "postCode": "4362",
+      "city": "VIGRESTAD",
+      "website": null,
+      "employer": true
+    },
+    "financials": {
+      "businessId": "982587786",
+      "financialDate": "2025-12-31",
+      "registrationDate": "2025-12-31",
+      "balanceProxy": 163588646,
+      "balanceProxyPrev": null,
+      "changePct": null,
+      "lineItems": 2
+    },
+    "score": 14,
+    "reasons": [
+      {
+        "label": "26 vuotta vanha",
+        "points": 3
+      },
+      {
+        "label": "Konsolidoituva toimiala: Sähköasennus",
+        "points": 2
+      },
+      {
+        "label": "Tilinpäätös rekisteröity juuri",
+        "points": 3
+      },
+      {
+        "label": "Henkilönimi yhtiön nimessä",
+        "points": 2
+      },
+      {
+        "label": "Ei koskaan nimenmuutosta",
+        "points": 1
+      },
+      {
+        "label": "Työnantajarekisterissä",
+        "points": 2
+      },
+      {
+        "label": "Pääkaupunkiseudun ulkopuolella",
+        "points": 1
+      }
+    ],
+    "age": 26,
+    "ownerNamed": true,
+    "matches": []
+  },
+  {
+    "company": {
+      "businessId": "975950824",
+      "name": "THORE MAGNUSSEN OG SØNN AS",
+      "registered": "1995-12-18",
+      "industry": "43120",
+      "industryName": "Grunnarbeid",
+      "renames": 0,
+      "postCode": "8360",
+      "city": "BØSTAD",
+      "website": null,
+      "employer": true
+    },
+    "financials": {
+      "businessId": "975950824",
+      "financialDate": "2025-12-31",
+      "registrationDate": "2025-12-31",
+      "balanceProxy": 161083954,
+      "balanceProxyPrev": null,
+      "changePct": null,
+      "lineItems": 2
+    },
+    "score": 14,
+    "reasons": [
+      {
+        "label": "31 vuotta vanha",
+        "points": 3
+      },
+      {
+        "label": "Konsolidoituva toimiala: Maarakennus",
+        "points": 2
+      },
+      {
+        "label": "Tilinpäätös rekisteröity juuri",
+        "points": 3
+      },
+      {
+        "label": "Henkilönimi yhtiön nimessä",
+        "points": 2
+      },
+      {
+        "label": "Ei koskaan nimenmuutosta",
+        "points": 1
+      },
+      {
+        "label": "Työnantajarekisterissä",
+        "points": 2
+      },
+      {
+        "label": "Pääkaupunkiseudun ulkopuolella",
+        "points": 1
+      }
+    ],
+    "age": 31,
+    "ownerNamed": true,
+    "matches": []
+  },
+  {
+    "company": {
+      "businessId": "980396762",
+      "name": "FARBU OG GAUSEN AS",
+      "registered": "1999-01-19",
+      "industry": "43120",
+      "industryName": "Grunnarbeid",
+      "renames": 0,
+      "postCode": "7670",
+      "city": "INDERØY",
+      "website": null,
+      "employer": true
+    },
+    "financials": {
+      "businessId": "980396762",
+      "financialDate": "2025-12-31",
+      "registrationDate": "2025-12-31",
+      "balanceProxy": 157450251,
+      "balanceProxyPrev": null,
+      "changePct": null,
+      "lineItems": 2
+    },
+    "score": 14,
+    "reasons": [
+      {
+        "label": "27 vuotta vanha",
+        "points": 3
+      },
+      {
+        "label": "Konsolidoituva toimiala: Maarakennus",
+        "points": 2
+      },
+      {
+        "label": "Tilinpäätös rekisteröity juuri",
+        "points": 3
+      },
+      {
+        "label": "Henkilönimi yhtiön nimessä",
+        "points": 2
+      },
+      {
+        "label": "Ei koskaan nimenmuutosta",
+        "points": 1
+      },
+      {
+        "label": "Työnantajarekisterissä",
+        "points": 2
+      },
+      {
+        "label": "Pääkaupunkiseudun ulkopuolella",
+        "points": 1
+      }
+    ],
+    "age": 27,
+    "ownerNamed": true,
+    "matches": []
+  },
+  {
+    "company": {
+      "businessId": "956813301",
+      "name": "KAARE MORTENSEN AS",
+      "registered": "1995-02-19",
+      "industry": "43120",
+      "industryName": "Grunnarbeid",
+      "renames": 0,
+      "postCode": "3274",
+      "city": "LARVIK",
+      "website": null,
+      "employer": true
+    },
+    "financials": {
+      "businessId": "956813301",
+      "financialDate": "2025-12-31",
+      "registrationDate": "2025-12-31",
+      "balanceProxy": 143504866,
+      "balanceProxyPrev": null,
+      "changePct": null,
+      "lineItems": 2
+    },
+    "score": 14,
+    "reasons": [
+      {
+        "label": "31 vuotta vanha",
+        "points": 3
+      },
+      {
+        "label": "Konsolidoituva toimiala: Maarakennus",
+        "points": 2
+      },
+      {
+        "label": "Tilinpäätös rekisteröity juuri",
+        "points": 3
+      },
+      {
+        "label": "Henkilönimi yhtiön nimessä",
+        "points": 2
+      },
+      {
+        "label": "Ei koskaan nimenmuutosta",
+        "points": 1
+      },
+      {
+        "label": "Työnantajarekisterissä",
+        "points": 2
+      },
+      {
+        "label": "Pääkaupunkiseudun ulkopuolella",
+        "points": 1
+      }
+    ],
+    "age": 31,
+    "ownerNamed": true,
+    "matches": []
+  },
+  {
+    "company": {
+      "businessId": "976950275",
+      "name": "SIGURD FURULUND MASKIN AS",
+      "registered": "1996-12-03",
+      "industry": "43120",
+      "industryName": "Grunnarbeid",
+      "renames": 0,
+      "postCode": "2067",
+      "city": "JESSHEIM",
+      "website": null,
+      "employer": true
+    },
+    "financials": {
+      "businessId": "976950275",
+      "financialDate": "2025-12-31",
+      "registrationDate": "2025-12-31",
+      "balanceProxy": 142781055,
+      "balanceProxyPrev": null,
+      "changePct": null,
+      "lineItems": 2
+    },
+    "score": 14,
+    "reasons": [
+      {
+        "label": "30 vuotta vanha",
+        "points": 3
+      },
+      {
+        "label": "Konsolidoituva toimiala: Maarakennus",
+        "points": 2
+      },
+      {
+        "label": "Tilinpäätös rekisteröity juuri",
+        "points": 3
+      },
+      {
+        "label": "Henkilönimi yhtiön nimessä",
+        "points": 2
+      },
+      {
+        "label": "Ei koskaan nimenmuutosta",
+        "points": 1
+      },
+      {
+        "label": "Työnantajarekisterissä",
+        "points": 2
+      },
+      {
+        "label": "Pääkaupunkiseudun ulkopuolella",
+        "points": 1
+      }
+    ],
+    "age": 30,
+    "ownerNamed": true,
+    "matches": []
+  },
+  {
+    "company": {
+      "businessId": "983792324",
+      "name": "JOHN GALTEN AS",
+      "registered": "2001-10-11",
+      "industry": "43120",
+      "industryName": "Grunnarbeid",
+      "renames": 0,
+      "postCode": "2450",
+      "city": "RENA",
+      "website": null,
+      "employer": true
+    },
+    "financials": {
+      "businessId": "983792324",
+      "financialDate": "2025-12-31",
+      "registrationDate": "2025-12-31",
+      "balanceProxy": 142140385,
+      "balanceProxyPrev": null,
+      "changePct": null,
+      "lineItems": 2
+    },
+    "score": 14,
+    "reasons": [
+      {
+        "label": "25 vuotta vanha",
+        "points": 3
+      },
+      {
+        "label": "Konsolidoituva toimiala: Maarakennus",
+        "points": 2
+      },
+      {
+        "label": "Tilinpäätös rekisteröity juuri",
+        "points": 3
+      },
+      {
+        "label": "Henkilönimi yhtiön nimessä",
+        "points": 2
+      },
+      {
+        "label": "Ei koskaan nimenmuutosta",
+        "points": 1
+      },
+      {
+        "label": "Työnantajarekisterissä",
+        "points": 2
+      },
+      {
+        "label": "Pääkaupunkiseudun ulkopuolella",
+        "points": 1
+      }
+    ],
+    "age": 25,
+    "ownerNamed": true,
+    "matches": []
+  },
+  {
+    "company": {
+      "businessId": "979743467",
+      "name": "LINDHAUGEN AS",
+      "registered": "1998-04-03",
+      "industry": "43120",
+      "industryName": "Grunnarbeid",
+      "renames": 0,
+      "postCode": "1747",
+      "city": "SKJEBERG",
+      "website": null,
+      "employer": true
+    },
+    "financials": {
+      "businessId": "979743467",
+      "financialDate": "2025-12-31",
+      "registrationDate": "2025-12-31",
+      "balanceProxy": 141964571,
+      "balanceProxyPrev": null,
+      "changePct": null,
+      "lineItems": 2
+    },
+    "score": 14,
+    "reasons": [
+      {
+        "label": "28 vuotta vanha",
+        "points": 3
+      },
+      {
+        "label": "Konsolidoituva toimiala: Maarakennus",
+        "points": 2
+      },
+      {
+        "label": "Tilinpäätös rekisteröity juuri",
+        "points": 3
+      },
+      {
+        "label": "Henkilönimi yhtiön nimessä",
+        "points": 2
+      },
+      {
+        "label": "Ei koskaan nimenmuutosta",
+        "points": 1
+      },
+      {
+        "label": "Työnantajarekisterissä",
+        "points": 2
+      },
+      {
+        "label": "Pääkaupunkiseudun ulkopuolella",
+        "points": 1
+      }
+    ],
+    "age": 28,
+    "ownerNamed": true,
+    "matches": []
+  },
+  {
+    "company": {
+      "businessId": "950948906",
+      "name": "L GRØNAASEN TRANSPORT AS",
+      "registered": "1995-02-19",
+      "industry": "49410",
+      "industryName": "Godstransport på vei",
+      "renames": 0,
+      "postCode": "3940",
+      "city": "PORSGRUNN",
+      "website": null,
+      "employer": true
+    },
+    "financials": {
+      "businessId": "950948906",
+      "financialDate": "2025-12-31",
+      "registrationDate": "2025-12-31",
+      "balanceProxy": 139034432,
+      "balanceProxyPrev": null,
+      "changePct": null,
+      "lineItems": 2
+    },
+    "score": 14,
+    "reasons": [
+      {
+        "label": "31 vuotta vanha",
+        "points": 3
+      },
+      {
+        "label": "Konsolidoituva toimiala: Tieliikenteen tavarankuljetus",
+        "points": 2
+      },
+      {
+        "label": "Tilinpäätös rekisteröity juuri",
+        "points": 3
+      },
+      {
+        "label": "Henkilönimi yhtiön nimessä",
+        "points": 2
+      },
+      {
+        "label": "Ei koskaan nimenmuutosta",
+        "points": 1
+      },
+      {
+        "label": "Työnantajarekisterissä",
+        "points": 2
+      },
+      {
+        "label": "Pääkaupunkiseudun ulkopuolella",
+        "points": 1
+      }
+    ],
+    "age": 31,
+    "ownerNamed": true,
+    "matches": []
+  },
+  {
+    "company": {
+      "businessId": "976052560",
+      "name": "ABICON ELEKTRO AS",
+      "registered": "1996-02-01",
+      "industry": "43210",
+      "industryName": "Elektrisk installasjonsarbeid",
+      "renames": 0,
+      "postCode": "3036",
+      "city": "DRAMMEN",
+      "website": null,
+      "employer": true
+    },
+    "financials": {
+      "businessId": "976052560",
+      "financialDate": "2025-12-31",
+      "registrationDate": "2025-12-31",
+      "balanceProxy": 135686332,
+      "balanceProxyPrev": null,
+      "changePct": null,
+      "lineItems": 2
+    },
+    "score": 14,
+    "reasons": [
+      {
+        "label": "30 vuotta vanha",
+        "points": 3
+      },
+      {
+        "label": "Konsolidoituva toimiala: Sähköasennus",
+        "points": 2
+      },
+      {
+        "label": "Tilinpäätös rekisteröity juuri",
+        "points": 3
+      },
+      {
+        "label": "Henkilönimi yhtiön nimessä",
+        "points": 2
+      },
+      {
+        "label": "Ei koskaan nimenmuutosta",
+        "points": 1
+      },
+      {
+        "label": "Työnantajarekisterissä",
+        "points": 2
+      },
+      {
+        "label": "Pääkaupunkiseudun ulkopuolella",
+        "points": 1
+      }
+    ],
+    "age": 30,
+    "ownerNamed": true,
+    "matches": []
+  },
+  {
+    "company": {
+      "businessId": "947504436",
+      "name": "Erik Håland Maskin A/S",
+      "registered": "1995-02-19",
+      "industry": "43120",
+      "industryName": "Grunnarbeid",
+      "renames": 0,
+      "postCode": "4365",
+      "city": "NÆRBØ",
+      "website": null,
+      "employer": true
+    },
+    "financials": {
+      "businessId": "947504436",
+      "financialDate": "2025-12-31",
+      "registrationDate": "2025-12-31",
+      "balanceProxy": 120916207,
+      "balanceProxyPrev": null,
+      "changePct": null,
+      "lineItems": 2
+    },
+    "score": 14,
+    "reasons": [
+      {
+        "label": "31 vuotta vanha",
+        "points": 3
+      },
+      {
+        "label": "Konsolidoituva toimiala: Maarakennus",
+        "points": 2
+      },
+      {
+        "label": "Tilinpäätös rekisteröity juuri",
+        "points": 3
+      },
+      {
+        "label": "Henkilönimi yhtiön nimessä",
+        "points": 2
+      },
+      {
+        "label": "Ei koskaan nimenmuutosta",
+        "points": 1
+      },
+      {
+        "label": "Työnantajarekisterissä",
+        "points": 2
+      },
+      {
+        "label": "Pääkaupunkiseudun ulkopuolella",
+        "points": 1
+      }
+    ],
+    "age": 31,
+    "ownerNamed": true,
+    "matches": []
+  },
+  {
+    "company": {
+      "businessId": "982797632",
+      "name": "HÅKERUD JOHANSEN TRANSPORT AS",
+      "registered": "2001-01-12",
+      "industry": "49410",
+      "industryName": "Godstransport på vei",
+      "renames": 0,
+      "postCode": "2830",
+      "city": "RAUFOSS",
+      "website": null,
+      "employer": true
+    },
+    "financials": {
+      "businessId": "982797632",
+      "financialDate": "2025-12-31",
+      "registrationDate": "2025-12-31",
+      "balanceProxy": 116313250,
+      "balanceProxyPrev": null,
+      "changePct": null,
+      "lineItems": 2
+    },
+    "score": 14,
+    "reasons": [
+      {
+        "label": "25 vuotta vanha",
+        "points": 3
+      },
+      {
+        "label": "Konsolidoituva toimiala: Tieliikenteen tavarankuljetus",
+        "points": 2
+      },
+      {
+        "label": "Tilinpäätös rekisteröity juuri",
+        "points": 3
+      },
+      {
+        "label": "Henkilönimi yhtiön nimessä",
+        "points": 2
+      },
+      {
+        "label": "Ei koskaan nimenmuutosta",
+        "points": 1
+      },
+      {
+        "label": "Työnantajarekisterissä",
+        "points": 2
+      },
+      {
+        "label": "Pääkaupunkiseudun ulkopuolella",
+        "points": 1
+      }
+    ],
+    "age": 25,
+    "ownerNamed": true,
+    "matches": []
+  },
+  {
+    "company": {
+      "businessId": "859860222",
+      "name": "PER JOHANSEN TRANSPORT AS",
+      "registered": "1995-02-19",
+      "industry": "49410",
+      "industryName": "Godstransport på vei",
+      "renames": 0,
+      "postCode": "8850",
+      "city": "HERØY",
+      "website": null,
+      "employer": true
+    },
+    "financials": {
+      "businessId": "859860222",
+      "financialDate": "2025-12-31",
+      "registrationDate": "2025-12-31",
+      "balanceProxy": 110179570,
+      "balanceProxyPrev": null,
+      "changePct": null,
+      "lineItems": 2
+    },
+    "score": 14,
+    "reasons": [
+      {
+        "label": "31 vuotta vanha",
+        "points": 3
+      },
+      {
+        "label": "Konsolidoituva toimiala: Tieliikenteen tavarankuljetus",
+        "points": 2
+      },
+      {
+        "label": "Tilinpäätös rekisteröity juuri",
+        "points": 3
+      },
+      {
+        "label": "Henkilönimi yhtiön nimessä",
+        "points": 2
+      },
+      {
+        "label": "Ei koskaan nimenmuutosta",
+        "points": 1
+      },
+      {
+        "label": "Työnantajarekisterissä",
+        "points": 2
+      },
+      {
+        "label": "Pääkaupunkiseudun ulkopuolella",
+        "points": 1
+      }
+    ],
+    "age": 31,
+    "ownerNamed": true,
+    "matches": []
+  },
+  {
+    "company": {
+      "businessId": "952709003",
+      "name": "STAVANGER INSTALLASJON AS",
+      "registered": "1995-02-19",
+      "industry": "43210",
+      "industryName": "Elektrisk installasjonsarbeid",
+      "renames": 0,
+      "postCode": "4017",
+      "city": "STAVANGER",
+      "website": null,
+      "employer": true
+    },
+    "financials": {
+      "businessId": "952709003",
+      "financialDate": "2025-12-31",
+      "registrationDate": "2025-12-31",
+      "balanceProxy": 109801044,
+      "balanceProxyPrev": null,
+      "changePct": null,
+      "lineItems": 2
+    },
+    "score": 14,
+    "reasons": [
+      {
+        "label": "31 vuotta vanha",
+        "points": 3
+      },
+      {
+        "label": "Konsolidoituva toimiala: Sähköasennus",
+        "points": 2
+      },
+      {
+        "label": "Tilinpäätös rekisteröity juuri",
+        "points": 3
+      },
+      {
+        "label": "Henkilönimi yhtiön nimessä",
+        "points": 2
+      },
+      {
+        "label": "Ei koskaan nimenmuutosta",
+        "points": 1
+      },
+      {
+        "label": "Työnantajarekisterissä",
+        "points": 2
+      },
+      {
+        "label": "Pääkaupunkiseudun ulkopuolella",
+        "points": 1
+      }
+    ],
+    "age": 31,
+    "ownerNamed": true,
+    "matches": []
+  },
+  {
+    "company": {
+      "businessId": "967099201",
+      "name": "BERGQUIST MASKIN OG TRANSPORT AS",
+      "registered": "1995-02-20",
+      "industry": "49410",
+      "industryName": "Godstransport på vei",
+      "renames": 0,
+      "postCode": "1950",
+      "city": "RØMSKOG",
+      "website": null,
+      "employer": true
+    },
+    "financials": {
+      "businessId": "967099201",
+      "financialDate": "2025-12-31",
+      "registrationDate": "2025-12-31",
+      "balanceProxy": 109491050,
+      "balanceProxyPrev": null,
+      "changePct": null,
+      "lineItems": 2
+    },
+    "score": 14,
+    "reasons": [
+      {
+        "label": "31 vuotta vanha",
+        "points": 3
+      },
+      {
+        "label": "Konsolidoituva toimiala: Tieliikenteen tavarankuljetus",
+        "points": 2
+      },
+      {
+        "label": "Tilinpäätös rekisteröity juuri",
+        "points": 3
+      },
+      {
+        "label": "Henkilönimi yhtiön nimessä",
+        "points": 2
+      },
+      {
+        "label": "Ei koskaan nimenmuutosta",
+        "points": 1
+      },
+      {
+        "label": "Työnantajarekisterissä",
+        "points": 2
+      },
+      {
+        "label": "Pääkaupunkiseudun ulkopuolella",
+        "points": 1
+      }
+    ],
+    "age": 31,
+    "ownerNamed": true,
+    "matches": []
+  },
+  {
+    "company": {
+      "businessId": "860318822",
+      "name": "MAGNE SVEEN AS",
+      "registered": "1995-02-19",
+      "industry": "43120",
+      "industryName": "Grunnarbeid",
+      "renames": 0,
+      "postCode": "2833",
+      "city": "RAUFOSS",
+      "website": null,
+      "employer": true
+    },
+    "financials": {
+      "businessId": "860318822",
+      "financialDate": "2025-12-31",
+      "registrationDate": "2025-12-31",
+      "balanceProxy": 109078258,
+      "balanceProxyPrev": null,
+      "changePct": null,
+      "lineItems": 2
+    },
+    "score": 14,
+    "reasons": [
+      {
+        "label": "31 vuotta vanha",
+        "points": 3
+      },
+      {
+        "label": "Konsolidoituva toimiala: Maarakennus",
+        "points": 2
+      },
+      {
+        "label": "Tilinpäätös rekisteröity juuri",
+        "points": 3
+      },
+      {
+        "label": "Henkilönimi yhtiön nimessä",
+        "points": 2
+      },
+      {
+        "label": "Ei koskaan nimenmuutosta",
+        "points": 1
+      },
+      {
+        "label": "Työnantajarekisterissä",
+        "points": 2
+      },
+      {
+        "label": "Pääkaupunkiseudun ulkopuolella",
+        "points": 1
+      }
+    ],
+    "age": 31,
+    "ownerNamed": true,
+    "matches": []
+  },
+  {
+    "company": {
+      "businessId": "980672522",
+      "name": "ELEKTROSERVICE HALLINGDAL INSTALLASJON AS",
+      "registered": "1999-05-03",
+      "industry": "43210",
+      "industryName": "Elektrisk installasjonsarbeid",
+      "renames": 0,
+      "postCode": "3570",
+      "city": "ÅL",
+      "website": null,
+      "employer": true
+    },
+    "financials": {
+      "businessId": "980672522",
+      "financialDate": "2025-12-31",
+      "registrationDate": "2025-12-31",
+      "balanceProxy": 105475982,
+      "balanceProxyPrev": null,
+      "changePct": null,
+      "lineItems": 2
+    },
+    "score": 14,
+    "reasons": [
+      {
+        "label": "27 vuotta vanha",
+        "points": 3
+      },
+      {
+        "label": "Konsolidoituva toimiala: Sähköasennus",
+        "points": 2
+      },
+      {
+        "label": "Tilinpäätös rekisteröity juuri",
+        "points": 3
+      },
+      {
+        "label": "Henkilönimi yhtiön nimessä",
+        "points": 2
+      },
+      {
+        "label": "Ei koskaan nimenmuutosta",
+        "points": 1
+      },
+      {
+        "label": "Työnantajarekisterissä",
+        "points": 2
+      },
+      {
+        "label": "Pääkaupunkiseudun ulkopuolella",
+        "points": 1
+      }
+    ],
+    "age": 27,
+    "ownerNamed": true,
+    "matches": []
+  },
+  {
+    "company": {
+      "businessId": "942623232",
+      "name": "THOR TENDEN TRANSPORT AS",
+      "registered": "1995-02-19",
+      "industry": "49410",
+      "industryName": "Godstransport på vei",
+      "renames": 0,
+      "postCode": "6783",
+      "city": "STRYN",
+      "website": null,
+      "employer": true
+    },
+    "financials": {
+      "businessId": "942623232",
+      "financialDate": "2025-12-31",
+      "registrationDate": "2025-12-31",
+      "balanceProxy": 105065840,
+      "balanceProxyPrev": null,
+      "changePct": null,
+      "lineItems": 2
+    },
+    "score": 14,
+    "reasons": [
+      {
+        "label": "31 vuotta vanha",
+        "points": 3
+      },
+      {
+        "label": "Konsolidoituva toimiala: Tieliikenteen tavarankuljetus",
+        "points": 2
+      },
+      {
+        "label": "Tilinpäätös rekisteröity juuri",
+        "points": 3
+      },
+      {
+        "label": "Henkilönimi yhtiön nimessä",
+        "points": 2
+      },
+      {
+        "label": "Ei koskaan nimenmuutosta",
+        "points": 1
+      },
+      {
+        "label": "Työnantajarekisterissä",
+        "points": 2
+      },
+      {
+        "label": "Pääkaupunkiseudun ulkopuolella",
+        "points": 1
+      }
+    ],
+    "age": 31,
+    "ownerNamed": true,
+    "matches": []
+  },
+  {
+    "company": {
+      "businessId": "979803672",
+      "name": "BRØDRENE HANSEN TRANSPORT AS",
+      "registered": "1998-04-30",
+      "industry": "49410",
+      "industryName": "Godstransport på vei",
+      "renames": 0,
+      "postCode": "3940",
+      "city": "PORSGRUNN",
+      "website": null,
+      "employer": true
+    },
+    "financials": {
+      "businessId": "979803672",
+      "financialDate": "2025-12-31",
+      "registrationDate": "2025-12-31",
+      "balanceProxy": 101947497,
+      "balanceProxyPrev": null,
+      "changePct": null,
+      "lineItems": 2
+    },
+    "score": 14,
+    "reasons": [
+      {
+        "label": "28 vuotta vanha",
+        "points": 3
+      },
+      {
+        "label": "Konsolidoituva toimiala: Tieliikenteen tavarankuljetus",
+        "points": 2
+      },
+      {
+        "label": "Tilinpäätös rekisteröity juuri",
+        "points": 3
+      },
+      {
+        "label": "Henkilönimi yhtiön nimessä",
+        "points": 2
+      },
+      {
+        "label": "Ei koskaan nimenmuutosta",
+        "points": 1
+      },
+      {
+        "label": "Työnantajarekisterissä",
+        "points": 2
+      },
+      {
+        "label": "Pääkaupunkiseudun ulkopuolella",
+        "points": 1
+      }
+    ],
+    "age": 28,
+    "ownerNamed": true,
+    "matches": []
+  },
+  {
+    "company": {
+      "businessId": "921348398",
+      "name": "AS BTS-BERGEN TRANSPORT & SPEDISJON",
+      "registered": "1995-03-12",
+      "industry": "49410",
+      "industryName": "Godstransport på vei",
+      "renames": 0,
+      "postCode": "5006",
+      "city": "BERGEN",
+      "website": null,
+      "employer": true
+    },
+    "financials": {
+      "businessId": "921348398",
+      "financialDate": "2025-12-31",
+      "registrationDate": "2025-12-31",
+      "balanceProxy": 98452093,
+      "balanceProxyPrev": null,
+      "changePct": null,
+      "lineItems": 2
+    },
+    "score": 14,
+    "reasons": [
+      {
+        "label": "31 vuotta vanha",
+        "points": 3
+      },
+      {
+        "label": "Konsolidoituva toimiala: Tieliikenteen tavarankuljetus",
+        "points": 2
+      },
+      {
+        "label": "Tilinpäätös rekisteröity juuri",
+        "points": 3
+      },
+      {
+        "label": "Henkilönimi yhtiön nimessä",
+        "points": 2
+      },
+      {
+        "label": "Ei koskaan nimenmuutosta",
+        "points": 1
+      },
+      {
+        "label": "Työnantajarekisterissä",
+        "points": 2
+      },
+      {
+        "label": "Pääkaupunkiseudun ulkopuolella",
+        "points": 1
+      }
+    ],
+    "age": 31,
+    "ownerNamed": true,
+    "matches": []
+  },
+  {
+    "company": {
+      "businessId": "931777319",
+      "name": "O WESTAD & SØNNER AS",
+      "registered": "1995-02-19",
+      "industry": "49410",
+      "industryName": "Godstransport på vei",
+      "renames": 0,
+      "postCode": "1540",
+      "city": "VESTBY",
+      "website": null,
+      "employer": true
+    },
+    "financials": {
+      "businessId": "931777319",
+      "financialDate": "2025-12-31",
+      "registrationDate": "2025-12-31",
+      "balanceProxy": 98343725,
+      "balanceProxyPrev": null,
+      "changePct": null,
+      "lineItems": 2
+    },
+    "score": 14,
+    "reasons": [
+      {
+        "label": "31 vuotta vanha",
+        "points": 3
+      },
+      {
+        "label": "Konsolidoituva toimiala: Tieliikenteen tavarankuljetus",
+        "points": 2
+      },
+      {
+        "label": "Tilinpäätös rekisteröity juuri",
+        "points": 3
+      },
+      {
+        "label": "Henkilönimi yhtiön nimessä",
+        "points": 2
+      },
+      {
+        "label": "Ei koskaan nimenmuutosta",
+        "points": 1
+      },
+      {
+        "label": "Työnantajarekisterissä",
+        "points": 2
+      },
+      {
+        "label": "Pääkaupunkiseudun ulkopuolella",
+        "points": 1
+      }
+    ],
+    "age": 31,
+    "ownerNamed": true,
+    "matches": []
+  },
+  {
+    "company": {
+      "businessId": "982056497",
+      "name": "EL-EXPERTEN AS",
+      "registered": "2000-06-08",
+      "industry": "43210",
+      "industryName": "Elektrisk installasjonsarbeid",
+      "renames": 0,
+      "postCode": "4372",
+      "city": "EGERSUND",
+      "website": null,
+      "employer": true
+    },
+    "financials": {
+      "businessId": "982056497",
+      "financialDate": "2025-12-31",
+      "registrationDate": "2025-12-31",
+      "balanceProxy": 96373196,
+      "balanceProxyPrev": null,
+      "changePct": null,
+      "lineItems": 2
+    },
+    "score": 14,
+    "reasons": [
+      {
+        "label": "26 vuotta vanha",
+        "points": 3
+      },
+      {
+        "label": "Konsolidoituva toimiala: Sähköasennus",
+        "points": 2
+      },
+      {
+        "label": "Tilinpäätös rekisteröity juuri",
+        "points": 3
+      },
+      {
+        "label": "Henkilönimi yhtiön nimessä",
+        "points": 2
+      },
+      {
+        "label": "Ei koskaan nimenmuutosta",
+        "points": 1
+      },
+      {
+        "label": "Työnantajarekisterissä",
+        "points": 2
+      },
+      {
+        "label": "Pääkaupunkiseudun ulkopuolella",
+        "points": 1
+      }
+    ],
+    "age": 26,
+    "ownerNamed": true,
+    "matches": []
+  },
+  {
+    "company": {
+      "businessId": "978677339",
+      "name": "GALÅEN TRANSPORT AS",
+      "registered": "1997-07-07",
+      "industry": "49410",
+      "industryName": "Godstransport på vei",
+      "renames": 0,
+      "postCode": "7374",
+      "city": "RØROS",
+      "website": null,
+      "employer": true
+    },
+    "financials": {
+      "businessId": "978677339",
+      "financialDate": "2025-12-31",
+      "registrationDate": "2025-12-31",
+      "balanceProxy": 92314538,
+      "balanceProxyPrev": null,
+      "changePct": null,
+      "lineItems": 2
+    },
+    "score": 14,
+    "reasons": [
+      {
+        "label": "29 vuotta vanha",
+        "points": 3
+      },
+      {
+        "label": "Konsolidoituva toimiala: Tieliikenteen tavarankuljetus",
+        "points": 2
+      },
+      {
+        "label": "Tilinpäätös rekisteröity juuri",
+        "points": 3
+      },
+      {
+        "label": "Henkilönimi yhtiön nimessä",
+        "points": 2
+      },
+      {
+        "label": "Ei koskaan nimenmuutosta",
+        "points": 1
+      },
+      {
+        "label": "Työnantajarekisterissä",
+        "points": 2
+      },
+      {
+        "label": "Pääkaupunkiseudun ulkopuolella",
+        "points": 1
+      }
+    ],
+    "age": 29,
+    "ownerNamed": true,
+    "matches": []
+  },
+  {
+    "company": {
+      "businessId": "936276083",
+      "name": "AS BREDESEN GRAVING & TRANSPORT",
+      "registered": "1995-02-19",
+      "industry": "43120",
+      "industryName": "Grunnarbeid",
+      "renames": 0,
+      "postCode": "6600",
+      "city": "SUNNDALSØRA",
+      "website": null,
+      "employer": true
+    },
+    "financials": {
+      "businessId": "936276083",
+      "financialDate": "2025-12-31",
+      "registrationDate": "2025-12-31",
+      "balanceProxy": 91103678,
+      "balanceProxyPrev": null,
+      "changePct": null,
+      "lineItems": 2
+    },
+    "score": 14,
+    "reasons": [
+      {
+        "label": "31 vuotta vanha",
+        "points": 3
+      },
+      {
+        "label": "Konsolidoituva toimiala: Maarakennus",
+        "points": 2
+      },
+      {
+        "label": "Tilinpäätös rekisteröity juuri",
+        "points": 3
+      },
+      {
+        "label": "Henkilönimi yhtiön nimessä",
+        "points": 2
+      },
+      {
+        "label": "Ei koskaan nimenmuutosta",
+        "points": 1
+      },
+      {
+        "label": "Työnantajarekisterissä",
+        "points": 2
+      },
+      {
+        "label": "Pääkaupunkiseudun ulkopuolella",
+        "points": 1
+      }
+    ],
+    "age": 31,
+    "ownerNamed": true,
+    "matches": []
+  },
+  {
+    "company": {
+      "businessId": "977518873",
+      "name": "BLINDHEIM MASKIN & TRANSPORT AS",
+      "registered": "1997-05-12",
+      "industry": "43120",
+      "industryName": "Grunnarbeid",
+      "renames": 0,
+      "postCode": "6020",
+      "city": "ÅLESUND",
+      "website": null,
+      "employer": true
+    },
+    "financials": {
+      "businessId": "977518873",
+      "financialDate": "2025-12-31",
+      "registrationDate": "2025-12-31",
+      "balanceProxy": 90206900,
+      "balanceProxyPrev": null,
+      "changePct": null,
+      "lineItems": 2
+    },
+    "score": 14,
+    "reasons": [
+      {
+        "label": "29 vuotta vanha",
+        "points": 3
+      },
+      {
+        "label": "Konsolidoituva toimiala: Maarakennus",
+        "points": 2
+      },
+      {
+        "label": "Tilinpäätös rekisteröity juuri",
+        "points": 3
+      },
+      {
+        "label": "Henkilönimi yhtiön nimessä",
+        "points": 2
+      },
+      {
+        "label": "Ei koskaan nimenmuutosta",
+        "points": 1
+      },
+      {
+        "label": "Työnantajarekisterissä",
+        "points": 2
+      },
+      {
+        "label": "Pääkaupunkiseudun ulkopuolella",
+        "points": 1
+      }
+    ],
+    "age": 29,
+    "ownerNamed": true,
+    "matches": []
+  },
+  {
+    "company": {
+      "businessId": "914240980",
+      "name": "MEKVIK MASKIN AS",
+      "registered": "1995-03-12",
+      "industry": "43120",
+      "industryName": "Grunnarbeid",
+      "renames": 0,
+      "postCode": "6517",
+      "city": "KRISTIANSUND N",
+      "website": null,
+      "employer": true
+    },
+    "financials": {
+      "businessId": "914240980",
+      "financialDate": "2025-12-31",
+      "registrationDate": "2025-12-31",
+      "balanceProxy": 85431744,
+      "balanceProxyPrev": null,
+      "changePct": null,
+      "lineItems": 2
+    },
+    "score": 14,
+    "reasons": [
+      {
+        "label": "31 vuotta vanha",
+        "points": 3
+      },
+      {
+        "label": "Konsolidoituva toimiala: Maarakennus",
+        "points": 2
+      },
+      {
+        "label": "Tilinpäätös rekisteröity juuri",
+        "points": 3
+      },
+      {
+        "label": "Henkilönimi yhtiön nimessä",
+        "points": 2
+      },
+      {
+        "label": "Ei koskaan nimenmuutosta",
+        "points": 1
+      },
+      {
+        "label": "Työnantajarekisterissä",
+        "points": 2
+      },
+      {
+        "label": "Pääkaupunkiseudun ulkopuolella",
+        "points": 1
+      }
+    ],
+    "age": 31,
+    "ownerNamed": true,
+    "matches": []
+  },
+  {
+    "company": {
+      "businessId": "977087848",
+      "name": "SVANEVIK TRANSPORT & UTLEIE AS",
+      "registered": "1997-01-14",
+      "industry": "49410",
+      "industryName": "Godstransport på vei",
+      "renames": 0,
+      "postCode": "5171",
+      "city": "LODDEFJORD",
+      "website": null,
+      "employer": true
+    },
+    "financials": {
+      "businessId": "977087848",
+      "financialDate": "2025-12-31",
+      "registrationDate": "2025-12-31",
+      "balanceProxy": 83883190,
+      "balanceProxyPrev": null,
+      "changePct": null,
+      "lineItems": 2
+    },
+    "score": 14,
+    "reasons": [
+      {
+        "label": "29 vuotta vanha",
+        "points": 3
+      },
+      {
+        "label": "Konsolidoituva toimiala: Tieliikenteen tavarankuljetus",
+        "points": 2
+      },
+      {
+        "label": "Tilinpäätös rekisteröity juuri",
+        "points": 3
+      },
+      {
+        "label": "Henkilönimi yhtiön nimessä",
+        "points": 2
+      },
+      {
+        "label": "Ei koskaan nimenmuutosta",
+        "points": 1
+      },
+      {
+        "label": "Työnantajarekisterissä",
+        "points": 2
+      },
+      {
+        "label": "Pääkaupunkiseudun ulkopuolella",
+        "points": 1
+      }
+    ],
+    "age": 29,
+    "ownerNamed": true,
+    "matches": []
+  },
+  {
+    "company": {
+      "businessId": "933907074",
+      "name": "PAULSEN MASKIN AS",
+      "registered": "1995-03-12",
+      "industry": "43120",
+      "industryName": "Grunnarbeid",
+      "renames": 0,
+      "postCode": "7900",
+      "city": "RØRVIK",
+      "website": null,
+      "employer": true
+    },
+    "financials": {
+      "businessId": "933907074",
+      "financialDate": "2025-12-31",
+      "registrationDate": "2025-12-31",
+      "balanceProxy": 82019494,
+      "balanceProxyPrev": null,
+      "changePct": null,
+      "lineItems": 2
+    },
+    "score": 14,
+    "reasons": [
+      {
+        "label": "31 vuotta vanha",
+        "points": 3
+      },
+      {
+        "label": "Konsolidoituva toimiala: Maarakennus",
+        "points": 2
+      },
+      {
+        "label": "Tilinpäätös rekisteröity juuri",
+        "points": 3
+      },
+      {
+        "label": "Henkilönimi yhtiön nimessä",
+        "points": 2
+      },
+      {
+        "label": "Ei koskaan nimenmuutosta",
+        "points": 1
+      },
+      {
+        "label": "Työnantajarekisterissä",
+        "points": 2
+      },
+      {
+        "label": "Pääkaupunkiseudun ulkopuolella",
+        "points": 1
+      }
+    ],
+    "age": 31,
+    "ownerNamed": true,
+    "matches": []
+  },
+  {
+    "company": {
+      "businessId": "966291192",
+      "name": "SERVICE ELEKTRIKEREN AS",
+      "registered": "1995-03-12",
+      "industry": "43210",
+      "industryName": "Elektrisk installasjonsarbeid",
+      "renames": 0,
+      "postCode": "5144",
+      "city": "FYLLINGSDALEN",
+      "website": null,
+      "employer": true
+    },
+    "financials": {
+      "businessId": "966291192",
+      "financialDate": "2025-12-31",
+      "registrationDate": "2025-12-31",
+      "balanceProxy": 80628068,
+      "balanceProxyPrev": null,
+      "changePct": null,
+      "lineItems": 2
+    },
+    "score": 14,
+    "reasons": [
+      {
+        "label": "31 vuotta vanha",
+        "points": 3
+      },
+      {
+        "label": "Konsolidoituva toimiala: Sähköasennus",
+        "points": 2
+      },
+      {
+        "label": "Tilinpäätös rekisteröity juuri",
+        "points": 3
+      },
+      {
+        "label": "Henkilönimi yhtiön nimessä",
+        "points": 2
+      },
+      {
+        "label": "Ei koskaan nimenmuutosta",
+        "points": 1
+      },
+      {
+        "label": "Työnantajarekisterissä",
+        "points": 2
+      },
+      {
+        "label": "Pääkaupunkiseudun ulkopuolella",
+        "points": 1
+      }
+    ],
+    "age": 31,
+    "ownerNamed": true,
+    "matches": []
+  },
+  {
+    "company": {
+      "businessId": "876519062",
+      "name": "ERLANDSEN TRANSPORT AS",
+      "registered": "1996-06-15",
+      "industry": "49410",
+      "industryName": "Godstransport på vei",
+      "renames": 0,
+      "postCode": "9407",
+      "city": "HARSTAD",
+      "website": null,
+      "employer": true
+    },
+    "financials": {
+      "businessId": "876519062",
+      "financialDate": "2025-12-31",
+      "registrationDate": "2025-12-31",
+      "balanceProxy": 79404849,
+      "balanceProxyPrev": null,
+      "changePct": null,
+      "lineItems": 2
+    },
+    "score": 14,
+    "reasons": [
+      {
+        "label": "30 vuotta vanha",
+        "points": 3
+      },
+      {
+        "label": "Konsolidoituva toimiala: Tieliikenteen tavarankuljetus",
+        "points": 2
+      },
+      {
+        "label": "Tilinpäätös rekisteröity juuri",
+        "points": 3
+      },
+      {
+        "label": "Henkilönimi yhtiön nimessä",
+        "points": 2
+      },
+      {
+        "label": "Ei koskaan nimenmuutosta",
+        "points": 1
+      },
+      {
+        "label": "Työnantajarekisterissä",
+        "points": 2
+      },
+      {
+        "label": "Pääkaupunkiseudun ulkopuolella",
+        "points": 1
+      }
+    ],
+    "age": 30,
+    "ownerNamed": true,
+    "matches": []
+  },
+  {
+    "company": {
+      "businessId": "968542788",
+      "name": "ØYVIND JENSEN TERMOTRANSPORT AS",
+      "registered": "1995-02-20",
+      "industry": "49410",
+      "industryName": "Godstransport på vei",
+      "renames": 0,
+      "postCode": "8208",
+      "city": "FAUSKE",
+      "website": null,
+      "employer": true
+    },
+    "financials": {
+      "businessId": "968542788",
+      "financialDate": "2025-12-31",
+      "registrationDate": "2025-12-31",
+      "balanceProxy": 75515010,
+      "balanceProxyPrev": null,
+      "changePct": null,
+      "lineItems": 2
+    },
+    "score": 14,
+    "reasons": [
+      {
+        "label": "31 vuotta vanha",
+        "points": 3
+      },
+      {
+        "label": "Konsolidoituva toimiala: Tieliikenteen tavarankuljetus",
+        "points": 2
+      },
+      {
+        "label": "Tilinpäätös rekisteröity juuri",
+        "points": 3
+      },
+      {
+        "label": "Henkilönimi yhtiön nimessä",
+        "points": 2
+      },
+      {
+        "label": "Ei koskaan nimenmuutosta",
+        "points": 1
+      },
+      {
+        "label": "Työnantajarekisterissä",
+        "points": 2
+      },
+      {
+        "label": "Pääkaupunkiseudun ulkopuolella",
+        "points": 1
+      }
+    ],
+    "age": 31,
+    "ownerNamed": true,
+    "matches": []
+  },
+  {
+    "company": {
+      "businessId": "977566584",
+      "name": "TARALDSVIK MASKIN AS",
+      "registered": "1997-05-28",
+      "industry": "43120",
+      "industryName": "Grunnarbeid",
+      "renames": 0,
+      "postCode": "8514",
+      "city": "NARVIK",
+      "website": null,
+      "employer": true
+    },
+    "financials": {
+      "businessId": "977566584",
+      "financialDate": "2025-12-31",
+      "registrationDate": "2025-12-31",
+      "balanceProxy": 71453284,
+      "balanceProxyPrev": null,
+      "changePct": null,
+      "lineItems": 2
+    },
+    "score": 14,
+    "reasons": [
+      {
+        "label": "29 vuotta vanha",
+        "points": 3
+      },
+      {
+        "label": "Konsolidoituva toimiala: Maarakennus",
+        "points": 2
+      },
+      {
+        "label": "Tilinpäätös rekisteröity juuri",
+        "points": 3
+      },
+      {
+        "label": "Henkilönimi yhtiön nimessä",
+        "points": 2
+      },
+      {
+        "label": "Ei koskaan nimenmuutosta",
+        "points": 1
+      },
+      {
+        "label": "Työnantajarekisterissä",
+        "points": 2
+      },
+      {
+        "label": "Pääkaupunkiseudun ulkopuolella",
+        "points": 1
+      }
+    ],
+    "age": 29,
+    "ownerNamed": true,
+    "matches": []
+  }
+]
