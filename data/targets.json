@@ -1,6 +1,89 @@
 [
   {
     "company": {
+      "businessId": "2428432-7",
+      "name": "JO-Sähkö Oy",
+      "registered": "2011-10-01",
+      "industry": "43210",
+      "industryName": "Sähköasennus",
+      "renames": 0,
+      "postCode": "04660",
+      "city": "NUMMINEN",
+      "website": null,
+      "employer": false
+    },
+    "financials": {
+      "businessId": "2428432-7",
+      "financialDate": "2025-06-30",
+      "registrationDate": "2026-08-22",
+      "balanceProxy": 3963213.54,
+      "balanceProxyPrev": 3041317.5,
+      "changePct": 30.3,
+      "lineItems": 50
+    },
+    "score": 17,
+    "reasons": [
+      {
+        "label": "15 vuotta vanha",
+        "points": 2
+      },
+      {
+        "label": "Konsolidoituva toimiala: Sähköasennus",
+        "points": 2
+      },
+      {
+        "label": "Toimialalla sähköasennus on 38 aktiivista ostajaa jotka ovat tehneet yhteensä 67 yritysostoa vuodesta 2023, aktiivisin on KONE Hissit Oy",
+        "points": 3
+      },
+      {
+        "label": "Tilinpäätös rekisteröity juuri",
+        "points": 3
+      },
+      {
+        "label": "Tase kasvoi 30 %",
+        "points": 1
+      },
+      {
+        "label": "Tilinpäätös 5 kk yli määräajan",
+        "points": 4
+      },
+      {
+        "label": "Ei koskaan nimenmuutosta",
+        "points": 1
+      },
+      {
+        "label": "Pääkaupunkiseudun ulkopuolella",
+        "points": 1
+      }
+    ],
+    "age": 15,
+    "ownerNamed": false,
+    "matches": [
+      {
+        "buyer": {
+          "id": "kotera-group",
+          "name": "Kotera Group",
+          "kind": "serial acquirer",
+          "industries": [
+            "43220",
+            "43210",
+            "43290",
+            "43120",
+            "43991",
+            "33200",
+            "25110"
+          ],
+          "minSize": 1000000,
+          "maxSize": 40000000,
+          "evidence": "16 acquisitions since founding, revenue ~€185M in 2025 and ~€260M forecast for 2026, IPO targeted 2028-29. Buys industrial construction and installation businesses one at a time.",
+          "source": "Mergero opening deck, roll-up track record"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      }
+    ]
+  },
+  {
+    "company": {
       "businessId": "0152307-3",
       "name": "Riihimäen Öljypoltinhuolto Oy",
       "registered": "1973-05-04",
@@ -574,6 +657,87 @@
           "maxSize": 40000000,
           "evidence": "16 acquisitions since founding, revenue ~€185M in 2025 and ~€260M forecast for 2026, IPO targeted 2028-29. Buys industrial construction and installation businesses one at a time.",
           "source": "Mergero opening deck, roll-up track record"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      }
+    ]
+  },
+  {
+    "company": {
+      "businessId": "1624575-8",
+      "name": "Ikirauta Oy",
+      "registered": "2000-10-31",
+      "industry": "25990",
+      "industryName": "Metallituotteet",
+      "renames": 1,
+      "postCode": "36220",
+      "city": "KANGASALA",
+      "website": null,
+      "employer": false
+    },
+    "financials": {
+      "businessId": "1624575-8",
+      "financialDate": "2025-09-30",
+      "registrationDate": "2026-06-09",
+      "balanceProxy": 1792890.14,
+      "balanceProxyPrev": 2011438.78,
+      "changePct": -10.9,
+      "lineItems": 51
+    },
+    "score": 15,
+    "reasons": [
+      {
+        "label": "26 vuotta vanha",
+        "points": 3
+      },
+      {
+        "label": "Konsolidoituva toimiala: Metallituotteet",
+        "points": 2
+      },
+      {
+        "label": "Toimialalla metallituotteet on 13 aktiivista ostajaa jotka ovat tehneet yhteensä 28 yritysostoa vuodesta 2023, aktiivisin on Fibroc Oy",
+        "points": 2
+      },
+      {
+        "label": "Tilinpäätös rekisteröity juuri",
+        "points": 3
+      },
+      {
+        "label": "Tase supistui -11 %",
+        "points": 2
+      },
+      {
+        "label": "Tilinpäätös 9 pv yli määräajan",
+        "points": 2
+      },
+      {
+        "label": "Pääkaupunkiseudun ulkopuolella",
+        "points": 1
+      }
+    ],
+    "age": 26,
+    "ownerNamed": false,
+    "matches": [
+      {
+        "buyer": {
+          "id": "teqnion",
+          "name": "Teqnion",
+          "kind": "serial acquirer",
+          "industries": [
+            "25110",
+            "25620",
+            "25730",
+            "25990",
+            "28990",
+            "33120",
+            "33200",
+            "22290",
+            "23610"
+          ],
+          "minSize": 1000000,
+          "maxSize": 30000000,
+          "evidence": "Listed Swedish acquirer of small industrial businesses with an eternal holding period, 36 companies owned. Bought Norband in a Mergero 2026 transaction, its route into Finland.",
+          "source": "Mergero 2026 transactions, Teqnion public reporting"
         },
         "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
       }
@@ -2782,85 +2946,6 @@
   },
   {
     "company": {
-      "businessId": "2428432-7",
-      "name": "JO-Sähkö Oy",
-      "registered": "2011-10-01",
-      "industry": "43210",
-      "industryName": "Sähköasennus",
-      "renames": 0,
-      "postCode": "04660",
-      "city": "NUMMINEN",
-      "website": null,
-      "employer": false
-    },
-    "financials": {
-      "businessId": "2428432-7",
-      "financialDate": "2025-06-30",
-      "registrationDate": "2026-08-22",
-      "balanceProxy": 3963213.54,
-      "balanceProxyPrev": 3041317.5,
-      "changePct": 30.3,
-      "lineItems": 50
-    },
-    "score": 13,
-    "reasons": [
-      {
-        "label": "15 vuotta vanha",
-        "points": 2
-      },
-      {
-        "label": "Konsolidoituva toimiala: Sähköasennus",
-        "points": 2
-      },
-      {
-        "label": "Toimialalla sähköasennus on 38 aktiivista ostajaa jotka ovat tehneet yhteensä 67 yritysostoa vuodesta 2023, aktiivisin on KONE Hissit Oy",
-        "points": 3
-      },
-      {
-        "label": "Tilinpäätös rekisteröity juuri",
-        "points": 3
-      },
-      {
-        "label": "Tase kasvoi 30 %",
-        "points": 1
-      },
-      {
-        "label": "Ei koskaan nimenmuutosta",
-        "points": 1
-      },
-      {
-        "label": "Pääkaupunkiseudun ulkopuolella",
-        "points": 1
-      }
-    ],
-    "age": 15,
-    "ownerNamed": false,
-    "matches": [
-      {
-        "buyer": {
-          "id": "kotera-group",
-          "name": "Kotera Group",
-          "kind": "serial acquirer",
-          "industries": [
-            "43220",
-            "43210",
-            "43290",
-            "43120",
-            "43991",
-            "33200",
-            "25110"
-          ],
-          "minSize": 1000000,
-          "maxSize": 40000000,
-          "evidence": "16 acquisitions since founding, revenue ~€185M in 2025 and ~€260M forecast for 2026, IPO targeted 2028-29. Buys industrial construction and installation businesses one at a time.",
-          "source": "Mergero opening deck, roll-up track record"
-        },
-        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
-      }
-    ]
-  },
-  {
-    "company": {
       "businessId": "0660413-9",
       "name": "Raikon Konepaja Oy",
       "registered": "1982-11-04",
@@ -3306,83 +3391,6 @@
           "maxSize": 40000000,
           "evidence": "Merged Huhtala Logistics and Puura-Trans, later adding Weeman. Revenue ~€80M in 2025 and group value more than tripled. Backed by Lease Deal Group.",
           "source": "Mergero opening deck, roll-up track record"
-        },
-        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
-      }
-    ]
-  },
-  {
-    "company": {
-      "businessId": "1624575-8",
-      "name": "Ikirauta Oy",
-      "registered": "2000-10-31",
-      "industry": "25990",
-      "industryName": "Metallituotteet",
-      "renames": 1,
-      "postCode": "36220",
-      "city": "KANGASALA",
-      "website": null,
-      "employer": false
-    },
-    "financials": {
-      "businessId": "1624575-8",
-      "financialDate": "2025-09-30",
-      "registrationDate": "2026-06-09",
-      "balanceProxy": 1792890.14,
-      "balanceProxyPrev": 2011438.78,
-      "changePct": -10.9,
-      "lineItems": 51
-    },
-    "score": 13,
-    "reasons": [
-      {
-        "label": "26 vuotta vanha",
-        "points": 3
-      },
-      {
-        "label": "Konsolidoituva toimiala: Metallituotteet",
-        "points": 2
-      },
-      {
-        "label": "Toimialalla metallituotteet on 13 aktiivista ostajaa jotka ovat tehneet yhteensä 28 yritysostoa vuodesta 2023, aktiivisin on Fibroc Oy",
-        "points": 2
-      },
-      {
-        "label": "Tilinpäätös rekisteröity juuri",
-        "points": 3
-      },
-      {
-        "label": "Tase supistui -11 %",
-        "points": 2
-      },
-      {
-        "label": "Pääkaupunkiseudun ulkopuolella",
-        "points": 1
-      }
-    ],
-    "age": 26,
-    "ownerNamed": false,
-    "matches": [
-      {
-        "buyer": {
-          "id": "teqnion",
-          "name": "Teqnion",
-          "kind": "serial acquirer",
-          "industries": [
-            "25110",
-            "25620",
-            "25730",
-            "25990",
-            "28990",
-            "33120",
-            "33200",
-            "22290",
-            "23610"
-          ],
-          "minSize": 1000000,
-          "maxSize": 30000000,
-          "evidence": "Listed Swedish acquirer of small industrial businesses with an eternal holding period, 36 companies owned. Bought Norband in a Mergero 2026 transaction, its route into Finland.",
-          "source": "Mergero 2026 transactions, Teqnion public reporting"
         },
         "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
       }

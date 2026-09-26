@@ -66,6 +66,17 @@ export function ageOf(company: Company, asOf = new Date()): number {
   return asOf.getFullYear() - Number(company.registered.slice(0, 4))
 }
 
+/** Statutory deadline for registering a financial statement: eight months from period end. */
+const DEADLINE_DAYS = 243
+
+/** Days from the end of the financial period to the day the filing was registered. */
+export function filingLagDays(f: Financials): number {
+  const end = Date.parse(f.financialDate)
+  const registered = Date.parse(f.registrationDate)
+  if (Number.isNaN(end) || Number.isNaN(registered)) return 0
+  return Math.round((registered - end) / 86_400_000)
+}
+
 export type Scored = { score: number; reasons: ScoreReason[]; age: number; ownerNamed: boolean }
 
 /**
@@ -103,6 +114,21 @@ export function score(
     } else if (financials.changePct !== null && financials.changePct >= 20) {
       add(`Tase kasvoi ${Math.round(financials.changePct)} %`, 1)
     }
+
+    /**
+     * Filing late is a stronger signal than filing at all.
+     *
+     * Every company files every year, so the filing itself marks a moment, not a situation. The
+     * statutory deadline is eight months from the end of the financial period, and in the measured
+     * window 12% of filings crossed it. A company that misses it has something going on: an owner
+     * whose attention is elsewhere, an accountant mid-change, a year nobody wanted to close.
+     *
+     * Worth more than the on-time filing it rides on, and free from the same document.
+     */
+    const lateDays = filingLagDays(financials) - DEADLINE_DAYS
+    if (lateDays > 150) add(`Tilinpäätös ${Math.floor(lateDays / 30)} kk yli määräajan`, 4)
+    else if (lateDays > 30) add(`Tilinpäätös ${Math.floor(lateDays / 30)} kk yli määräajan`, 3)
+    else if (lateDays > 0) add(`Tilinpäätös ${lateDays} pv yli määräajan`, 2)
   }
 
   const ownerNamed = hasPersonName(company.name)
