@@ -17,6 +17,17 @@ export type Company = {
   employer: boolean
 }
 
+/**
+ * One filing in the stream. This is the timing signal: the owner has just looked at their own
+ * numbers, and the date it was registered is public.
+ */
+export type Filing = {
+  businessId: string
+  /** End date of the financial period, needed to fetch the filing itself. */
+  financialDate: string
+  registrationDate: string
+}
+
 /** Balance-sheet size read out of the XBRL filing, with the comparative period from the same document. */
 export type Financials = {
   businessId: string

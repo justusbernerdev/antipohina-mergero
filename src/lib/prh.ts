@@ -9,6 +9,8 @@
  * No API key, no rate plan. The register download is the only heavy call.
  */
 
+import type { Filing } from './types.js'
+
 export const YTJ = 'https://avoindata.prh.fi/opendata-ytj-api/v3'
 export const XBRL = 'https://avoindata.prh.fi/opendata-xbrl-api/v3'
 
@@ -49,14 +51,6 @@ export async function fetchText(url: string, attempts = 4): Promise<string> {
 }
 
 export const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms))
-
-/** One filing in the stream. This is the timing signal: the owner just looked at their own numbers. */
-export type Filing = {
-  businessId: string
-  /** End date of the financial period, needed to fetch the filing itself. */
-  financialDate: string
-  registrationDate: string
-}
 
 /**
  * Every digital financial statement registered between two dates.
