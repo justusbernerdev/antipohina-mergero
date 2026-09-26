@@ -29,7 +29,11 @@ const clerkConfigured = Boolean(
 )
 
 const guarded = clerkMiddleware(async (auth, req) => {
-  if (!isPublic(req)) await auth.protect()
+  if (isPublic(req)) return
+  const { userId, redirectToSignIn } = await auth()
+  // protect() answers 404 when it cannot resolve a sign-in route; redirect explicitly so a
+  // signed-out visitor lands on the login instead of a dead end.
+  if (!userId) return redirectToSignIn({ returnBackUrl: req.url })
 })
 
 export default clerkConfigured ? guarded : () => NextResponse.next()
