@@ -1,63 +1,6 @@
 [
   {
     "company": {
-      "businessId": "980416976",
-      "name": "MARTHINSEN & DUVHOLT AS",
-      "registered": "1999-01-05",
-      "industry": "43120",
-      "industryName": "Grunnarbeid",
-      "renames": 0,
-      "postCode": "3241",
-      "city": "SANDEFJORD",
-      "website": null,
-      "employer": true
-    },
-    "financials": {
-      "businessId": "980416976",
-      "financialDate": "2025-12-31",
-      "registrationDate": "2025-12-31",
-      "balanceProxy": 1690767220,
-      "balanceProxyPrev": null,
-      "changePct": null,
-      "lineItems": 2
-    },
-    "score": 14,
-    "reasons": [
-      {
-        "label": "27 vuotta vanha",
-        "points": 3
-      },
-      {
-        "label": "Konsolidoituva toimiala: Maarakennus",
-        "points": 2
-      },
-      {
-        "label": "Tilinpäätös rekisteröity juuri",
-        "points": 3
-      },
-      {
-        "label": "Henkilönimi yhtiön nimessä",
-        "points": 2
-      },
-      {
-        "label": "Ei koskaan nimenmuutosta",
-        "points": 1
-      },
-      {
-        "label": "Työnantajarekisterissä",
-        "points": 2
-      },
-      {
-        "label": "Pääkaupunkiseudun ulkopuolella",
-        "points": 1
-      }
-    ],
-    "age": 27,
-    "ownerNamed": true,
-    "matches": []
-  },
-  {
-    "company": {
       "businessId": "958324014",
       "name": "TVERÅS MASKIN & TRANSPORT AS",
       "registered": "1995-02-19",
@@ -225,7 +168,29 @@
     ],
     "age": 31,
     "ownerNamed": true,
-    "matches": []
+    "matches": [
+      {
+        "buyer": {
+          "id": "kotera-group",
+          "name": "Kotera Group",
+          "kind": "serial acquirer",
+          "industries": [
+            "43220",
+            "43210",
+            "43290",
+            "43120",
+            "43991",
+            "33200",
+            "25110"
+          ],
+          "minSize": 1000000,
+          "maxSize": 40000000,
+          "evidence": "16 acquisitions since founding, revenue ~€185M in 2025 and ~€260M forecast for 2026, IPO targeted 2028-29. Buys industrial construction and installation businesses one at a time.",
+          "source": "Mergero opening deck, roll-up track record"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      }
+    ]
   },
   {
     "company": {
@@ -282,7 +247,29 @@
     ],
     "age": 31,
     "ownerNamed": true,
-    "matches": []
+    "matches": [
+      {
+        "buyer": {
+          "id": "kotera-group",
+          "name": "Kotera Group",
+          "kind": "serial acquirer",
+          "industries": [
+            "43220",
+            "43210",
+            "43290",
+            "43120",
+            "43991",
+            "33200",
+            "25110"
+          ],
+          "minSize": 1000000,
+          "maxSize": 40000000,
+          "evidence": "16 acquisitions since founding, revenue ~€185M in 2025 and ~€260M forecast for 2026, IPO targeted 2028-29. Buys industrial construction and installation businesses one at a time.",
+          "source": "Mergero opening deck, roll-up track record"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      }
+    ]
   },
   {
     "company": {
@@ -339,7 +326,29 @@
     ],
     "age": 29,
     "ownerNamed": true,
-    "matches": []
+    "matches": [
+      {
+        "buyer": {
+          "id": "kotera-group",
+          "name": "Kotera Group",
+          "kind": "serial acquirer",
+          "industries": [
+            "43220",
+            "43210",
+            "43290",
+            "43120",
+            "43991",
+            "33200",
+            "25110"
+          ],
+          "minSize": 1000000,
+          "maxSize": 40000000,
+          "evidence": "16 acquisitions since founding, revenue ~€185M in 2025 and ~€260M forecast for 2026, IPO targeted 2028-29. Buys industrial construction and installation businesses one at a time.",
+          "source": "Mergero opening deck, roll-up track record"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      }
+    ]
   },
   {
     "company": {
@@ -396,7 +405,29 @@
     ],
     "age": 31,
     "ownerNamed": true,
-    "matches": []
+    "matches": [
+      {
+        "buyer": {
+          "id": "kotera-group",
+          "name": "Kotera Group",
+          "kind": "serial acquirer",
+          "industries": [
+            "43220",
+            "43210",
+            "43290",
+            "43120",
+            "43991",
+            "33200",
+            "25110"
+          ],
+          "minSize": 1000000,
+          "maxSize": 40000000,
+          "evidence": "16 acquisitions since founding, revenue ~€185M in 2025 and ~€260M forecast for 2026, IPO targeted 2028-29. Buys industrial construction and installation businesses one at a time.",
+          "source": "Mergero opening deck, roll-up track record"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      }
+    ]
   },
   {
     "company": {
@@ -453,7 +484,29 @@
     ],
     "age": 26,
     "ownerNamed": true,
-    "matches": []
+    "matches": [
+      {
+        "buyer": {
+          "id": "kotera-group",
+          "name": "Kotera Group",
+          "kind": "serial acquirer",
+          "industries": [
+            "43220",
+            "43210",
+            "43290",
+            "43120",
+            "43991",
+            "33200",
+            "25110"
+          ],
+          "minSize": 1000000,
+          "maxSize": 40000000,
+          "evidence": "16 acquisitions since founding, revenue ~€185M in 2025 and ~€260M forecast for 2026, IPO targeted 2028-29. Buys industrial construction and installation businesses one at a time.",
+          "source": "Mergero opening deck, roll-up track record"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      }
+    ]
   },
   {
     "company": {
@@ -510,7 +563,29 @@
     ],
     "age": 26,
     "ownerNamed": true,
-    "matches": []
+    "matches": [
+      {
+        "buyer": {
+          "id": "kotera-group",
+          "name": "Kotera Group",
+          "kind": "serial acquirer",
+          "industries": [
+            "43220",
+            "43210",
+            "43290",
+            "43120",
+            "43991",
+            "33200",
+            "25110"
+          ],
+          "minSize": 1000000,
+          "maxSize": 40000000,
+          "evidence": "16 acquisitions since founding, revenue ~€185M in 2025 and ~€260M forecast for 2026, IPO targeted 2028-29. Buys industrial construction and installation businesses one at a time.",
+          "source": "Mergero opening deck, roll-up track record"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      }
+    ]
   },
   {
     "company": {
@@ -567,7 +642,29 @@
     ],
     "age": 26,
     "ownerNamed": true,
-    "matches": []
+    "matches": [
+      {
+        "buyer": {
+          "id": "kotera-group",
+          "name": "Kotera Group",
+          "kind": "serial acquirer",
+          "industries": [
+            "43220",
+            "43210",
+            "43290",
+            "43120",
+            "43991",
+            "33200",
+            "25110"
+          ],
+          "minSize": 1000000,
+          "maxSize": 40000000,
+          "evidence": "16 acquisitions since founding, revenue ~€185M in 2025 and ~€260M forecast for 2026, IPO targeted 2028-29. Buys industrial construction and installation businesses one at a time.",
+          "source": "Mergero opening deck, roll-up track record"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      }
+    ]
   },
   {
     "company": {
@@ -624,7 +721,47 @@
     ],
     "age": 31,
     "ownerNamed": true,
-    "matches": []
+    "matches": [
+      {
+        "buyer": {
+          "id": "kotera-group",
+          "name": "Kotera Group",
+          "kind": "serial acquirer",
+          "industries": [
+            "43220",
+            "43210",
+            "43290",
+            "43120",
+            "43991",
+            "33200",
+            "25110"
+          ],
+          "minSize": 1000000,
+          "maxSize": 40000000,
+          "evidence": "16 acquisitions since founding, revenue ~€185M in 2025 and ~€260M forecast for 2026, IPO targeted 2028-29. Buys industrial construction and installation businesses one at a time.",
+          "source": "Mergero opening deck, roll-up track record"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      },
+      {
+        "buyer": {
+          "id": "no-dig-alliance",
+          "name": "No Dig Alliance",
+          "kind": "serial acquirer",
+          "industries": [
+            "43220",
+            "43290",
+            "43120",
+            "43110"
+          ],
+          "minSize": 500000,
+          "maxSize": 20000000,
+          "evidence": "Acquired Suomen Putkisto Palvelu in a Mergero 2026 transaction. Consolidates pipeline services.",
+          "source": "Mergero 2026 transactions"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      }
+    ]
   },
   {
     "company": {
@@ -681,7 +818,47 @@
     ],
     "age": 27,
     "ownerNamed": true,
-    "matches": []
+    "matches": [
+      {
+        "buyer": {
+          "id": "kotera-group",
+          "name": "Kotera Group",
+          "kind": "serial acquirer",
+          "industries": [
+            "43220",
+            "43210",
+            "43290",
+            "43120",
+            "43991",
+            "33200",
+            "25110"
+          ],
+          "minSize": 1000000,
+          "maxSize": 40000000,
+          "evidence": "16 acquisitions since founding, revenue ~€185M in 2025 and ~€260M forecast for 2026, IPO targeted 2028-29. Buys industrial construction and installation businesses one at a time.",
+          "source": "Mergero opening deck, roll-up track record"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      },
+      {
+        "buyer": {
+          "id": "no-dig-alliance",
+          "name": "No Dig Alliance",
+          "kind": "serial acquirer",
+          "industries": [
+            "43220",
+            "43290",
+            "43120",
+            "43110"
+          ],
+          "minSize": 500000,
+          "maxSize": 20000000,
+          "evidence": "Acquired Suomen Putkisto Palvelu in a Mergero 2026 transaction. Consolidates pipeline services.",
+          "source": "Mergero 2026 transactions"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      }
+    ]
   },
   {
     "company": {
@@ -738,7 +915,47 @@
     ],
     "age": 31,
     "ownerNamed": true,
-    "matches": []
+    "matches": [
+      {
+        "buyer": {
+          "id": "kotera-group",
+          "name": "Kotera Group",
+          "kind": "serial acquirer",
+          "industries": [
+            "43220",
+            "43210",
+            "43290",
+            "43120",
+            "43991",
+            "33200",
+            "25110"
+          ],
+          "minSize": 1000000,
+          "maxSize": 40000000,
+          "evidence": "16 acquisitions since founding, revenue ~€185M in 2025 and ~€260M forecast for 2026, IPO targeted 2028-29. Buys industrial construction and installation businesses one at a time.",
+          "source": "Mergero opening deck, roll-up track record"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      },
+      {
+        "buyer": {
+          "id": "no-dig-alliance",
+          "name": "No Dig Alliance",
+          "kind": "serial acquirer",
+          "industries": [
+            "43220",
+            "43290",
+            "43120",
+            "43110"
+          ],
+          "minSize": 500000,
+          "maxSize": 20000000,
+          "evidence": "Acquired Suomen Putkisto Palvelu in a Mergero 2026 transaction. Consolidates pipeline services.",
+          "source": "Mergero 2026 transactions"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      }
+    ]
   },
   {
     "company": {
@@ -795,7 +1012,47 @@
     ],
     "age": 30,
     "ownerNamed": true,
-    "matches": []
+    "matches": [
+      {
+        "buyer": {
+          "id": "kotera-group",
+          "name": "Kotera Group",
+          "kind": "serial acquirer",
+          "industries": [
+            "43220",
+            "43210",
+            "43290",
+            "43120",
+            "43991",
+            "33200",
+            "25110"
+          ],
+          "minSize": 1000000,
+          "maxSize": 40000000,
+          "evidence": "16 acquisitions since founding, revenue ~€185M in 2025 and ~€260M forecast for 2026, IPO targeted 2028-29. Buys industrial construction and installation businesses one at a time.",
+          "source": "Mergero opening deck, roll-up track record"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      },
+      {
+        "buyer": {
+          "id": "no-dig-alliance",
+          "name": "No Dig Alliance",
+          "kind": "serial acquirer",
+          "industries": [
+            "43220",
+            "43290",
+            "43120",
+            "43110"
+          ],
+          "minSize": 500000,
+          "maxSize": 20000000,
+          "evidence": "Acquired Suomen Putkisto Palvelu in a Mergero 2026 transaction. Consolidates pipeline services.",
+          "source": "Mergero 2026 transactions"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      }
+    ]
   },
   {
     "company": {
@@ -852,7 +1109,47 @@
     ],
     "age": 25,
     "ownerNamed": true,
-    "matches": []
+    "matches": [
+      {
+        "buyer": {
+          "id": "kotera-group",
+          "name": "Kotera Group",
+          "kind": "serial acquirer",
+          "industries": [
+            "43220",
+            "43210",
+            "43290",
+            "43120",
+            "43991",
+            "33200",
+            "25110"
+          ],
+          "minSize": 1000000,
+          "maxSize": 40000000,
+          "evidence": "16 acquisitions since founding, revenue ~€185M in 2025 and ~€260M forecast for 2026, IPO targeted 2028-29. Buys industrial construction and installation businesses one at a time.",
+          "source": "Mergero opening deck, roll-up track record"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      },
+      {
+        "buyer": {
+          "id": "no-dig-alliance",
+          "name": "No Dig Alliance",
+          "kind": "serial acquirer",
+          "industries": [
+            "43220",
+            "43290",
+            "43120",
+            "43110"
+          ],
+          "minSize": 500000,
+          "maxSize": 20000000,
+          "evidence": "Acquired Suomen Putkisto Palvelu in a Mergero 2026 transaction. Consolidates pipeline services.",
+          "source": "Mergero 2026 transactions"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      }
+    ]
   },
   {
     "company": {
@@ -909,7 +1206,47 @@
     ],
     "age": 28,
     "ownerNamed": true,
-    "matches": []
+    "matches": [
+      {
+        "buyer": {
+          "id": "kotera-group",
+          "name": "Kotera Group",
+          "kind": "serial acquirer",
+          "industries": [
+            "43220",
+            "43210",
+            "43290",
+            "43120",
+            "43991",
+            "33200",
+            "25110"
+          ],
+          "minSize": 1000000,
+          "maxSize": 40000000,
+          "evidence": "16 acquisitions since founding, revenue ~€185M in 2025 and ~€260M forecast for 2026, IPO targeted 2028-29. Buys industrial construction and installation businesses one at a time.",
+          "source": "Mergero opening deck, roll-up track record"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      },
+      {
+        "buyer": {
+          "id": "no-dig-alliance",
+          "name": "No Dig Alliance",
+          "kind": "serial acquirer",
+          "industries": [
+            "43220",
+            "43290",
+            "43120",
+            "43110"
+          ],
+          "minSize": 500000,
+          "maxSize": 20000000,
+          "evidence": "Acquired Suomen Putkisto Palvelu in a Mergero 2026 transaction. Consolidates pipeline services.",
+          "source": "Mergero 2026 transactions"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      }
+    ]
   },
   {
     "company": {
@@ -966,7 +1303,45 @@
     ],
     "age": 31,
     "ownerNamed": true,
-    "matches": []
+    "matches": [
+      {
+        "buyer": {
+          "id": "luo-logistics",
+          "name": "Luo Logistics Group",
+          "kind": "serial acquirer",
+          "industries": [
+            "49410",
+            "49310",
+            "52100",
+            "52240"
+          ],
+          "minSize": 1000000,
+          "maxSize": 40000000,
+          "evidence": "Merged Huhtala Logistics and Puura-Trans, later adding Weeman. Revenue ~€80M in 2025 and group value more than tripled. Backed by Lease Deal Group.",
+          "source": "Mergero opening deck, roll-up track record"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      },
+      {
+        "buyer": {
+          "id": "hig-capital",
+          "name": "H.I.G. Capital",
+          "kind": "private equity",
+          "industries": [
+            "38110",
+            "38320",
+            "39000",
+            "49410",
+            "52100"
+          ],
+          "minSize": 10000000,
+          "maxSize": 100000000,
+          "evidence": "Acquired the majority of Fluo Group in August 2025 after Sponsor Capital built the platform. Enters once a group has been assembled.",
+          "source": "Mergero opening deck, roll-up track record"
+        },
+        "why": "Sijoittaa tähän toimialaan ja kokoluokkaan."
+      }
+    ]
   },
   {
     "company": {
@@ -1023,7 +1398,29 @@
     ],
     "age": 30,
     "ownerNamed": true,
-    "matches": []
+    "matches": [
+      {
+        "buyer": {
+          "id": "kotera-group",
+          "name": "Kotera Group",
+          "kind": "serial acquirer",
+          "industries": [
+            "43220",
+            "43210",
+            "43290",
+            "43120",
+            "43991",
+            "33200",
+            "25110"
+          ],
+          "minSize": 1000000,
+          "maxSize": 40000000,
+          "evidence": "16 acquisitions since founding, revenue ~€185M in 2025 and ~€260M forecast for 2026, IPO targeted 2028-29. Buys industrial construction and installation businesses one at a time.",
+          "source": "Mergero opening deck, roll-up track record"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      }
+    ]
   },
   {
     "company": {
@@ -1080,7 +1477,47 @@
     ],
     "age": 31,
     "ownerNamed": true,
-    "matches": []
+    "matches": [
+      {
+        "buyer": {
+          "id": "kotera-group",
+          "name": "Kotera Group",
+          "kind": "serial acquirer",
+          "industries": [
+            "43220",
+            "43210",
+            "43290",
+            "43120",
+            "43991",
+            "33200",
+            "25110"
+          ],
+          "minSize": 1000000,
+          "maxSize": 40000000,
+          "evidence": "16 acquisitions since founding, revenue ~€185M in 2025 and ~€260M forecast for 2026, IPO targeted 2028-29. Buys industrial construction and installation businesses one at a time.",
+          "source": "Mergero opening deck, roll-up track record"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      },
+      {
+        "buyer": {
+          "id": "no-dig-alliance",
+          "name": "No Dig Alliance",
+          "kind": "serial acquirer",
+          "industries": [
+            "43220",
+            "43290",
+            "43120",
+            "43110"
+          ],
+          "minSize": 500000,
+          "maxSize": 20000000,
+          "evidence": "Acquired Suomen Putkisto Palvelu in a Mergero 2026 transaction. Consolidates pipeline services.",
+          "source": "Mergero 2026 transactions"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      }
+    ]
   },
   {
     "company": {
@@ -1137,7 +1574,26 @@
     ],
     "age": 25,
     "ownerNamed": true,
-    "matches": []
+    "matches": [
+      {
+        "buyer": {
+          "id": "luo-logistics",
+          "name": "Luo Logistics Group",
+          "kind": "serial acquirer",
+          "industries": [
+            "49410",
+            "49310",
+            "52100",
+            "52240"
+          ],
+          "minSize": 1000000,
+          "maxSize": 40000000,
+          "evidence": "Merged Huhtala Logistics and Puura-Trans, later adding Weeman. Revenue ~€80M in 2025 and group value more than tripled. Backed by Lease Deal Group.",
+          "source": "Mergero opening deck, roll-up track record"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      }
+    ]
   },
   {
     "company": {
@@ -1194,7 +1650,26 @@
     ],
     "age": 31,
     "ownerNamed": true,
-    "matches": []
+    "matches": [
+      {
+        "buyer": {
+          "id": "luo-logistics",
+          "name": "Luo Logistics Group",
+          "kind": "serial acquirer",
+          "industries": [
+            "49410",
+            "49310",
+            "52100",
+            "52240"
+          ],
+          "minSize": 1000000,
+          "maxSize": 40000000,
+          "evidence": "Merged Huhtala Logistics and Puura-Trans, later adding Weeman. Revenue ~€80M in 2025 and group value more than tripled. Backed by Lease Deal Group.",
+          "source": "Mergero opening deck, roll-up track record"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      }
+    ]
   },
   {
     "company": {
@@ -1251,7 +1726,29 @@
     ],
     "age": 31,
     "ownerNamed": true,
-    "matches": []
+    "matches": [
+      {
+        "buyer": {
+          "id": "kotera-group",
+          "name": "Kotera Group",
+          "kind": "serial acquirer",
+          "industries": [
+            "43220",
+            "43210",
+            "43290",
+            "43120",
+            "43991",
+            "33200",
+            "25110"
+          ],
+          "minSize": 1000000,
+          "maxSize": 40000000,
+          "evidence": "16 acquisitions since founding, revenue ~€185M in 2025 and ~€260M forecast for 2026, IPO targeted 2028-29. Buys industrial construction and installation businesses one at a time.",
+          "source": "Mergero opening deck, roll-up track record"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      }
+    ]
   },
   {
     "company": {
@@ -1308,7 +1805,26 @@
     ],
     "age": 31,
     "ownerNamed": true,
-    "matches": []
+    "matches": [
+      {
+        "buyer": {
+          "id": "luo-logistics",
+          "name": "Luo Logistics Group",
+          "kind": "serial acquirer",
+          "industries": [
+            "49410",
+            "49310",
+            "52100",
+            "52240"
+          ],
+          "minSize": 1000000,
+          "maxSize": 40000000,
+          "evidence": "Merged Huhtala Logistics and Puura-Trans, later adding Weeman. Revenue ~€80M in 2025 and group value more than tripled. Backed by Lease Deal Group.",
+          "source": "Mergero opening deck, roll-up track record"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      }
+    ]
   },
   {
     "company": {
@@ -1365,7 +1881,47 @@
     ],
     "age": 31,
     "ownerNamed": true,
-    "matches": []
+    "matches": [
+      {
+        "buyer": {
+          "id": "kotera-group",
+          "name": "Kotera Group",
+          "kind": "serial acquirer",
+          "industries": [
+            "43220",
+            "43210",
+            "43290",
+            "43120",
+            "43991",
+            "33200",
+            "25110"
+          ],
+          "minSize": 1000000,
+          "maxSize": 40000000,
+          "evidence": "16 acquisitions since founding, revenue ~€185M in 2025 and ~€260M forecast for 2026, IPO targeted 2028-29. Buys industrial construction and installation businesses one at a time.",
+          "source": "Mergero opening deck, roll-up track record"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      },
+      {
+        "buyer": {
+          "id": "no-dig-alliance",
+          "name": "No Dig Alliance",
+          "kind": "serial acquirer",
+          "industries": [
+            "43220",
+            "43290",
+            "43120",
+            "43110"
+          ],
+          "minSize": 500000,
+          "maxSize": 20000000,
+          "evidence": "Acquired Suomen Putkisto Palvelu in a Mergero 2026 transaction. Consolidates pipeline services.",
+          "source": "Mergero 2026 transactions"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      }
+    ]
   },
   {
     "company": {
@@ -1422,7 +1978,29 @@
     ],
     "age": 27,
     "ownerNamed": true,
-    "matches": []
+    "matches": [
+      {
+        "buyer": {
+          "id": "kotera-group",
+          "name": "Kotera Group",
+          "kind": "serial acquirer",
+          "industries": [
+            "43220",
+            "43210",
+            "43290",
+            "43120",
+            "43991",
+            "33200",
+            "25110"
+          ],
+          "minSize": 1000000,
+          "maxSize": 40000000,
+          "evidence": "16 acquisitions since founding, revenue ~€185M in 2025 and ~€260M forecast for 2026, IPO targeted 2028-29. Buys industrial construction and installation businesses one at a time.",
+          "source": "Mergero opening deck, roll-up track record"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      }
+    ]
   },
   {
     "company": {
@@ -1479,7 +2057,26 @@
     ],
     "age": 31,
     "ownerNamed": true,
-    "matches": []
+    "matches": [
+      {
+        "buyer": {
+          "id": "luo-logistics",
+          "name": "Luo Logistics Group",
+          "kind": "serial acquirer",
+          "industries": [
+            "49410",
+            "49310",
+            "52100",
+            "52240"
+          ],
+          "minSize": 1000000,
+          "maxSize": 40000000,
+          "evidence": "Merged Huhtala Logistics and Puura-Trans, later adding Weeman. Revenue ~€80M in 2025 and group value more than tripled. Backed by Lease Deal Group.",
+          "source": "Mergero opening deck, roll-up track record"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      }
+    ]
   },
   {
     "company": {
@@ -1536,7 +2133,26 @@
     ],
     "age": 28,
     "ownerNamed": true,
-    "matches": []
+    "matches": [
+      {
+        "buyer": {
+          "id": "luo-logistics",
+          "name": "Luo Logistics Group",
+          "kind": "serial acquirer",
+          "industries": [
+            "49410",
+            "49310",
+            "52100",
+            "52240"
+          ],
+          "minSize": 1000000,
+          "maxSize": 40000000,
+          "evidence": "Merged Huhtala Logistics and Puura-Trans, later adding Weeman. Revenue ~€80M in 2025 and group value more than tripled. Backed by Lease Deal Group.",
+          "source": "Mergero opening deck, roll-up track record"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      }
+    ]
   },
   {
     "company": {
@@ -1593,7 +2209,26 @@
     ],
     "age": 31,
     "ownerNamed": true,
-    "matches": []
+    "matches": [
+      {
+        "buyer": {
+          "id": "luo-logistics",
+          "name": "Luo Logistics Group",
+          "kind": "serial acquirer",
+          "industries": [
+            "49410",
+            "49310",
+            "52100",
+            "52240"
+          ],
+          "minSize": 1000000,
+          "maxSize": 40000000,
+          "evidence": "Merged Huhtala Logistics and Puura-Trans, later adding Weeman. Revenue ~€80M in 2025 and group value more than tripled. Backed by Lease Deal Group.",
+          "source": "Mergero opening deck, roll-up track record"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      }
+    ]
   },
   {
     "company": {
@@ -1650,7 +2285,26 @@
     ],
     "age": 31,
     "ownerNamed": true,
-    "matches": []
+    "matches": [
+      {
+        "buyer": {
+          "id": "luo-logistics",
+          "name": "Luo Logistics Group",
+          "kind": "serial acquirer",
+          "industries": [
+            "49410",
+            "49310",
+            "52100",
+            "52240"
+          ],
+          "minSize": 1000000,
+          "maxSize": 40000000,
+          "evidence": "Merged Huhtala Logistics and Puura-Trans, later adding Weeman. Revenue ~€80M in 2025 and group value more than tripled. Backed by Lease Deal Group.",
+          "source": "Mergero opening deck, roll-up track record"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      }
+    ]
   },
   {
     "company": {
@@ -1707,7 +2361,29 @@
     ],
     "age": 26,
     "ownerNamed": true,
-    "matches": []
+    "matches": [
+      {
+        "buyer": {
+          "id": "kotera-group",
+          "name": "Kotera Group",
+          "kind": "serial acquirer",
+          "industries": [
+            "43220",
+            "43210",
+            "43290",
+            "43120",
+            "43991",
+            "33200",
+            "25110"
+          ],
+          "minSize": 1000000,
+          "maxSize": 40000000,
+          "evidence": "16 acquisitions since founding, revenue ~€185M in 2025 and ~€260M forecast for 2026, IPO targeted 2028-29. Buys industrial construction and installation businesses one at a time.",
+          "source": "Mergero opening deck, roll-up track record"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      }
+    ]
   },
   {
     "company": {
@@ -1764,7 +2440,26 @@
     ],
     "age": 29,
     "ownerNamed": true,
-    "matches": []
+    "matches": [
+      {
+        "buyer": {
+          "id": "luo-logistics",
+          "name": "Luo Logistics Group",
+          "kind": "serial acquirer",
+          "industries": [
+            "49410",
+            "49310",
+            "52100",
+            "52240"
+          ],
+          "minSize": 1000000,
+          "maxSize": 40000000,
+          "evidence": "Merged Huhtala Logistics and Puura-Trans, later adding Weeman. Revenue ~€80M in 2025 and group value more than tripled. Backed by Lease Deal Group.",
+          "source": "Mergero opening deck, roll-up track record"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      }
+    ]
   },
   {
     "company": {
@@ -1821,7 +2516,47 @@
     ],
     "age": 31,
     "ownerNamed": true,
-    "matches": []
+    "matches": [
+      {
+        "buyer": {
+          "id": "kotera-group",
+          "name": "Kotera Group",
+          "kind": "serial acquirer",
+          "industries": [
+            "43220",
+            "43210",
+            "43290",
+            "43120",
+            "43991",
+            "33200",
+            "25110"
+          ],
+          "minSize": 1000000,
+          "maxSize": 40000000,
+          "evidence": "16 acquisitions since founding, revenue ~€185M in 2025 and ~€260M forecast for 2026, IPO targeted 2028-29. Buys industrial construction and installation businesses one at a time.",
+          "source": "Mergero opening deck, roll-up track record"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      },
+      {
+        "buyer": {
+          "id": "no-dig-alliance",
+          "name": "No Dig Alliance",
+          "kind": "serial acquirer",
+          "industries": [
+            "43220",
+            "43290",
+            "43120",
+            "43110"
+          ],
+          "minSize": 500000,
+          "maxSize": 20000000,
+          "evidence": "Acquired Suomen Putkisto Palvelu in a Mergero 2026 transaction. Consolidates pipeline services.",
+          "source": "Mergero 2026 transactions"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      }
+    ]
   },
   {
     "company": {
@@ -1878,7 +2613,47 @@
     ],
     "age": 29,
     "ownerNamed": true,
-    "matches": []
+    "matches": [
+      {
+        "buyer": {
+          "id": "kotera-group",
+          "name": "Kotera Group",
+          "kind": "serial acquirer",
+          "industries": [
+            "43220",
+            "43210",
+            "43290",
+            "43120",
+            "43991",
+            "33200",
+            "25110"
+          ],
+          "minSize": 1000000,
+          "maxSize": 40000000,
+          "evidence": "16 acquisitions since founding, revenue ~€185M in 2025 and ~€260M forecast for 2026, IPO targeted 2028-29. Buys industrial construction and installation businesses one at a time.",
+          "source": "Mergero opening deck, roll-up track record"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      },
+      {
+        "buyer": {
+          "id": "no-dig-alliance",
+          "name": "No Dig Alliance",
+          "kind": "serial acquirer",
+          "industries": [
+            "43220",
+            "43290",
+            "43120",
+            "43110"
+          ],
+          "minSize": 500000,
+          "maxSize": 20000000,
+          "evidence": "Acquired Suomen Putkisto Palvelu in a Mergero 2026 transaction. Consolidates pipeline services.",
+          "source": "Mergero 2026 transactions"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      }
+    ]
   },
   {
     "company": {
@@ -1935,7 +2710,47 @@
     ],
     "age": 31,
     "ownerNamed": true,
-    "matches": []
+    "matches": [
+      {
+        "buyer": {
+          "id": "kotera-group",
+          "name": "Kotera Group",
+          "kind": "serial acquirer",
+          "industries": [
+            "43220",
+            "43210",
+            "43290",
+            "43120",
+            "43991",
+            "33200",
+            "25110"
+          ],
+          "minSize": 1000000,
+          "maxSize": 40000000,
+          "evidence": "16 acquisitions since founding, revenue ~€185M in 2025 and ~€260M forecast for 2026, IPO targeted 2028-29. Buys industrial construction and installation businesses one at a time.",
+          "source": "Mergero opening deck, roll-up track record"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      },
+      {
+        "buyer": {
+          "id": "no-dig-alliance",
+          "name": "No Dig Alliance",
+          "kind": "serial acquirer",
+          "industries": [
+            "43220",
+            "43290",
+            "43120",
+            "43110"
+          ],
+          "minSize": 500000,
+          "maxSize": 20000000,
+          "evidence": "Acquired Suomen Putkisto Palvelu in a Mergero 2026 transaction. Consolidates pipeline services.",
+          "source": "Mergero 2026 transactions"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      }
+    ]
   },
   {
     "company": {
@@ -1992,7 +2807,26 @@
     ],
     "age": 29,
     "ownerNamed": true,
-    "matches": []
+    "matches": [
+      {
+        "buyer": {
+          "id": "luo-logistics",
+          "name": "Luo Logistics Group",
+          "kind": "serial acquirer",
+          "industries": [
+            "49410",
+            "49310",
+            "52100",
+            "52240"
+          ],
+          "minSize": 1000000,
+          "maxSize": 40000000,
+          "evidence": "Merged Huhtala Logistics and Puura-Trans, later adding Weeman. Revenue ~€80M in 2025 and group value more than tripled. Backed by Lease Deal Group.",
+          "source": "Mergero opening deck, roll-up track record"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      }
+    ]
   },
   {
     "company": {
@@ -2049,7 +2883,47 @@
     ],
     "age": 31,
     "ownerNamed": true,
-    "matches": []
+    "matches": [
+      {
+        "buyer": {
+          "id": "kotera-group",
+          "name": "Kotera Group",
+          "kind": "serial acquirer",
+          "industries": [
+            "43220",
+            "43210",
+            "43290",
+            "43120",
+            "43991",
+            "33200",
+            "25110"
+          ],
+          "minSize": 1000000,
+          "maxSize": 40000000,
+          "evidence": "16 acquisitions since founding, revenue ~€185M in 2025 and ~€260M forecast for 2026, IPO targeted 2028-29. Buys industrial construction and installation businesses one at a time.",
+          "source": "Mergero opening deck, roll-up track record"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      },
+      {
+        "buyer": {
+          "id": "no-dig-alliance",
+          "name": "No Dig Alliance",
+          "kind": "serial acquirer",
+          "industries": [
+            "43220",
+            "43290",
+            "43120",
+            "43110"
+          ],
+          "minSize": 500000,
+          "maxSize": 20000000,
+          "evidence": "Acquired Suomen Putkisto Palvelu in a Mergero 2026 transaction. Consolidates pipeline services.",
+          "source": "Mergero 2026 transactions"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      }
+    ]
   },
   {
     "company": {
@@ -2106,7 +2980,29 @@
     ],
     "age": 31,
     "ownerNamed": true,
-    "matches": []
+    "matches": [
+      {
+        "buyer": {
+          "id": "kotera-group",
+          "name": "Kotera Group",
+          "kind": "serial acquirer",
+          "industries": [
+            "43220",
+            "43210",
+            "43290",
+            "43120",
+            "43991",
+            "33200",
+            "25110"
+          ],
+          "minSize": 1000000,
+          "maxSize": 40000000,
+          "evidence": "16 acquisitions since founding, revenue ~€185M in 2025 and ~€260M forecast for 2026, IPO targeted 2028-29. Buys industrial construction and installation businesses one at a time.",
+          "source": "Mergero opening deck, roll-up track record"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      }
+    ]
   },
   {
     "company": {
@@ -2163,7 +3059,26 @@
     ],
     "age": 30,
     "ownerNamed": true,
-    "matches": []
+    "matches": [
+      {
+        "buyer": {
+          "id": "luo-logistics",
+          "name": "Luo Logistics Group",
+          "kind": "serial acquirer",
+          "industries": [
+            "49410",
+            "49310",
+            "52100",
+            "52240"
+          ],
+          "minSize": 1000000,
+          "maxSize": 40000000,
+          "evidence": "Merged Huhtala Logistics and Puura-Trans, later adding Weeman. Revenue ~€80M in 2025 and group value more than tripled. Backed by Lease Deal Group.",
+          "source": "Mergero opening deck, roll-up track record"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      }
+    ]
   },
   {
     "company": {
@@ -2220,7 +3135,26 @@
     ],
     "age": 31,
     "ownerNamed": true,
-    "matches": []
+    "matches": [
+      {
+        "buyer": {
+          "id": "luo-logistics",
+          "name": "Luo Logistics Group",
+          "kind": "serial acquirer",
+          "industries": [
+            "49410",
+            "49310",
+            "52100",
+            "52240"
+          ],
+          "minSize": 1000000,
+          "maxSize": 40000000,
+          "evidence": "Merged Huhtala Logistics and Puura-Trans, later adding Weeman. Revenue ~€80M in 2025 and group value more than tripled. Backed by Lease Deal Group.",
+          "source": "Mergero opening deck, roll-up track record"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      }
+    ]
   },
   {
     "company": {
@@ -2277,6 +3211,143 @@
     ],
     "age": 29,
     "ownerNamed": true,
-    "matches": []
+    "matches": [
+      {
+        "buyer": {
+          "id": "kotera-group",
+          "name": "Kotera Group",
+          "kind": "serial acquirer",
+          "industries": [
+            "43220",
+            "43210",
+            "43290",
+            "43120",
+            "43991",
+            "33200",
+            "25110"
+          ],
+          "minSize": 1000000,
+          "maxSize": 40000000,
+          "evidence": "16 acquisitions since founding, revenue ~€185M in 2025 and ~€260M forecast for 2026, IPO targeted 2028-29. Buys industrial construction and installation businesses one at a time.",
+          "source": "Mergero opening deck, roll-up track record"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      },
+      {
+        "buyer": {
+          "id": "no-dig-alliance",
+          "name": "No Dig Alliance",
+          "kind": "serial acquirer",
+          "industries": [
+            "43220",
+            "43290",
+            "43120",
+            "43110"
+          ],
+          "minSize": 500000,
+          "maxSize": 20000000,
+          "evidence": "Acquired Suomen Putkisto Palvelu in a Mergero 2026 transaction. Consolidates pipeline services.",
+          "source": "Mergero 2026 transactions"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      }
+    ]
+  },
+  {
+    "company": {
+      "businessId": "919700572",
+      "name": "Arne Rød & CO AS",
+      "registered": "1995-02-19",
+      "industry": "43120",
+      "industryName": "Grunnarbeid",
+      "renames": 0,
+      "postCode": "3236",
+      "city": "SANDEFJORD",
+      "website": null,
+      "employer": true
+    },
+    "financials": {
+      "businessId": "919700572",
+      "financialDate": "2024-12-31",
+      "registrationDate": "2024-12-31",
+      "balanceProxy": 70348107,
+      "balanceProxyPrev": null,
+      "changePct": null,
+      "lineItems": 2
+    },
+    "score": 14,
+    "reasons": [
+      {
+        "label": "31 vuotta vanha",
+        "points": 3
+      },
+      {
+        "label": "Konsolidoituva toimiala: Maarakennus",
+        "points": 2
+      },
+      {
+        "label": "Tilinpäätös rekisteröity juuri",
+        "points": 3
+      },
+      {
+        "label": "Henkilönimi yhtiön nimessä",
+        "points": 2
+      },
+      {
+        "label": "Ei koskaan nimenmuutosta",
+        "points": 1
+      },
+      {
+        "label": "Työnantajarekisterissä",
+        "points": 2
+      },
+      {
+        "label": "Pääkaupunkiseudun ulkopuolella",
+        "points": 1
+      }
+    ],
+    "age": 31,
+    "ownerNamed": true,
+    "matches": [
+      {
+        "buyer": {
+          "id": "kotera-group",
+          "name": "Kotera Group",
+          "kind": "serial acquirer",
+          "industries": [
+            "43220",
+            "43210",
+            "43290",
+            "43120",
+            "43991",
+            "33200",
+            "25110"
+          ],
+          "minSize": 1000000,
+          "maxSize": 40000000,
+          "evidence": "16 acquisitions since founding, revenue ~€185M in 2025 and ~€260M forecast for 2026, IPO targeted 2028-29. Buys industrial construction and installation businesses one at a time.",
+          "source": "Mergero opening deck, roll-up track record"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      },
+      {
+        "buyer": {
+          "id": "no-dig-alliance",
+          "name": "No Dig Alliance",
+          "kind": "serial acquirer",
+          "industries": [
+            "43220",
+            "43290",
+            "43120",
+            "43110"
+          ],
+          "minSize": 500000,
+          "maxSize": 20000000,
+          "evidence": "Acquired Suomen Putkisto Palvelu in a Mergero 2026 transaction. Consolidates pipeline services.",
+          "source": "Mergero 2026 transactions"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      }
+    ]
   }
 ]
