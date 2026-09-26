@@ -7,3 +7,4 @@ data/raw/
 .env*
 *.log
 tsconfig.tsbuildinfo
+no.log

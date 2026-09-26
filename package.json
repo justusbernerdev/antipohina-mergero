@@ -12,7 +12,8 @@
     "build": "next build",
     "start": "next start",
     "export:selda": "tsx scripts/export-selda.ts",
-    "acquirers": "tsx scripts/acquirers.ts"
+    "acquirers": "tsx scripts/acquirers.ts",
+    "scan:no": "tsx scripts/scan-no.ts"
   },
   "dependencies": {
     "@clerk/nextjs": "^7.9.7",
