@@ -2,33 +2,42 @@ import { clerkMiddleware, createRouteMatcher } from '@clerk/nextjs/server'
 import { NextResponse } from 'next/server'
 
 /**
- * Only the console is behind a login, and only when a login is configured at all.
+ * Everything is behind a login except two things, and both exceptions are deliberate.
  *
- * Three things have to be true at once and they pull in different directions:
+ * `/kohde/*` is the artefact — one page about the owner's own company, built from their own
+ * registered filing, sent out of the building. An owner who has to create an account to see a
+ * figure about their own business will not, and that would defeat the entire point of the page.
  *
- *   The owner's page is the artefact that gets sent out of the building. An owner who has to
- *   create an account to see a figure about their own company will not.
+ * `/api/selda` is the webhook. Selda authenticates it with an HMAC signature over the body, which
+ * is the right mechanism for a machine; a session cookie is not.
  *
- *   The result list has to run on a judge's machine. `git clone && npm run dev` must show real
- *   data with nothing to sign up for.
+ * Everything else is Mergero's internal view and the console, and those are worth protecting.
  *
- *   The console holds API keys and run logs, so that part is worth protecting.
- *
- * Hence: when Clerk keys are absent the middleware steps aside entirely rather than throwing.
- * A missing optional dependency should not turn every route into a 500.
+ * When Clerk keys are absent the middleware steps aside entirely. That is not a security hole but
+ * the local-development path: a missing optional dependency should not turn every route into a
+ * 500, and `git clone && npm run dev` has to show real data with nothing to sign up for.
  */
-const isProtected = createRouteMatcher(['/konsoli(.*)', '/api/admin/(.*)'])
+const isPublic = createRouteMatcher([
+  '/kohde/(.*)',
+  '/api/selda',
+  '/sign-in(.*)',
+  '/sign-up(.*)',
+])
 
 const clerkConfigured = Boolean(
   process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY && process.env.CLERK_SECRET_KEY,
 )
 
 const guarded = clerkMiddleware(async (auth, req) => {
-  if (isProtected(req)) await auth.protect()
+  if (!isPublic(req)) await auth.protect()
 })
 
 export default clerkConfigured ? guarded : () => NextResponse.next()
 
 export const config = {
-  matcher: ['/((?!_next|[^?]*\\.(?:html?|css|js(?!on)|jpe?g|webp|png|gif|svg|ttf|woff2?|ico)).*)', '/(api|trpc)(.*)'],
+  matcher: [
+    '/((?!_next|[^?]*\\.(?:html?|css|js(?!on)|jpe?g|webp|png|gif|svg|ttf|woff2?|ico)).*)',
+    '/(api|trpc)(.*)',
+    '/__clerk/:path*',
+  ],
 }

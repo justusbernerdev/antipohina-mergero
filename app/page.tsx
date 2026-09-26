@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { UserButton } from '@clerk/nextjs'
 import { loadTargets, loadFunnel, eur, pct, count } from '@/lib/data'
 
 export const dynamic = 'force-dynamic'
@@ -25,7 +26,10 @@ export default async function Home() {
       <header className="top">
         <div className="wrap">
           <span className="brand">antipöhinä × Mergero</span>
-          <span className="dim">Ajo {funnel?.generatedAt} · PRH:n avoin data</span>
+          <span className="dim" style={{ display: 'flex', alignItems: 'center', gap: 14 }}>
+            Ajo {funnel?.generatedAt} · PRH:n avoin data
+            <UserButton />
+          </span>
         </div>
       </header>
 
