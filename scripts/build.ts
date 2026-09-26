@@ -8,10 +8,11 @@
  * Usage:  npm run build:targets -- --min-size 1500000 --limit 200
  */
 
-import { open, writeFile } from 'node:fs/promises'
+import { open, readFile, writeFile } from 'node:fs/promises'
 import { createInterface } from 'node:readline'
 import { score } from '../src/lib/score.js'
 import { matchBuyers } from '../src/lib/buyers.js'
+import type { IndustryHeat } from '../src/lib/consolidation.js'
 import type { Company, Financials, Target } from '../src/lib/types.js'
 
 const args = process.argv.slice(2)
@@ -35,6 +36,15 @@ const companies = await readJsonl<Company>('data/raw/companies.jsonl')
 const financials = await readJsonl<Financials>('data/raw/financials.jsonl')
 const byId = new Map(companies.map((c) => [c.businessId, c]))
 
+/** Industry heat comes from `npm run acquirers`. Optional: scoring degrades rather than fails. */
+let heatByIndustry = new Map<string, IndustryHeat>()
+try {
+  const rows: IndustryHeat[] = JSON.parse(await readFile('data/heat.json', 'utf8'))
+  heatByIndustry = new Map(rows.map((h) => [h.industry, h]))
+} catch {
+  console.warn('data/heat.json puuttuu, konsolidaatiosignaali ohitetaan. Aja npm run acquirers.')
+}
+
 const funnel: { stage: string; left: number; note: string }[] = [
   { stage: 'Konsolidoituvalla toimialalla, vähintään 15 v vanha', left: companies.length, note: 'Kaupparekisteri, paikallinen suodatus' },
   { stage: 'Tilinpäätös rekisteröity ikkunassa', left: financials.length, note: 'Digitaalinen tilinpäätösvirta' },
@@ -44,7 +54,7 @@ const scored: Target[] = []
 for (const f of financials) {
   const company = byId.get(f.businessId)
   if (!company) continue
-  const s = score(company, f)
+  const s = score(company, f, heatByIndustry.get(company.industry))
   scored.push({ company, financials: f, ...s, matches: matchBuyers(company, f) })
 }
 

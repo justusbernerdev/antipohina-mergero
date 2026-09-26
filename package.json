@@ -7,13 +7,15 @@
   "scripts": {
     "ingest": "tsx scripts/ingest.ts",
     "build:targets": "tsx scripts/build.ts",
-    "pipeline": "npm run ingest && npm run build:targets",
+    "pipeline": "npm run ingest && npm run acquirers && npm run build:targets",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "export:selda": "tsx scripts/export-selda.ts"
+    "export:selda": "tsx scripts/export-selda.ts",
+    "acquirers": "tsx scripts/acquirers.ts"
   },
   "dependencies": {
+    "@clerk/nextjs": "^7.9.7",
     "next": "^15.5.4",
     "react": "^19.1.1",
     "react-dom": "^19.1.1"

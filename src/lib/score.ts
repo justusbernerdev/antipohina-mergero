@@ -1,5 +1,6 @@
 import type { Company, Financials, ScoreReason } from './types.js'
 import { CONSOLIDATING } from './industries.js'
+import { consolidationPoints, consolidationReason, type IndustryHeat } from './consolidation.js'
 
 /**
  * Succession scoring.
@@ -71,7 +72,12 @@ export type Scored = { score: number; reasons: ScoreReason[]; age: number; owner
  * Score one company. `financials` present means the company filed recently, which is the timing
  * signal — the owner has just seen their own numbers, possibly for the last time before deciding.
  */
-export function score(company: Company, financials: Financials | null, asOf = new Date()): Scored {
+export function score(
+  company: Company,
+  financials: Financials | null,
+  heat?: IndustryHeat,
+  asOf = new Date(),
+): Scored {
   const reasons: ScoreReason[] = []
   const add = (label: string, points: number) => reasons.push({ label, points })
 
@@ -81,6 +87,13 @@ export function score(company: Company, financials: Financials | null, asOf = ne
 
   const industry = CONSOLIDATING[company.industry]
   if (industry) add(`Konsolidoituva toimiala: ${industry}`, 2)
+
+  // Someone is actively rolling up this industry. Context, not evidence about this owner, so capped.
+  const heatPoints = consolidationPoints(heat)
+  if (heatPoints) {
+    const reason = consolidationReason(heat, company)
+    if (reason) add(reason, heatPoints)
+  }
 
   if (financials) {
     add('Tilinpäätös rekisteröity juuri', 3)
