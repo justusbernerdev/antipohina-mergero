@@ -57,24 +57,24 @@ voi sanoa demossa ääneen.
 
 ## Neljä jotka muuttavat ratkaisun muotoa
 
-### 4. Mitä MGX:n rekisteriseulonta ei tänään löydä?
+### 6. Mitä MGX:n rekisteriseulonta ei tänään löydä?
 
 Kalvolla lukee *"Screens target companies across multiple company registers."* Innovaatiokriteeri
 ratkeaa tähän vastaukseen: mikä on se signaali jota kone ei näe. Meidän vastauksemme on
 **tilinpäätöksen rekisteröintipäivä ajoitussignaalina**, ja tämä kysymys kertoo onko se uusi heille.
 
-### 5. Mistä ne 18 kauppaa H1 2026 oikeasti tulivat?
+### 7. Mistä ne 18 kauppaa H1 2026 oikeasti tulivat?
 
 Verkosto, suositus, inbound vai outbound. Jos verkosto ja suositukset, ongelma on tavoittaminen.
 Jos outbound, ongelma on osumatarkkuus. Ratkaisu painottuu eri tavalla.
 
-### 6. Roll-up-asiakkaassa kuinka monta kohdetta ostetaan vuodessa?
+### 8. Roll-up-asiakkaassa kuinka monta kohdetta ostetaan vuodessa?
 
 Kotera Group teki 16 yritysostoa. Jokainen vaati yhden omistajan suostumaan keskusteluun. Jos yksi
 buy-and-build-asiakas tarkoittaa kymmentä mandaattia vuodessa, **vaikutus lasketaan asiakkaina eikä
 yksittäisinä kauppoina**, ja se on paljon isompi luku.
 
-### 7. Kuka teillä tekee sen ensimmäisen kontaktin, partneri vai analyytikko?
+### 9. Kuka teillä tekee sen ensimmäisen kontaktin, partneri vai analyytikko?
 
 Jos partneri, aika on kallista ja säästö on iso euroina. Jos analyytikko, ratkaisu myydään laadulla
 eikä ajalla. Sama demo, eri pitch.
@@ -83,16 +83,16 @@ eikä ajalla. Sama demo, eri pitch.
 
 ## Kolme jotka ratkaisevat liiketoimintamallin
 
-### 8. Kalvolla lukee että viiden vuoden tavoite on olla Euroopan ykkönen kuratoidussa deal flow'ssa. Mikä se on lukuna?
+### 10. Kalvolla lukee että viiden vuoden tavoite on olla Euroopan ykkönen kuratoidussa deal flow'ssa. Mikä se on lukuna?
 
 Tuplaatteko toimeksiannot, kymmenkertaistatteko, vai onko mittari muu kuin määrä.
 
-### 9. Mihin asti tämä voi teidän näkemyksenne mukaan kasvaa? Missä katto tulee vastaan?
+### 11. Mihin asti tämä voi teidän näkemyksenne mukaan kasvaa? Missä katto tulee vastaan?
 
 Tästä kuulee onko rajoite ihmiset, kohteet, ostajat vai luottamus. **Se rajoite on se jota ratkaisu
 purkaa**, ja vastaus kertoo suoraan mitä demossa kannattaa korostaa.
 
-### 10. Ostaisitteko originaation tulospohjaisesti, vai pitääkö sen olla työkalu jonka omistatte?
+### 12. Ostaisitteko originaation tulospohjaisesti, vai pitääkö sen olla työkalu jonka omistatte?
 
 Axialilla ei ole tilausmaksua lainkaan, vain onnistumispalkkio. Vastaus ratkaisee esitetäänkö
 liiketoimintamalli vai tuote.
@@ -101,13 +101,13 @@ liiketoimintamalli vai tuote.
 
 ## Kaksi jotka koskevat suoraan meidän toteutustamme
 
-### 11. Saatteko ulos ostajakriteerit koneluettavassa muodossa? Toimiala, kokoluokka, maa.
+### 13. Saatteko ulos ostajakriteerit koneluettavassa muodossa? Toimiala, kokoluokka, maa.
 
 Tämä on koko feasibility-argumentti. Meidän ostajakirjamme on julkinen sijainen heidän 2 000
 ostajastaan, koottu heidän omista julkaistuista kaupoistaan. **Pilotissa tiedosto korvataan heidän
 exportillaan eikä mikään muu muutu.** Jos vastaus on kyllä, sen voi sanoa lavalla.
 
-### 12. Saksassa ei ole vastaavaa ilmaista tilinpäätösvirtaa kuin Suomessa. Onko teillä jo lähde DACH-dataan?
+### 14. Saksassa ei ole vastaavaa ilmaista tilinpäätösvirtaa kuin Suomessa. Onko teillä jo lähde DACH-dataan?
 
 Suomi on poikkeus: PRH antaa koneluettavan virran ilmaiseksi. Saksassa tilinpäätökset ovat julkisia
 mutta avointa rajapintaa ei ole, vaan pääsy ostetaan (handelsregister.ai, OpenRegister). Jos heillä
