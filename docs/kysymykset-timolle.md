@@ -9,7 +9,13 @@ kohdekoko on **yritysarvo 2 to 100 M€**.
 
 ---
 
-## Kolme joita ilman demo jää väitteeksi
+Kysymykset on johdettu riskeistä: jokainen varmentaa yhden asian joka voi kaataa ratkaisun tai
+muuttaa sen muotoa. Riskit ja niiden vastaukset ovat [`dataflow.md`](dataflow.md):ssä ja
+julkaistussa kaaviossa.
+
+---
+
+## Viisi joita ilman demo jää väitteeksi
 
 ### 1. Kuinka monta omistajakeskustelua johtaa yhteen toimeksiantoon?
 
@@ -25,7 +31,20 @@ Kalvo sanoi että kontaktointi on pullonkaula ja että sen pitää skaalautua *"
 quality"*. Tämä kysymys kertoo mitä artefaktia koneen pitää tuottaa. Jos vastaus on soitto,
 artefakti on se mikä ansaitsee puhelun. Jos se on kirje, artefakti on itse kirje.
 
-### 3. Kasvuluvuissanne on kaksi eri numeroa. Kumpi on tavoite?
+### 3. Voimmeko käyttää teidän 2026-kauppojanne testinä?
+
+Jos ajamme signaalin taaksepäin, näkyvätkö ne kohteet listalla ennen kauppaa? Jos hän suostuu,
+**backtest on yhteinen koe eikä meidän väitteemme**, ja se on vahvin mahdollinen tapa esittää se.
+
+Huomaa että Clean-Kalle ei olisi löytynyt tilinpäätössignaalilla: sillä ei ole yhtään digitaalista
+tilinpäätöstä. Se on rehellisyyttä joka kannattaa kertoa itse ennen kuin se löydetään.
+
+### 4. Mistä te saatte omistajan yhteystiedon tänään? Ostatteko sen vai onko se verkostossa?
+
+Jos he ostavat sen jo, meidän ei tarvitse ratkaista sitä lainkaan ja koko kontaktointikerros voi
+jäädä pois. Se olisi hyvä uutinen, koska se on putken heikoin kohta.
+
+### 5. Kasvuluvuissanne on kaksi eri numeroa. Kumpi on tavoite?
 
 Kirjallisessa briiffissä lukee *"18 transactions in H1 2026 and roughly 50% growth ahead"*,
 avajaiskalvolla *"~25% expected YoY growth H2 2026"*. Tuplaero.
