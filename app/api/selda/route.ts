@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server'
 import { appendFile, mkdir } from 'node:fs/promises'
+import { createHmac, timingSafeEqual } from 'node:crypto'
 
 /**
  * Webhook back from the contact layer.
@@ -39,14 +40,23 @@ type SeldaEvent = {
 }
 
 export async function POST(req: Request) {
+  // The body has to be read as text first: verifying the signature means hashing the exact bytes
+  // that were sent, and re-serialising a parsed object would not reproduce them.
+  const raw = await req.text()
+
   const secret = process.env.SELDA_WEBHOOK_SECRET
-  if (secret && req.headers.get('x-selda-signature') !== secret) {
-    return NextResponse.json({ error: 'bad signature' }, { status: 401 })
+  if (secret) {
+    const expected = createHmac('sha256', secret).update(raw).digest('hex')
+    const got = req.headers.get('x-selda-signature') ?? ''
+    // Constant-time compare so a mismatch cannot be found one byte at a time.
+    const ok =
+      got.length === expected.length && timingSafeEqual(Buffer.from(got), Buffer.from(expected))
+    if (!ok) return NextResponse.json({ error: 'bad signature' }, { status: 401 })
   }
 
   let body: SeldaEvent
   try {
-    body = await req.json()
+    body = JSON.parse(raw)
   } catch {
     return NextResponse.json({ error: 'invalid json' }, { status: 400 })
   }
