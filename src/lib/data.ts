@@ -1,9 +1,16 @@
-import { readFile } from 'node:fs/promises'
 import type { Target } from './types.js'
+import targetsJson from '../../data/targets.json'
+import funnelJson from '../../data/funnel.json'
 
 /**
- * The app reads what the pipeline wrote. No database: the judge clones the repo, runs the pipeline
- * once and the site has real data, or skips the pipeline and reads the committed run.
+ * The app reads what the pipeline wrote.
+ *
+ * Imported rather than read from disk, because a serverless function does not ship the repo's
+ * working directory with it — `readFile('data/targets.json')` works locally and returns nothing
+ * once deployed. Importing makes the data part of the bundle, so the committed run is what the
+ * site shows until someone runs the pipeline again.
+ *
+ * No database. The judge clones the repo and the site has real data.
  */
 
 export type Funnel = {
@@ -13,19 +20,11 @@ export type Funnel = {
 }
 
 export async function loadTargets(): Promise<Target[]> {
-  try {
-    return JSON.parse(await readFile('data/targets.json', 'utf8'))
-  } catch {
-    return []
-  }
+  return targetsJson as unknown as Target[]
 }
 
 export async function loadFunnel(): Promise<Funnel | null> {
-  try {
-    return JSON.parse(await readFile('data/funnel.json', 'utf8'))
-  } catch {
-    return null
-  }
+  return funnelJson as Funnel
 }
 
 export const eur = (n: number) =>
