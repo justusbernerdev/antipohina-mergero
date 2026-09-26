@@ -7,14 +7,14 @@ skaalautuvuudesta voidaan luvata ja mitä ei.
 
 ## Yhteenveto
 
-| Maa | Rekisteri | Tilinpäätösvirta | Liikevaihto ja tulos | Hinta |
-|---|---|---|---|---|
-| **Suomi** | kyllä, 97 MB zip päivittäin | kyllä, ~50 / pankkipäivä | ei, vain tase | **0 €** |
-| **Tanska** | kyllä, CVR | **kyllä, 7 069 / 3 vk** | XBRL-liitteenä | **0 €** |
-| **Norja** | kyllä, REST | per yhtiö | **kyllä, suoraan JSON:ina** | **0 €** |
-| **Viro** | kyllä, latausportaali | ei testattu | ei testattu | **0 €** |
-| **Ruotsi** | osittain | ei avointa | ei | maksullinen |
-| **Saksa** | kyllä, OffeneRegister-dumppi | ei avointa | ei | ostettava |
+| Maa | Rekisteri | Tilinpäätösvirta | Liikevaihto ja tulos | Omistaja nimeltä | Hinta |
+|---|---|---|---|---|---|
+| **Suomi** | kyllä, 97 MB zip päivittäin | kyllä, ~50 / pankkipäivä | ei, vain tase | ei saa | **0 €** |
+| **Tanska** | kyllä, CVR | **kyllä, 7 069 / 3 vk** | XBRL-liitteenä | ei testattu | **0 €** |
+| **Norja** | kyllä, REST | per yhtiö | **kyllä, suoraan JSON:ina** | ei saa | **0 €** |
+| **Viro** | kyllä | **kyllä, XBRL pakollinen 2022** | XBRL:ssä | **kyllä, osuuksineen** | **0 €** |
+| **Ruotsi** | osittain | ei avointa | ei | ei | maksullinen |
+| **Saksa** | kyllä, dumppi 2019 | ei avointa | ei | **kyllä, vastuuhenkilöt** | ostettava |
 
 **Pohjoismaat ovat ilmaisia. Tämä ei ollut tiedossa kun putki rakennettiin Suomelle.**
 
@@ -85,9 +85,39 @@ datasta, Suomessa vain approksimoitavissa.**
 
 ## Viro · Äriregister avaandmed
 
-Latausportaali on olemassa (`avaandmed.ariregister.rik.ee`) ja aineistot ovat ilmaisia.
-Tilinpäätösten saatavuutta ei ehditty testata. Viro on pieni mutta se on Prenewin esimerkkien
-perusteella aktiivinen markkina, ja se on kolmas kieli nimisäännölle.
+**Ladattu ja tarkistettu. Viro on datan laadulla mitattuna paras Euroopassa, ja se on ilmaista.**
+
+Kahdeksan aineistoa JSON:ina ja XML:nä, ja joukossa kolme joita ei saa mistään muualta:
+
+| Aineisto | Mitä sisältää | Koko |
+|---|---|---|
+| `osanikud` | **Osakkaat nimineen ja omistusosuuksineen** | 32 MB |
+| `kasusaajad` | **Tosiasialliset edunsaajat** | 27 MB |
+| `kaardile_kantud_isikud` | Hallitus ja edustajat | 44 MB |
+| `yldandmed` | Perustiedot, toimiala, perustamispäivä | 220 MB |
+| `kommertspandid` | Yrityskiinnitykset | — |
+
+Osakasaineisto sisältää etunimen, sukunimen, omistusosuuden prosentteina, omistuksen lajin ja
+sen onko omistaja henkilö vai yhtiö:
+
+```
+007 Agent & Partners OÜ
+  Veronika Oškina · osanik · 100,00 % · ainuomand · henkilö
+```
+
+Mitattuna: **378 648 yhtiötä, joista 219 042 on yhden fyysisen henkilön kokonaan omistamia.**
+Ja `isiku_tyyp` erottelee suoraan onko omistaja henkilö vai yhtiö, eli **onko yhtiö jo ostettu**.
+
+Lisäksi Viro siirtyi **pakolliseen XBRL-tilinpäätökseen 2022**, ensimmäisten joukossa Euroopassa.
+Kattavuus on siis lähellä sataa prosenttia, kun Suomessa se on 2,5 %.
+
+**Rajoite joka olisi mennyt läpi ilman tarkistusta.** Omistuksen alkupäivä `algus_kpv` on
+valtaosalla 2023, koska osakasrekisteri migratoitiin 1.9.2023. **Omistuksen kestoa ei siis voi
+lukea datasta**, vaikka kenttä näyttää siltä että voisi. Yhtiön ikä tulee perustiedoista ja sitä
+on käytettävä sen sijaan.
+
+Yhtiön perustietojen läpikäynti vaatii saman stream-parserin kuin Suomi, koska purettu
+`yldandmed` on 1,2 GB eikä mahdu muistiin.
 
 ---
 
@@ -134,6 +164,24 @@ näytti:
 | Ostajamatchaus | ei | 0 |
 | Artefakti | vain käännös | 1 h |
 
-Norja on helpoin: REST, JSON, luvut valmiina. Tanska on lähimpänä Suomen putkea. **Jos aika riittää
-yhteen lisämaahan, se on Norja**, koska siellä voidaan näyttää heidän oma kriteerinsä toteutumassa
-eikä approksimaatiota.
+Norja on helpoin: REST, JSON, luvut valmiina. Tanska on lähimpänä Suomen putkea.
+**Norja on ajettu**, ja siellä voidaan näyttää heidän oma kriteerinsä toteutumassa eikä
+approksimaatiota.
+
+---
+
+## Mikä maa mihinkin
+
+Jokainen maa on hyvä eri asiassa, ja se on itse asiassa vahvempi kuin että yksi olisi hyvä kaikessa.
+
+| | Paras siinä että | Käyttö |
+|---|---|---|
+| **Viro** | **omistaja on nimeltä tiedossa** ja XBRL pakollinen | täydellinen ketju ilman aukkoja, mutta pieni markkina |
+| **Norja** | **96 % kattavuus ja liikevaihto suoraan** | paras yhdistelmä volyymia ja laatua |
+| **Tanska** | reaaliaikainen virta, iso volyymi | eniten kohteita per viikko |
+| **Suomi** | aputoiminimet paljastavat ostohistorian | ostajakirja, ja se toimii vain täällä |
+| **Saksa** | **vastuuhenkilöt ilmaiseksi**, heidän tavoitemarkkinansa | kallein signaali, halvin omistajatieto |
+
+Huomaa Suomen ja Saksan käänteisyys. **Suomessa ajoitussignaali on ilmainen ja omistajatieto
+ostettava, Saksassa juuri toisin päin.** Sama moottori, käänteinen kustannusrakenne, ja
+kummassakin se pala joka maksaa on halvempi kuin yhden analyytikon viikko.
