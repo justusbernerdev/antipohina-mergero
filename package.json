@@ -14,7 +14,8 @@
     "export:selda": "tsx scripts/export-selda.ts",
     "acquirers": "tsx scripts/acquirers.ts",
     "scan:no": "tsx scripts/scan-no.ts",
-    "csv": "tsx scripts/export-csv.ts"
+    "csv": "tsx scripts/export-csv.ts",
+    "selda": "tsx scripts/to-selda.ts"
   },
   "dependencies": {
     "@clerk/nextjs": "^7.9.7",

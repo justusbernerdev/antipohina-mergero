@@ -8,3 +8,5 @@ data/raw/
 *.log
 tsconfig.tsbuildinfo
 no.log
+data/events.jsonl
+no2.log

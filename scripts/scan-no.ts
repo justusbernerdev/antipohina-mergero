@@ -12,6 +12,7 @@ import { writeFile } from 'node:fs/promises'
 import { norway } from '../src/sources/no.js'
 import { CONSOLIDATING, EXCLUDE_NAME } from '../src/lib/industries.js'
 import { score } from '../src/lib/score.js'
+import { matchBuyers } from '../src/lib/buyers.js'
 import { sleep } from '../src/lib/prh.js'
 import type { Company, Financials, Target } from '../src/lib/types.js'
 
@@ -21,9 +22,19 @@ const arg = (n: string, d: string) => {
   return i >= 0 && args[i + 1] ? args[i + 1] : d
 }
 
-/** NOK. Roughly 1.7M EUR, the bottom of Mergero's €2-100M enterprise value band at a 1x multiple. */
-const MIN_REVENUE = Number(arg('min-revenue', '20000000'))
+/**
+ * NOK bounds for Mergero's stated band, enterprise value €2-100M.
+ *
+ * Revenue is not enterprise value, but at the roughly 1x revenue multiples typical of these
+ * sectors it is close enough to filter on, and it beats a balance sheet total by a distance.
+ * Without the upper bound the list fills with companies far outside what they would touch: the
+ * top hit in the first run did 1.7bn NOK, about €145M.
+ */
+const MIN_REVENUE = Number(arg('min-revenue', '20000000')) // ~1.7M EUR
+const MAX_REVENUE = Number(arg('max-revenue', '1200000000')) // ~100M EUR
 const LIMIT = Number(arg('limit', '40'))
+/** Norwegian krone per euro, for comparing against buyer criteria that are stated in euros. */
+const NOK_EUR = 11.7
 const MIN_AGE = Number(arg('min-age', '15'))
 
 /** A slice wide enough to be a real test, narrow enough to run in minutes. */
@@ -52,9 +63,9 @@ for (const c of companies) {
   fetched++
   if (f) {
     if (f.lineItems >= 2) withRevenue++
-    if (f.balanceProxy >= MIN_REVENUE) {
+    if (f.balanceProxy >= MIN_REVENUE && f.balanceProxy <= MAX_REVENUE) {
       const s = score(c, f)
-      scored.push({ company: c, financials: f, ...s, matches: [] })
+      scored.push({ company: c, financials: f, ...s, matches: matchBuyers(c, f, NOK_EUR) })
     }
   }
   if (fetched % 50 === 0) console.log(`  ${fetched}/${companies.length}, ${scored.length} yli rajan`)
@@ -69,7 +80,8 @@ console.log(`\nSuppilo`)
 console.log(`  ${String(companies.length).padStart(6)}  kohdeyhtiötä toimialoilla`)
 console.log(`  ${String(fetched).padStart(6)}  tilinpäätös haettu`)
 console.log(`  ${String(withRevenue).padStart(6)}  liikevaihto saatavilla`)
-console.log(`  ${String(scored.length).padStart(6)}  liikevaihto yli ${(MIN_REVENUE / 1e6).toFixed(0)} M NOK\n`)
+console.log(`  ${String(scored.length).padStart(6)}  liikevaihto ${(MIN_REVENUE / 1e6).toFixed(0)} to ${(MAX_REVENUE / 1e6).toFixed(0)} M NOK`)
+console.log(`  ${String(targets.filter((t) => t.matches.length).length).padStart(6)}  vähintään yksi ostaja\n`)
 
 for (const t of targets.slice(0, 15)) {
   const m = (t.financials.balanceProxy / 1e6).toFixed(1)

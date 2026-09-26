@@ -111,8 +111,13 @@ export const BUYERS: Buyer[] = [
 export function matchBuyers(
   company: Company,
   financials: Financials,
+  /**
+   * Units of local currency per euro. Buyer criteria are stated in euros, so a Norwegian figure in
+   * kroner has to be converted before it can be compared. Defaults to 1 for euro countries.
+   */
+  perEuro = 1,
 ): { buyer: Buyer; why: string }[] {
-  const size = financials.balanceProxy
+  const size = financials.balanceProxy / perEuro
   return BUYERS.filter(
     (b) => b.industries.includes(company.industry) && size >= b.minSize && size <= b.maxSize,
   ).map((buyer) => ({
