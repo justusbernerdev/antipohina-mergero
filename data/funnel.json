@@ -1,0 +1,26 @@
+{
+  "generatedAt": "2026-09-26",
+  "minSize": 1500000,
+  "funnel": [
+    {
+      "stage": "Konsolidoituvalla toimialalla, vähintään 15 v vanha",
+      "left": 16389,
+      "note": "Kaupparekisteri, paikallinen suodatus"
+    },
+    {
+      "stage": "Tilinpäätös rekisteröity ikkunassa",
+      "left": 409,
+      "note": "Digitaalinen tilinpäätösvirta"
+    },
+    {
+      "stage": "Tase vähintään 1.5 M€",
+      "left": 80,
+      "note": "Kokoluokkarajaus, taseen loppusumma proxyna"
+    },
+    {
+      "stage": "Vähintään yksi ostaja täyttää kriteerit",
+      "left": 68,
+      "note": "Ostajakirja, julkisista kaupoista koottu"
+    }
+  ]
+}

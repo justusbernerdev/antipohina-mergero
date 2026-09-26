@@ -1,0 +1,27 @@
+{
+  "name": "antipohina-mergero",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Off-market origination engine. Finds Finnish owner-led companies approaching a succession decision, from public data only.",
+  "type": "module",
+  "scripts": {
+    "ingest": "tsx scripts/ingest.ts",
+    "build:targets": "tsx scripts/build.ts",
+    "pipeline": "npm run ingest && npm run build:targets",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "export:selda": "tsx scripts/export-selda.ts"
+  },
+  "dependencies": {
+    "next": "^15.5.4",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.18.1",
+    "@types/react": "^19.1.13",
+    "tsx": "^4.20.5",
+    "typescript": "^5.9.2"
+  }
+}

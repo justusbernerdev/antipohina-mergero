@@ -1,0 +1,9 @@
+node_modules
+.next
+.cache
+data/raw/
+*.zip
+.DS_Store
+.env*
+*.log
+tsconfig.tsbuildinfo

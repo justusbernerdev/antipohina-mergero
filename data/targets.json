@@ -1,0 +1,5440 @@
+[
+  {
+    "company": {
+      "businessId": "1610039-9",
+      "name": "Lopen Maa ja Vesirakenne Oy",
+      "registered": "2000-07-07",
+      "industry": "43120",
+      "industryName": "Maarakennus",
+      "renames": 1,
+      "postCode": "11910",
+      "city": "RIIHIMÄKI",
+      "website": null,
+      "employer": false
+    },
+    "financials": {
+      "businessId": "1610039-9",
+      "financialDate": "2026-04-30",
+      "registrationDate": "2026-07-04",
+      "balanceProxy": 4097684.78,
+      "balanceProxyPrev": 4967131.79,
+      "changePct": -17.5,
+      "lineItems": 54
+    },
+    "score": 13,
+    "reasons": [
+      {
+        "label": "26 vuotta vanha",
+        "points": 3
+      },
+      {
+        "label": "Konsolidoituva toimiala: Maarakennus",
+        "points": 2
+      },
+      {
+        "label": "Tilinpäätös rekisteröity juuri",
+        "points": 3
+      },
+      {
+        "label": "Tase supistui -17 %",
+        "points": 2
+      },
+      {
+        "label": "Henkilönimi yhtiön nimessä",
+        "points": 2
+      },
+      {
+        "label": "Pääkaupunkiseudun ulkopuolella",
+        "points": 1
+      }
+    ],
+    "age": 26,
+    "ownerNamed": true,
+    "matches": [
+      {
+        "buyer": {
+          "id": "kotera-group",
+          "name": "Kotera Group",
+          "kind": "serial acquirer",
+          "industries": [
+            "43220",
+            "43210",
+            "43290",
+            "43120",
+            "43991",
+            "33200",
+            "25110"
+          ],
+          "minSize": 1000000,
+          "maxSize": 40000000,
+          "evidence": "16 acquisitions since founding, revenue ~€185M in 2025 and ~€260M forecast for 2026, IPO targeted 2028-29. Buys industrial construction and installation businesses one at a time.",
+          "source": "Mergero opening deck, roll-up track record"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      },
+      {
+        "buyer": {
+          "id": "no-dig-alliance",
+          "name": "No Dig Alliance",
+          "kind": "serial acquirer",
+          "industries": [
+            "43220",
+            "43290",
+            "43120",
+            "43110"
+          ],
+          "minSize": 500000,
+          "maxSize": 20000000,
+          "evidence": "Acquired Suomen Putkisto Palvelu in a Mergero 2026 transaction. Consolidates pipeline services.",
+          "source": "Mergero 2026 transactions"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      }
+    ]
+  },
+  {
+    "company": {
+      "businessId": "0152307-3",
+      "name": "Riihimäen Öljypoltinhuolto Oy",
+      "registered": "1973-05-04",
+      "industry": "43220",
+      "industryName": "LVI-asennus",
+      "renames": 1,
+      "postCode": "11120",
+      "city": "RIIHIMÄKI",
+      "website": "www.roph.fi",
+      "employer": false
+    },
+    "financials": {
+      "businessId": "0152307-3",
+      "financialDate": "2026-03-31",
+      "registrationDate": "2026-09-24",
+      "balanceProxy": 3944936.39,
+      "balanceProxyPrev": 6501258.72,
+      "changePct": -39.3,
+      "lineItems": 58
+    },
+    "score": 13,
+    "reasons": [
+      {
+        "label": "53 vuotta vanha",
+        "points": 3
+      },
+      {
+        "label": "Konsolidoituva toimiala: LVI-asennus",
+        "points": 2
+      },
+      {
+        "label": "Tilinpäätös rekisteröity juuri",
+        "points": 3
+      },
+      {
+        "label": "Tase supistui -39 %",
+        "points": 2
+      },
+      {
+        "label": "Henkilönimi yhtiön nimessä",
+        "points": 2
+      },
+      {
+        "label": "Pääkaupunkiseudun ulkopuolella",
+        "points": 1
+      }
+    ],
+    "age": 53,
+    "ownerNamed": true,
+    "matches": [
+      {
+        "buyer": {
+          "id": "kotera-group",
+          "name": "Kotera Group",
+          "kind": "serial acquirer",
+          "industries": [
+            "43220",
+            "43210",
+            "43290",
+            "43120",
+            "43991",
+            "33200",
+            "25110"
+          ],
+          "minSize": 1000000,
+          "maxSize": 40000000,
+          "evidence": "16 acquisitions since founding, revenue ~€185M in 2025 and ~€260M forecast for 2026, IPO targeted 2028-29. Buys industrial construction and installation businesses one at a time.",
+          "source": "Mergero opening deck, roll-up track record"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      },
+      {
+        "buyer": {
+          "id": "no-dig-alliance",
+          "name": "No Dig Alliance",
+          "kind": "serial acquirer",
+          "industries": [
+            "43220",
+            "43290",
+            "43120",
+            "43110"
+          ],
+          "minSize": 500000,
+          "maxSize": 20000000,
+          "evidence": "Acquired Suomen Putkisto Palvelu in a Mergero 2026 transaction. Consolidates pipeline services.",
+          "source": "Mergero 2026 transactions"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      }
+    ]
+  },
+  {
+    "company": {
+      "businessId": "0652345-1",
+      "name": "Nokian Teollisuusapu Oy",
+      "registered": "1987-05-27",
+      "industry": "33200",
+      "industryName": "Teollinen asennus",
+      "renames": 1,
+      "postCode": "37150",
+      "city": "NOKIA",
+      "website": "www.nokianteollisuusapu.fi",
+      "employer": false
+    },
+    "financials": {
+      "businessId": "0652345-1",
+      "financialDate": "2025-12-31",
+      "registrationDate": "2026-07-10",
+      "balanceProxy": 2047212.81,
+      "balanceProxyPrev": 2967848.36,
+      "changePct": -31,
+      "lineItems": 54
+    },
+    "score": 13,
+    "reasons": [
+      {
+        "label": "39 vuotta vanha",
+        "points": 3
+      },
+      {
+        "label": "Konsolidoituva toimiala: Teollinen asennus",
+        "points": 2
+      },
+      {
+        "label": "Tilinpäätös rekisteröity juuri",
+        "points": 3
+      },
+      {
+        "label": "Tase supistui -31 %",
+        "points": 2
+      },
+      {
+        "label": "Henkilönimi yhtiön nimessä",
+        "points": 2
+      },
+      {
+        "label": "Pääkaupunkiseudun ulkopuolella",
+        "points": 1
+      }
+    ],
+    "age": 39,
+    "ownerNamed": true,
+    "matches": [
+      {
+        "buyer": {
+          "id": "kotera-group",
+          "name": "Kotera Group",
+          "kind": "serial acquirer",
+          "industries": [
+            "43220",
+            "43210",
+            "43290",
+            "43120",
+            "43991",
+            "33200",
+            "25110"
+          ],
+          "minSize": 1000000,
+          "maxSize": 40000000,
+          "evidence": "16 acquisitions since founding, revenue ~€185M in 2025 and ~€260M forecast for 2026, IPO targeted 2028-29. Buys industrial construction and installation businesses one at a time.",
+          "source": "Mergero opening deck, roll-up track record"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      },
+      {
+        "buyer": {
+          "id": "teqnion",
+          "name": "Teqnion",
+          "kind": "serial acquirer",
+          "industries": [
+            "25110",
+            "25620",
+            "25730",
+            "25990",
+            "28990",
+            "33120",
+            "33200",
+            "22290",
+            "23610"
+          ],
+          "minSize": 1000000,
+          "maxSize": 30000000,
+          "evidence": "Listed Swedish acquirer of small industrial businesses with an eternal holding period, 36 companies owned. Bought Norband in a Mergero 2026 transaction, its route into Finland.",
+          "source": "Mergero 2026 transactions, Teqnion public reporting"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      }
+    ]
+  },
+  {
+    "company": {
+      "businessId": "2312233-4",
+      "name": "Kuljetusliike Ville Noiva Oy",
+      "registered": "2010-01-27",
+      "industry": "49410",
+      "industryName": "Tieliikenteen tavarankuljetus",
+      "renames": 0,
+      "postCode": "15700",
+      "city": "LAHTI",
+      "website": null,
+      "employer": false
+    },
+    "financials": {
+      "businessId": "2312233-4",
+      "financialDate": "2025-12-31",
+      "registrationDate": "2026-06-11",
+      "balanceProxy": 1579404.13,
+      "balanceProxyPrev": 2501467.37,
+      "changePct": -36.9,
+      "lineItems": 37
+    },
+    "score": 13,
+    "reasons": [
+      {
+        "label": "16 vuotta vanha",
+        "points": 2
+      },
+      {
+        "label": "Konsolidoituva toimiala: Tieliikenteen tavarankuljetus",
+        "points": 2
+      },
+      {
+        "label": "Tilinpäätös rekisteröity juuri",
+        "points": 3
+      },
+      {
+        "label": "Tase supistui -37 %",
+        "points": 2
+      },
+      {
+        "label": "Henkilönimi yhtiön nimessä",
+        "points": 2
+      },
+      {
+        "label": "Ei koskaan nimenmuutosta",
+        "points": 1
+      },
+      {
+        "label": "Pääkaupunkiseudun ulkopuolella",
+        "points": 1
+      }
+    ],
+    "age": 16,
+    "ownerNamed": true,
+    "matches": [
+      {
+        "buyer": {
+          "id": "luo-logistics",
+          "name": "Luo Logistics Group",
+          "kind": "serial acquirer",
+          "industries": [
+            "49410",
+            "49310",
+            "52100",
+            "52240"
+          ],
+          "minSize": 1000000,
+          "maxSize": 40000000,
+          "evidence": "Merged Huhtala Logistics and Puura-Trans, later adding Weeman. Revenue ~€80M in 2025 and group value more than tripled. Backed by Lease Deal Group.",
+          "source": "Mergero opening deck, roll-up track record"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      }
+    ]
+  },
+  {
+    "company": {
+      "businessId": "0864401-1",
+      "name": "Kari Malmstedt Oy",
+      "registered": "1991-11-27",
+      "industry": "49410",
+      "industryName": "Tieliikenteen tavarankuljetus",
+      "renames": 1,
+      "postCode": "58160",
+      "city": "KARVILA",
+      "website": null,
+      "employer": false
+    },
+    "financials": {
+      "businessId": "0864401-1",
+      "financialDate": "2026-01-31",
+      "registrationDate": "2026-08-19",
+      "balanceProxy": 5880626.57,
+      "balanceProxyPrev": 4171834.25,
+      "changePct": 41,
+      "lineItems": 66
+    },
+    "score": 12,
+    "reasons": [
+      {
+        "label": "35 vuotta vanha",
+        "points": 3
+      },
+      {
+        "label": "Konsolidoituva toimiala: Tieliikenteen tavarankuljetus",
+        "points": 2
+      },
+      {
+        "label": "Tilinpäätös rekisteröity juuri",
+        "points": 3
+      },
+      {
+        "label": "Tase kasvoi 41 %",
+        "points": 1
+      },
+      {
+        "label": "Henkilönimi yhtiön nimessä",
+        "points": 2
+      },
+      {
+        "label": "Pääkaupunkiseudun ulkopuolella",
+        "points": 1
+      }
+    ],
+    "age": 35,
+    "ownerNamed": true,
+    "matches": [
+      {
+        "buyer": {
+          "id": "luo-logistics",
+          "name": "Luo Logistics Group",
+          "kind": "serial acquirer",
+          "industries": [
+            "49410",
+            "49310",
+            "52100",
+            "52240"
+          ],
+          "minSize": 1000000,
+          "maxSize": 40000000,
+          "evidence": "Merged Huhtala Logistics and Puura-Trans, later adding Weeman. Revenue ~€80M in 2025 and group value more than tripled. Backed by Lease Deal Group.",
+          "source": "Mergero opening deck, roll-up track record"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      }
+    ]
+  },
+  {
+    "company": {
+      "businessId": "1031696-5",
+      "name": "Hernesniemen Maanrakennus Oy",
+      "registered": "1995-12-13",
+      "industry": "43120",
+      "industryName": "Maarakennus",
+      "renames": 0,
+      "postCode": "62600",
+      "city": "LAPPAJÄRVI",
+      "website": "www.hemar.fi",
+      "employer": false
+    },
+    "financials": {
+      "businessId": "1031696-5",
+      "financialDate": "2025-12-31",
+      "registrationDate": "2026-06-03",
+      "balanceProxy": 3943127.22,
+      "balanceProxyPrev": 4319149.03,
+      "changePct": -8.7,
+      "lineItems": 58
+    },
+    "score": 12,
+    "reasons": [
+      {
+        "label": "31 vuotta vanha",
+        "points": 3
+      },
+      {
+        "label": "Konsolidoituva toimiala: Maarakennus",
+        "points": 2
+      },
+      {
+        "label": "Tilinpäätös rekisteröity juuri",
+        "points": 3
+      },
+      {
+        "label": "Henkilönimi yhtiön nimessä",
+        "points": 2
+      },
+      {
+        "label": "Ei koskaan nimenmuutosta",
+        "points": 1
+      },
+      {
+        "label": "Pääkaupunkiseudun ulkopuolella",
+        "points": 1
+      }
+    ],
+    "age": 31,
+    "ownerNamed": true,
+    "matches": [
+      {
+        "buyer": {
+          "id": "kotera-group",
+          "name": "Kotera Group",
+          "kind": "serial acquirer",
+          "industries": [
+            "43220",
+            "43210",
+            "43290",
+            "43120",
+            "43991",
+            "33200",
+            "25110"
+          ],
+          "minSize": 1000000,
+          "maxSize": 40000000,
+          "evidence": "16 acquisitions since founding, revenue ~€185M in 2025 and ~€260M forecast for 2026, IPO targeted 2028-29. Buys industrial construction and installation businesses one at a time.",
+          "source": "Mergero opening deck, roll-up track record"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      },
+      {
+        "buyer": {
+          "id": "no-dig-alliance",
+          "name": "No Dig Alliance",
+          "kind": "serial acquirer",
+          "industries": [
+            "43220",
+            "43290",
+            "43120",
+            "43110"
+          ],
+          "minSize": 500000,
+          "maxSize": 20000000,
+          "evidence": "Acquired Suomen Putkisto Palvelu in a Mergero 2026 transaction. Consolidates pipeline services.",
+          "source": "Mergero 2026 transactions"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      }
+    ]
+  },
+  {
+    "company": {
+      "businessId": "1527461-0",
+      "name": "Urakointi J. Pääkkönen Oy",
+      "registered": "1999-04-01",
+      "industry": "43120",
+      "industryName": "Maarakennus",
+      "renames": 0,
+      "postCode": "15230",
+      "city": "LAHTI",
+      "website": null,
+      "employer": false
+    },
+    "financials": {
+      "businessId": "1527461-0",
+      "financialDate": "2026-03-31",
+      "registrationDate": "2026-08-15",
+      "balanceProxy": 3923548.84,
+      "balanceProxyPrev": 3925282.94,
+      "changePct": 0,
+      "lineItems": 56
+    },
+    "score": 12,
+    "reasons": [
+      {
+        "label": "27 vuotta vanha",
+        "points": 3
+      },
+      {
+        "label": "Konsolidoituva toimiala: Maarakennus",
+        "points": 2
+      },
+      {
+        "label": "Tilinpäätös rekisteröity juuri",
+        "points": 3
+      },
+      {
+        "label": "Henkilönimi yhtiön nimessä",
+        "points": 2
+      },
+      {
+        "label": "Ei koskaan nimenmuutosta",
+        "points": 1
+      },
+      {
+        "label": "Pääkaupunkiseudun ulkopuolella",
+        "points": 1
+      }
+    ],
+    "age": 27,
+    "ownerNamed": true,
+    "matches": [
+      {
+        "buyer": {
+          "id": "kotera-group",
+          "name": "Kotera Group",
+          "kind": "serial acquirer",
+          "industries": [
+            "43220",
+            "43210",
+            "43290",
+            "43120",
+            "43991",
+            "33200",
+            "25110"
+          ],
+          "minSize": 1000000,
+          "maxSize": 40000000,
+          "evidence": "16 acquisitions since founding, revenue ~€185M in 2025 and ~€260M forecast for 2026, IPO targeted 2028-29. Buys industrial construction and installation businesses one at a time.",
+          "source": "Mergero opening deck, roll-up track record"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      },
+      {
+        "buyer": {
+          "id": "no-dig-alliance",
+          "name": "No Dig Alliance",
+          "kind": "serial acquirer",
+          "industries": [
+            "43220",
+            "43290",
+            "43120",
+            "43110"
+          ],
+          "minSize": 500000,
+          "maxSize": 20000000,
+          "evidence": "Acquired Suomen Putkisto Palvelu in a Mergero 2026 transaction. Consolidates pipeline services.",
+          "source": "Mergero 2026 transactions"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      }
+    ]
+  },
+  {
+    "company": {
+      "businessId": "0912088-5",
+      "name": "Kuljetusliike Jorma Saari Oy",
+      "registered": "1992-12-31",
+      "industry": "49410",
+      "industryName": "Tieliikenteen tavarankuljetus",
+      "renames": 0,
+      "postCode": "20360",
+      "city": "TURKU",
+      "website": "www.jormasaarioy.fi",
+      "employer": false
+    },
+    "financials": {
+      "businessId": "0912088-5",
+      "financialDate": "2026-01-31",
+      "registrationDate": "2026-06-16",
+      "balanceProxy": 3790559.65,
+      "balanceProxyPrev": 3394426.8,
+      "changePct": 11.7,
+      "lineItems": 51
+    },
+    "score": 12,
+    "reasons": [
+      {
+        "label": "34 vuotta vanha",
+        "points": 3
+      },
+      {
+        "label": "Konsolidoituva toimiala: Tieliikenteen tavarankuljetus",
+        "points": 2
+      },
+      {
+        "label": "Tilinpäätös rekisteröity juuri",
+        "points": 3
+      },
+      {
+        "label": "Henkilönimi yhtiön nimessä",
+        "points": 2
+      },
+      {
+        "label": "Ei koskaan nimenmuutosta",
+        "points": 1
+      },
+      {
+        "label": "Pääkaupunkiseudun ulkopuolella",
+        "points": 1
+      }
+    ],
+    "age": 34,
+    "ownerNamed": true,
+    "matches": [
+      {
+        "buyer": {
+          "id": "luo-logistics",
+          "name": "Luo Logistics Group",
+          "kind": "serial acquirer",
+          "industries": [
+            "49410",
+            "49310",
+            "52100",
+            "52240"
+          ],
+          "minSize": 1000000,
+          "maxSize": 40000000,
+          "evidence": "Merged Huhtala Logistics and Puura-Trans, later adding Weeman. Revenue ~€80M in 2025 and group value more than tripled. Backed by Lease Deal Group.",
+          "source": "Mergero opening deck, roll-up track record"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      }
+    ]
+  },
+  {
+    "company": {
+      "businessId": "1038307-6",
+      "name": "Kailin Oy",
+      "registered": "1996-03-08",
+      "industry": "25990",
+      "industryName": "Metallituotteet",
+      "renames": 0,
+      "postCode": "15860",
+      "city": "HOLLOLA",
+      "website": "www.kailin.fi",
+      "employer": false
+    },
+    "financials": {
+      "businessId": "1038307-6",
+      "financialDate": "2026-05-31",
+      "registrationDate": "2026-09-16",
+      "balanceProxy": 3542024.04,
+      "balanceProxyPrev": 3199926.65,
+      "changePct": 10.7,
+      "lineItems": 60
+    },
+    "score": 12,
+    "reasons": [
+      {
+        "label": "30 vuotta vanha",
+        "points": 3
+      },
+      {
+        "label": "Konsolidoituva toimiala: Metallituotteet",
+        "points": 2
+      },
+      {
+        "label": "Tilinpäätös rekisteröity juuri",
+        "points": 3
+      },
+      {
+        "label": "Henkilönimi yhtiön nimessä",
+        "points": 2
+      },
+      {
+        "label": "Ei koskaan nimenmuutosta",
+        "points": 1
+      },
+      {
+        "label": "Pääkaupunkiseudun ulkopuolella",
+        "points": 1
+      }
+    ],
+    "age": 30,
+    "ownerNamed": true,
+    "matches": [
+      {
+        "buyer": {
+          "id": "teqnion",
+          "name": "Teqnion",
+          "kind": "serial acquirer",
+          "industries": [
+            "25110",
+            "25620",
+            "25730",
+            "25990",
+            "28990",
+            "33120",
+            "33200",
+            "22290",
+            "23610"
+          ],
+          "minSize": 1000000,
+          "maxSize": 30000000,
+          "evidence": "Listed Swedish acquirer of small industrial businesses with an eternal holding period, 36 companies owned. Bought Norband in a Mergero 2026 transaction, its route into Finland.",
+          "source": "Mergero 2026 transactions, Teqnion public reporting"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      }
+    ]
+  },
+  {
+    "company": {
+      "businessId": "2419497-0",
+      "name": "Kainuun Konetyö Oy",
+      "registered": "2011-08-01",
+      "industry": "43120",
+      "industryName": "Maarakennus",
+      "renames": 1,
+      "postCode": "87100",
+      "city": "KAJAANI",
+      "website": null,
+      "employer": false
+    },
+    "financials": {
+      "businessId": "2419497-0",
+      "financialDate": "2025-12-31",
+      "registrationDate": "2026-06-26",
+      "balanceProxy": 2956149.74,
+      "balanceProxyPrev": 3468704.46,
+      "changePct": -14.8,
+      "lineItems": 46
+    },
+    "score": 12,
+    "reasons": [
+      {
+        "label": "15 vuotta vanha",
+        "points": 2
+      },
+      {
+        "label": "Konsolidoituva toimiala: Maarakennus",
+        "points": 2
+      },
+      {
+        "label": "Tilinpäätös rekisteröity juuri",
+        "points": 3
+      },
+      {
+        "label": "Tase supistui -15 %",
+        "points": 2
+      },
+      {
+        "label": "Henkilönimi yhtiön nimessä",
+        "points": 2
+      },
+      {
+        "label": "Pääkaupunkiseudun ulkopuolella",
+        "points": 1
+      }
+    ],
+    "age": 15,
+    "ownerNamed": true,
+    "matches": [
+      {
+        "buyer": {
+          "id": "kotera-group",
+          "name": "Kotera Group",
+          "kind": "serial acquirer",
+          "industries": [
+            "43220",
+            "43210",
+            "43290",
+            "43120",
+            "43991",
+            "33200",
+            "25110"
+          ],
+          "minSize": 1000000,
+          "maxSize": 40000000,
+          "evidence": "16 acquisitions since founding, revenue ~€185M in 2025 and ~€260M forecast for 2026, IPO targeted 2028-29. Buys industrial construction and installation businesses one at a time.",
+          "source": "Mergero opening deck, roll-up track record"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      },
+      {
+        "buyer": {
+          "id": "no-dig-alliance",
+          "name": "No Dig Alliance",
+          "kind": "serial acquirer",
+          "industries": [
+            "43220",
+            "43290",
+            "43120",
+            "43110"
+          ],
+          "minSize": 500000,
+          "maxSize": 20000000,
+          "evidence": "Acquired Suomen Putkisto Palvelu in a Mergero 2026 transaction. Consolidates pipeline services.",
+          "source": "Mergero 2026 transactions"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      }
+    ]
+  },
+  {
+    "company": {
+      "businessId": "1070112-6",
+      "name": "Isoahon Sorvaamo Oy",
+      "registered": "1996-11-25",
+      "industry": "25990",
+      "industryName": "Metallituotteet",
+      "renames": 0,
+      "postCode": "63610",
+      "city": "TUURI",
+      "website": null,
+      "employer": false
+    },
+    "financials": {
+      "businessId": "1070112-6",
+      "financialDate": "2025-12-31",
+      "registrationDate": "2026-06-04",
+      "balanceProxy": 2200036.69,
+      "balanceProxyPrev": 2030900.65,
+      "changePct": 8.3,
+      "lineItems": 55
+    },
+    "score": 12,
+    "reasons": [
+      {
+        "label": "30 vuotta vanha",
+        "points": 3
+      },
+      {
+        "label": "Konsolidoituva toimiala: Metallituotteet",
+        "points": 2
+      },
+      {
+        "label": "Tilinpäätös rekisteröity juuri",
+        "points": 3
+      },
+      {
+        "label": "Henkilönimi yhtiön nimessä",
+        "points": 2
+      },
+      {
+        "label": "Ei koskaan nimenmuutosta",
+        "points": 1
+      },
+      {
+        "label": "Pääkaupunkiseudun ulkopuolella",
+        "points": 1
+      }
+    ],
+    "age": 30,
+    "ownerNamed": true,
+    "matches": [
+      {
+        "buyer": {
+          "id": "teqnion",
+          "name": "Teqnion",
+          "kind": "serial acquirer",
+          "industries": [
+            "25110",
+            "25620",
+            "25730",
+            "25990",
+            "28990",
+            "33120",
+            "33200",
+            "22290",
+            "23610"
+          ],
+          "minSize": 1000000,
+          "maxSize": 30000000,
+          "evidence": "Listed Swedish acquirer of small industrial businesses with an eternal holding period, 36 companies owned. Bought Norband in a Mergero 2026 transaction, its route into Finland.",
+          "source": "Mergero 2026 transactions, Teqnion public reporting"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      }
+    ]
+  },
+  {
+    "company": {
+      "businessId": "0897125-8",
+      "name": "Salon Aluesähkö Oy",
+      "registered": "1992-09-16",
+      "industry": "43210",
+      "industryName": "Sähköasennus",
+      "renames": 0,
+      "postCode": "24100",
+      "city": "SALO",
+      "website": null,
+      "employer": false
+    },
+    "financials": {
+      "businessId": "0897125-8",
+      "financialDate": "2025-12-31",
+      "registrationDate": "2026-07-14",
+      "balanceProxy": 1971169.08,
+      "balanceProxyPrev": 1941205.87,
+      "changePct": 1.5,
+      "lineItems": 48
+    },
+    "score": 12,
+    "reasons": [
+      {
+        "label": "34 vuotta vanha",
+        "points": 3
+      },
+      {
+        "label": "Konsolidoituva toimiala: Sähköasennus",
+        "points": 2
+      },
+      {
+        "label": "Tilinpäätös rekisteröity juuri",
+        "points": 3
+      },
+      {
+        "label": "Henkilönimi yhtiön nimessä",
+        "points": 2
+      },
+      {
+        "label": "Ei koskaan nimenmuutosta",
+        "points": 1
+      },
+      {
+        "label": "Pääkaupunkiseudun ulkopuolella",
+        "points": 1
+      }
+    ],
+    "age": 34,
+    "ownerNamed": true,
+    "matches": [
+      {
+        "buyer": {
+          "id": "kotera-group",
+          "name": "Kotera Group",
+          "kind": "serial acquirer",
+          "industries": [
+            "43220",
+            "43210",
+            "43290",
+            "43120",
+            "43991",
+            "33200",
+            "25110"
+          ],
+          "minSize": 1000000,
+          "maxSize": 40000000,
+          "evidence": "16 acquisitions since founding, revenue ~€185M in 2025 and ~€260M forecast for 2026, IPO targeted 2028-29. Buys industrial construction and installation businesses one at a time.",
+          "source": "Mergero opening deck, roll-up track record"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      }
+    ]
+  },
+  {
+    "company": {
+      "businessId": "2018511-0",
+      "name": "Ahinmäen Konepalvelu Oy",
+      "registered": "2006-03-07",
+      "industry": "43120",
+      "industryName": "Maarakennus",
+      "renames": 0,
+      "postCode": "42300",
+      "city": "JÄMSÄNKOSKI",
+      "website": null,
+      "employer": false
+    },
+    "financials": {
+      "businessId": "2018511-0",
+      "financialDate": "2026-02-28",
+      "registrationDate": "2026-07-07",
+      "balanceProxy": 1952252.92,
+      "balanceProxyPrev": 597452.77,
+      "changePct": 226.8,
+      "lineItems": 48
+    },
+    "score": 12,
+    "reasons": [
+      {
+        "label": "20 vuotta vanha",
+        "points": 2
+      },
+      {
+        "label": "Konsolidoituva toimiala: Maarakennus",
+        "points": 2
+      },
+      {
+        "label": "Tilinpäätös rekisteröity juuri",
+        "points": 3
+      },
+      {
+        "label": "Tase kasvoi 227 %",
+        "points": 1
+      },
+      {
+        "label": "Henkilönimi yhtiön nimessä",
+        "points": 2
+      },
+      {
+        "label": "Ei koskaan nimenmuutosta",
+        "points": 1
+      },
+      {
+        "label": "Pääkaupunkiseudun ulkopuolella",
+        "points": 1
+      }
+    ],
+    "age": 20,
+    "ownerNamed": true,
+    "matches": [
+      {
+        "buyer": {
+          "id": "kotera-group",
+          "name": "Kotera Group",
+          "kind": "serial acquirer",
+          "industries": [
+            "43220",
+            "43210",
+            "43290",
+            "43120",
+            "43991",
+            "33200",
+            "25110"
+          ],
+          "minSize": 1000000,
+          "maxSize": 40000000,
+          "evidence": "16 acquisitions since founding, revenue ~€185M in 2025 and ~€260M forecast for 2026, IPO targeted 2028-29. Buys industrial construction and installation businesses one at a time.",
+          "source": "Mergero opening deck, roll-up track record"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      },
+      {
+        "buyer": {
+          "id": "no-dig-alliance",
+          "name": "No Dig Alliance",
+          "kind": "serial acquirer",
+          "industries": [
+            "43220",
+            "43290",
+            "43120",
+            "43110"
+          ],
+          "minSize": 500000,
+          "maxSize": 20000000,
+          "evidence": "Acquired Suomen Putkisto Palvelu in a Mergero 2026 transaction. Consolidates pipeline services.",
+          "source": "Mergero 2026 transactions"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      }
+    ]
+  },
+  {
+    "company": {
+      "businessId": "1515892-7",
+      "name": "Saskon Oy",
+      "registered": "1999-03-05",
+      "industry": "43210",
+      "industryName": "Sähköasennus",
+      "renames": 1,
+      "postCode": "00500",
+      "city": "HELSINKI",
+      "website": "www.saskon.fi",
+      "employer": false
+    },
+    "financials": {
+      "businessId": "1515892-7",
+      "financialDate": "2025-12-31",
+      "registrationDate": "2026-08-15",
+      "balanceProxy": 1873239.86,
+      "balanceProxyPrev": 3530379.8,
+      "changePct": -46.9,
+      "lineItems": 49
+    },
+    "score": 12,
+    "reasons": [
+      {
+        "label": "27 vuotta vanha",
+        "points": 3
+      },
+      {
+        "label": "Konsolidoituva toimiala: Sähköasennus",
+        "points": 2
+      },
+      {
+        "label": "Tilinpäätös rekisteröity juuri",
+        "points": 3
+      },
+      {
+        "label": "Tase supistui -47 %",
+        "points": 2
+      },
+      {
+        "label": "Henkilönimi yhtiön nimessä",
+        "points": 2
+      }
+    ],
+    "age": 27,
+    "ownerNamed": true,
+    "matches": [
+      {
+        "buyer": {
+          "id": "kotera-group",
+          "name": "Kotera Group",
+          "kind": "serial acquirer",
+          "industries": [
+            "43220",
+            "43210",
+            "43290",
+            "43120",
+            "43991",
+            "33200",
+            "25110"
+          ],
+          "minSize": 1000000,
+          "maxSize": 40000000,
+          "evidence": "16 acquisitions since founding, revenue ~€185M in 2025 and ~€260M forecast for 2026, IPO targeted 2028-29. Buys industrial construction and installation businesses one at a time.",
+          "source": "Mergero opening deck, roll-up track record"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      }
+    ]
+  },
+  {
+    "company": {
+      "businessId": "2392127-5",
+      "name": "SRP-Saari Oy",
+      "registered": "2011-03-10",
+      "industry": "43991",
+      "industryName": "Muu erikoisrakentaminen",
+      "renames": 0,
+      "postCode": "62100",
+      "city": "LAPUA",
+      "website": null,
+      "employer": false
+    },
+    "financials": {
+      "businessId": "2392127-5",
+      "financialDate": "2025-12-31",
+      "registrationDate": "2026-06-05",
+      "balanceProxy": 1835693,
+      "balanceProxyPrev": 1465353.09,
+      "changePct": 25.3,
+      "lineItems": 46
+    },
+    "score": 12,
+    "reasons": [
+      {
+        "label": "15 vuotta vanha",
+        "points": 2
+      },
+      {
+        "label": "Konsolidoituva toimiala: Muu erikoisrakentaminen",
+        "points": 2
+      },
+      {
+        "label": "Tilinpäätös rekisteröity juuri",
+        "points": 3
+      },
+      {
+        "label": "Tase kasvoi 25 %",
+        "points": 1
+      },
+      {
+        "label": "Henkilönimi yhtiön nimessä",
+        "points": 2
+      },
+      {
+        "label": "Ei koskaan nimenmuutosta",
+        "points": 1
+      },
+      {
+        "label": "Pääkaupunkiseudun ulkopuolella",
+        "points": 1
+      }
+    ],
+    "age": 15,
+    "ownerNamed": true,
+    "matches": [
+      {
+        "buyer": {
+          "id": "kotera-group",
+          "name": "Kotera Group",
+          "kind": "serial acquirer",
+          "industries": [
+            "43220",
+            "43210",
+            "43290",
+            "43120",
+            "43991",
+            "33200",
+            "25110"
+          ],
+          "minSize": 1000000,
+          "maxSize": 40000000,
+          "evidence": "16 acquisitions since founding, revenue ~€185M in 2025 and ~€260M forecast for 2026, IPO targeted 2028-29. Buys industrial construction and installation businesses one at a time.",
+          "source": "Mergero opening deck, roll-up track record"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      }
+    ]
+  },
+  {
+    "company": {
+      "businessId": "1708045-7",
+      "name": "Kuljetus Muuronen Oy",
+      "registered": "2001-06-06",
+      "industry": "49410",
+      "industryName": "Tieliikenteen tavarankuljetus",
+      "renames": 0,
+      "postCode": "45360",
+      "city": "VALKEALA",
+      "website": null,
+      "employer": false
+    },
+    "financials": {
+      "businessId": "1708045-7",
+      "financialDate": "2025-12-31",
+      "registrationDate": "2026-06-26",
+      "balanceProxy": 1741217.62,
+      "balanceProxyPrev": 1662693.71,
+      "changePct": 4.7,
+      "lineItems": 49
+    },
+    "score": 12,
+    "reasons": [
+      {
+        "label": "25 vuotta vanha",
+        "points": 3
+      },
+      {
+        "label": "Konsolidoituva toimiala: Tieliikenteen tavarankuljetus",
+        "points": 2
+      },
+      {
+        "label": "Tilinpäätös rekisteröity juuri",
+        "points": 3
+      },
+      {
+        "label": "Henkilönimi yhtiön nimessä",
+        "points": 2
+      },
+      {
+        "label": "Ei koskaan nimenmuutosta",
+        "points": 1
+      },
+      {
+        "label": "Pääkaupunkiseudun ulkopuolella",
+        "points": 1
+      }
+    ],
+    "age": 25,
+    "ownerNamed": true,
+    "matches": [
+      {
+        "buyer": {
+          "id": "luo-logistics",
+          "name": "Luo Logistics Group",
+          "kind": "serial acquirer",
+          "industries": [
+            "49410",
+            "49310",
+            "52100",
+            "52240"
+          ],
+          "minSize": 1000000,
+          "maxSize": 40000000,
+          "evidence": "Merged Huhtala Logistics and Puura-Trans, later adding Weeman. Revenue ~€80M in 2025 and group value more than tripled. Backed by Lease Deal Group.",
+          "source": "Mergero opening deck, roll-up track record"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      }
+    ]
+  },
+  {
+    "company": {
+      "businessId": "2033607-0",
+      "name": "Kurko-Koponen Oy",
+      "registered": "2006-04-27",
+      "industry": "43991",
+      "industryName": "Muu erikoisrakentaminen",
+      "renames": 1,
+      "postCode": "78870",
+      "city": "VARKAUS",
+      "website": "www.kurkokoponen.fi",
+      "employer": false
+    },
+    "financials": {
+      "businessId": "2033607-0",
+      "financialDate": "2025-12-31",
+      "registrationDate": "2026-07-02",
+      "balanceProxy": 12118345.01,
+      "balanceProxyPrev": 8437057.04,
+      "changePct": 43.6,
+      "lineItems": 72
+    },
+    "score": 11,
+    "reasons": [
+      {
+        "label": "20 vuotta vanha",
+        "points": 2
+      },
+      {
+        "label": "Konsolidoituva toimiala: Muu erikoisrakentaminen",
+        "points": 2
+      },
+      {
+        "label": "Tilinpäätös rekisteröity juuri",
+        "points": 3
+      },
+      {
+        "label": "Tase kasvoi 44 %",
+        "points": 1
+      },
+      {
+        "label": "Henkilönimi yhtiön nimessä",
+        "points": 2
+      },
+      {
+        "label": "Pääkaupunkiseudun ulkopuolella",
+        "points": 1
+      }
+    ],
+    "age": 20,
+    "ownerNamed": true,
+    "matches": [
+      {
+        "buyer": {
+          "id": "kotera-group",
+          "name": "Kotera Group",
+          "kind": "serial acquirer",
+          "industries": [
+            "43220",
+            "43210",
+            "43290",
+            "43120",
+            "43991",
+            "33200",
+            "25110"
+          ],
+          "minSize": 1000000,
+          "maxSize": 40000000,
+          "evidence": "16 acquisitions since founding, revenue ~€185M in 2025 and ~€260M forecast for 2026, IPO targeted 2028-29. Buys industrial construction and installation businesses one at a time.",
+          "source": "Mergero opening deck, roll-up track record"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      }
+    ]
+  },
+  {
+    "company": {
+      "businessId": "0564867-4",
+      "name": "Raahen Konepajatyö Oy",
+      "registered": "1984-06-14",
+      "industry": "25110",
+      "industryName": "Metallirakenteet",
+      "renames": 1,
+      "postCode": "92150",
+      "city": "RAAHE",
+      "website": null,
+      "employer": false
+    },
+    "financials": {
+      "businessId": "0564867-4",
+      "financialDate": "2025-12-31",
+      "registrationDate": "2026-07-17",
+      "balanceProxy": 7569789.05,
+      "balanceProxyPrev": 7441817.5,
+      "changePct": 1.7,
+      "lineItems": 55
+    },
+    "score": 11,
+    "reasons": [
+      {
+        "label": "42 vuotta vanha",
+        "points": 3
+      },
+      {
+        "label": "Konsolidoituva toimiala: Metallirakenteet",
+        "points": 2
+      },
+      {
+        "label": "Tilinpäätös rekisteröity juuri",
+        "points": 3
+      },
+      {
+        "label": "Henkilönimi yhtiön nimessä",
+        "points": 2
+      },
+      {
+        "label": "Pääkaupunkiseudun ulkopuolella",
+        "points": 1
+      }
+    ],
+    "age": 42,
+    "ownerNamed": true,
+    "matches": [
+      {
+        "buyer": {
+          "id": "sponsor-capital",
+          "name": "Sponsor Capital",
+          "kind": "private equity",
+          "industries": [
+            "81210",
+            "81220",
+            "81291",
+            "81100",
+            "62010",
+            "38110",
+            "38320",
+            "25110",
+            "25620"
+          ],
+          "minSize": 2000000,
+          "maxSize": 100000000,
+          "evidence": "Appears three times in Mergero public material: Saarni Cloud (software), Fluo Group (circular economy) and Fasteo Group (technical wholesale). Buys platforms and builds on them.",
+          "source": "Mergero opening deck, roll-up track record"
+        },
+        "why": "Sijoittaa tähän toimialaan ja kokoluokkaan."
+      },
+      {
+        "buyer": {
+          "id": "kotera-group",
+          "name": "Kotera Group",
+          "kind": "serial acquirer",
+          "industries": [
+            "43220",
+            "43210",
+            "43290",
+            "43120",
+            "43991",
+            "33200",
+            "25110"
+          ],
+          "minSize": 1000000,
+          "maxSize": 40000000,
+          "evidence": "16 acquisitions since founding, revenue ~€185M in 2025 and ~€260M forecast for 2026, IPO targeted 2028-29. Buys industrial construction and installation businesses one at a time.",
+          "source": "Mergero opening deck, roll-up track record"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      },
+      {
+        "buyer": {
+          "id": "teqnion",
+          "name": "Teqnion",
+          "kind": "serial acquirer",
+          "industries": [
+            "25110",
+            "25620",
+            "25730",
+            "25990",
+            "28990",
+            "33120",
+            "33200",
+            "22290",
+            "23610"
+          ],
+          "minSize": 1000000,
+          "maxSize": 30000000,
+          "evidence": "Listed Swedish acquirer of small industrial businesses with an eternal holding period, 36 companies owned. Bought Norband in a Mergero 2026 transaction, its route into Finland.",
+          "source": "Mergero 2026 transactions, Teqnion public reporting"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      }
+    ]
+  },
+  {
+    "company": {
+      "businessId": "9095408-5",
+      "name": "Papinaho Oy",
+      "registered": "1985-08-29",
+      "industry": "49410",
+      "industryName": "Tieliikenteen tavarankuljetus",
+      "renames": 1,
+      "postCode": "42700",
+      "city": "KEURUU",
+      "website": null,
+      "employer": false
+    },
+    "financials": {
+      "businessId": "9095408-5",
+      "financialDate": "2026-02-28",
+      "registrationDate": "2026-06-26",
+      "balanceProxy": 4905788.49,
+      "balanceProxyPrev": 5142757,
+      "changePct": -4.6,
+      "lineItems": 49
+    },
+    "score": 11,
+    "reasons": [
+      {
+        "label": "41 vuotta vanha",
+        "points": 3
+      },
+      {
+        "label": "Konsolidoituva toimiala: Tieliikenteen tavarankuljetus",
+        "points": 2
+      },
+      {
+        "label": "Tilinpäätös rekisteröity juuri",
+        "points": 3
+      },
+      {
+        "label": "Henkilönimi yhtiön nimessä",
+        "points": 2
+      },
+      {
+        "label": "Pääkaupunkiseudun ulkopuolella",
+        "points": 1
+      }
+    ],
+    "age": 41,
+    "ownerNamed": true,
+    "matches": [
+      {
+        "buyer": {
+          "id": "luo-logistics",
+          "name": "Luo Logistics Group",
+          "kind": "serial acquirer",
+          "industries": [
+            "49410",
+            "49310",
+            "52100",
+            "52240"
+          ],
+          "minSize": 1000000,
+          "maxSize": 40000000,
+          "evidence": "Merged Huhtala Logistics and Puura-Trans, later adding Weeman. Revenue ~€80M in 2025 and group value more than tripled. Backed by Lease Deal Group.",
+          "source": "Mergero opening deck, roll-up track record"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      }
+    ]
+  },
+  {
+    "company": {
+      "businessId": "1510835-6",
+      "name": "Pomarak Oy",
+      "registered": "1999-03-22",
+      "industry": "43120",
+      "industryName": "Maarakennus",
+      "renames": 1,
+      "postCode": "96700",
+      "city": "ROVANIEMI",
+      "website": null,
+      "employer": false
+    },
+    "financials": {
+      "businessId": "1510835-6",
+      "financialDate": "2025-11-30",
+      "registrationDate": "2026-06-30",
+      "balanceProxy": 4565067.9,
+      "balanceProxyPrev": 6240566.22,
+      "changePct": -26.8,
+      "lineItems": 53
+    },
+    "score": 11,
+    "reasons": [
+      {
+        "label": "27 vuotta vanha",
+        "points": 3
+      },
+      {
+        "label": "Konsolidoituva toimiala: Maarakennus",
+        "points": 2
+      },
+      {
+        "label": "Tilinpäätös rekisteröity juuri",
+        "points": 3
+      },
+      {
+        "label": "Tase supistui -27 %",
+        "points": 2
+      },
+      {
+        "label": "Pääkaupunkiseudun ulkopuolella",
+        "points": 1
+      }
+    ],
+    "age": 27,
+    "ownerNamed": false,
+    "matches": [
+      {
+        "buyer": {
+          "id": "kotera-group",
+          "name": "Kotera Group",
+          "kind": "serial acquirer",
+          "industries": [
+            "43220",
+            "43210",
+            "43290",
+            "43120",
+            "43991",
+            "33200",
+            "25110"
+          ],
+          "minSize": 1000000,
+          "maxSize": 40000000,
+          "evidence": "16 acquisitions since founding, revenue ~€185M in 2025 and ~€260M forecast for 2026, IPO targeted 2028-29. Buys industrial construction and installation businesses one at a time.",
+          "source": "Mergero opening deck, roll-up track record"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      },
+      {
+        "buyer": {
+          "id": "no-dig-alliance",
+          "name": "No Dig Alliance",
+          "kind": "serial acquirer",
+          "industries": [
+            "43220",
+            "43290",
+            "43120",
+            "43110"
+          ],
+          "minSize": 500000,
+          "maxSize": 20000000,
+          "evidence": "Acquired Suomen Putkisto Palvelu in a Mergero 2026 transaction. Consolidates pipeline services.",
+          "source": "Mergero 2026 transactions"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      }
+    ]
+  },
+  {
+    "company": {
+      "businessId": "0494695-2",
+      "name": "Metallityö H. Turunen Oy",
+      "registered": "1983-02-24",
+      "industry": "25990",
+      "industryName": "Metallituotteet",
+      "renames": 1,
+      "postCode": "21310",
+      "city": "VAHTO",
+      "website": null,
+      "employer": false
+    },
+    "financials": {
+      "businessId": "0494695-2",
+      "financialDate": "2026-05-31",
+      "registrationDate": "2026-09-11",
+      "balanceProxy": 4422218.91,
+      "balanceProxyPrev": 3836175.64,
+      "changePct": 15.3,
+      "lineItems": 53
+    },
+    "score": 11,
+    "reasons": [
+      {
+        "label": "43 vuotta vanha",
+        "points": 3
+      },
+      {
+        "label": "Konsolidoituva toimiala: Metallituotteet",
+        "points": 2
+      },
+      {
+        "label": "Tilinpäätös rekisteröity juuri",
+        "points": 3
+      },
+      {
+        "label": "Henkilönimi yhtiön nimessä",
+        "points": 2
+      },
+      {
+        "label": "Pääkaupunkiseudun ulkopuolella",
+        "points": 1
+      }
+    ],
+    "age": 43,
+    "ownerNamed": true,
+    "matches": [
+      {
+        "buyer": {
+          "id": "teqnion",
+          "name": "Teqnion",
+          "kind": "serial acquirer",
+          "industries": [
+            "25110",
+            "25620",
+            "25730",
+            "25990",
+            "28990",
+            "33120",
+            "33200",
+            "22290",
+            "23610"
+          ],
+          "minSize": 1000000,
+          "maxSize": 30000000,
+          "evidence": "Listed Swedish acquirer of small industrial businesses with an eternal holding period, 36 companies owned. Bought Norband in a Mergero 2026 transaction, its route into Finland.",
+          "source": "Mergero 2026 transactions, Teqnion public reporting"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      }
+    ]
+  },
+  {
+    "company": {
+      "businessId": "0181915-7",
+      "name": "Molanders Transport Ab",
+      "registered": "1976-01-09",
+      "industry": "49410",
+      "industryName": "Tieliikenteen tavarankuljetus",
+      "renames": 1,
+      "postCode": "68800",
+      "city": "KOLPPI",
+      "website": "www.molanders.fi",
+      "employer": false
+    },
+    "financials": {
+      "businessId": "0181915-7",
+      "financialDate": "2026-03-31",
+      "registrationDate": "2026-06-16",
+      "balanceProxy": 3783231.07,
+      "balanceProxyPrev": 4299817.28,
+      "changePct": -12,
+      "lineItems": 58
+    },
+    "score": 11,
+    "reasons": [
+      {
+        "label": "50 vuotta vanha",
+        "points": 3
+      },
+      {
+        "label": "Konsolidoituva toimiala: Tieliikenteen tavarankuljetus",
+        "points": 2
+      },
+      {
+        "label": "Tilinpäätös rekisteröity juuri",
+        "points": 3
+      },
+      {
+        "label": "Tase supistui -12 %",
+        "points": 2
+      },
+      {
+        "label": "Pääkaupunkiseudun ulkopuolella",
+        "points": 1
+      }
+    ],
+    "age": 50,
+    "ownerNamed": false,
+    "matches": [
+      {
+        "buyer": {
+          "id": "luo-logistics",
+          "name": "Luo Logistics Group",
+          "kind": "serial acquirer",
+          "industries": [
+            "49410",
+            "49310",
+            "52100",
+            "52240"
+          ],
+          "minSize": 1000000,
+          "maxSize": 40000000,
+          "evidence": "Merged Huhtala Logistics and Puura-Trans, later adding Weeman. Revenue ~€80M in 2025 and group value more than tripled. Backed by Lease Deal Group.",
+          "source": "Mergero opening deck, roll-up track record"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      }
+    ]
+  },
+  {
+    "company": {
+      "businessId": "1715277-2",
+      "name": "Maantie Trans Oy",
+      "registered": "2001-08-22",
+      "industry": "49410",
+      "industryName": "Tieliikenteen tavarankuljetus",
+      "renames": 0,
+      "postCode": "12540",
+      "city": "LAUNONEN",
+      "website": null,
+      "employer": false
+    },
+    "financials": {
+      "businessId": "1715277-2",
+      "financialDate": "2026-06-30",
+      "registrationDate": "2026-09-18",
+      "balanceProxy": 3652007.59,
+      "balanceProxyPrev": 2936735.02,
+      "changePct": 24.4,
+      "lineItems": 49
+    },
+    "score": 11,
+    "reasons": [
+      {
+        "label": "25 vuotta vanha",
+        "points": 3
+      },
+      {
+        "label": "Konsolidoituva toimiala: Tieliikenteen tavarankuljetus",
+        "points": 2
+      },
+      {
+        "label": "Tilinpäätös rekisteröity juuri",
+        "points": 3
+      },
+      {
+        "label": "Tase kasvoi 24 %",
+        "points": 1
+      },
+      {
+        "label": "Ei koskaan nimenmuutosta",
+        "points": 1
+      },
+      {
+        "label": "Pääkaupunkiseudun ulkopuolella",
+        "points": 1
+      }
+    ],
+    "age": 25,
+    "ownerNamed": false,
+    "matches": [
+      {
+        "buyer": {
+          "id": "luo-logistics",
+          "name": "Luo Logistics Group",
+          "kind": "serial acquirer",
+          "industries": [
+            "49410",
+            "49310",
+            "52100",
+            "52240"
+          ],
+          "minSize": 1000000,
+          "maxSize": 40000000,
+          "evidence": "Merged Huhtala Logistics and Puura-Trans, later adding Weeman. Revenue ~€80M in 2025 and group value more than tripled. Backed by Lease Deal Group.",
+          "source": "Mergero opening deck, roll-up track record"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      }
+    ]
+  },
+  {
+    "company": {
+      "businessId": "2208293-2",
+      "name": "LVI-Klemola Oy",
+      "registered": "2008-07-28",
+      "industry": "43220",
+      "industryName": "LVI-asennus",
+      "renames": 0,
+      "postCode": "69700",
+      "city": "VETELI",
+      "website": null,
+      "employer": false
+    },
+    "financials": {
+      "businessId": "2208293-2",
+      "financialDate": "2026-04-30",
+      "registrationDate": "2026-09-05",
+      "balanceProxy": 3550640.77,
+      "balanceProxyPrev": 6253570.35,
+      "changePct": -43.2,
+      "lineItems": 73
+    },
+    "score": 11,
+    "reasons": [
+      {
+        "label": "18 vuotta vanha",
+        "points": 2
+      },
+      {
+        "label": "Konsolidoituva toimiala: LVI-asennus",
+        "points": 2
+      },
+      {
+        "label": "Tilinpäätös rekisteröity juuri",
+        "points": 3
+      },
+      {
+        "label": "Tase supistui -43 %",
+        "points": 2
+      },
+      {
+        "label": "Ei koskaan nimenmuutosta",
+        "points": 1
+      },
+      {
+        "label": "Pääkaupunkiseudun ulkopuolella",
+        "points": 1
+      }
+    ],
+    "age": 18,
+    "ownerNamed": false,
+    "matches": [
+      {
+        "buyer": {
+          "id": "kotera-group",
+          "name": "Kotera Group",
+          "kind": "serial acquirer",
+          "industries": [
+            "43220",
+            "43210",
+            "43290",
+            "43120",
+            "43991",
+            "33200",
+            "25110"
+          ],
+          "minSize": 1000000,
+          "maxSize": 40000000,
+          "evidence": "16 acquisitions since founding, revenue ~€185M in 2025 and ~€260M forecast for 2026, IPO targeted 2028-29. Buys industrial construction and installation businesses one at a time.",
+          "source": "Mergero opening deck, roll-up track record"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      },
+      {
+        "buyer": {
+          "id": "no-dig-alliance",
+          "name": "No Dig Alliance",
+          "kind": "serial acquirer",
+          "industries": [
+            "43220",
+            "43290",
+            "43120",
+            "43110"
+          ],
+          "minSize": 500000,
+          "maxSize": 20000000,
+          "evidence": "Acquired Suomen Putkisto Palvelu in a Mergero 2026 transaction. Consolidates pipeline services.",
+          "source": "Mergero 2026 transactions"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      }
+    ]
+  },
+  {
+    "company": {
+      "businessId": "0484306-4",
+      "name": "PT Kuivanen Oy",
+      "registered": "1982-05-13",
+      "industry": "49410",
+      "industryName": "Tieliikenteen tavarankuljetus",
+      "renames": 1,
+      "postCode": "36420",
+      "city": "SAHALAHTI",
+      "website": null,
+      "employer": false
+    },
+    "financials": {
+      "businessId": "0484306-4",
+      "financialDate": "2026-01-31",
+      "registrationDate": "2026-08-05",
+      "balanceProxy": 3444284.08,
+      "balanceProxyPrev": 3465596.85,
+      "changePct": -0.6,
+      "lineItems": 48
+    },
+    "score": 11,
+    "reasons": [
+      {
+        "label": "44 vuotta vanha",
+        "points": 3
+      },
+      {
+        "label": "Konsolidoituva toimiala: Tieliikenteen tavarankuljetus",
+        "points": 2
+      },
+      {
+        "label": "Tilinpäätös rekisteröity juuri",
+        "points": 3
+      },
+      {
+        "label": "Henkilönimi yhtiön nimessä",
+        "points": 2
+      },
+      {
+        "label": "Pääkaupunkiseudun ulkopuolella",
+        "points": 1
+      }
+    ],
+    "age": 44,
+    "ownerNamed": true,
+    "matches": [
+      {
+        "buyer": {
+          "id": "luo-logistics",
+          "name": "Luo Logistics Group",
+          "kind": "serial acquirer",
+          "industries": [
+            "49410",
+            "49310",
+            "52100",
+            "52240"
+          ],
+          "minSize": 1000000,
+          "maxSize": 40000000,
+          "evidence": "Merged Huhtala Logistics and Puura-Trans, later adding Weeman. Revenue ~€80M in 2025 and group value more than tripled. Backed by Lease Deal Group.",
+          "source": "Mergero opening deck, roll-up track record"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      }
+    ]
+  },
+  {
+    "company": {
+      "businessId": "0249640-9",
+      "name": "Terho Lehtinen Oy",
+      "registered": "1978-05-19",
+      "industry": "49410",
+      "industryName": "Tieliikenteen tavarankuljetus",
+      "renames": 1,
+      "postCode": "21110",
+      "city": "NAANTALI",
+      "website": null,
+      "employer": false
+    },
+    "financials": {
+      "businessId": "0249640-9",
+      "financialDate": "2026-03-31",
+      "registrationDate": "2026-06-27",
+      "balanceProxy": 2648337.81,
+      "balanceProxyPrev": 2666339.12,
+      "changePct": -0.7,
+      "lineItems": 50
+    },
+    "score": 11,
+    "reasons": [
+      {
+        "label": "48 vuotta vanha",
+        "points": 3
+      },
+      {
+        "label": "Konsolidoituva toimiala: Tieliikenteen tavarankuljetus",
+        "points": 2
+      },
+      {
+        "label": "Tilinpäätös rekisteröity juuri",
+        "points": 3
+      },
+      {
+        "label": "Henkilönimi yhtiön nimessä",
+        "points": 2
+      },
+      {
+        "label": "Pääkaupunkiseudun ulkopuolella",
+        "points": 1
+      }
+    ],
+    "age": 48,
+    "ownerNamed": true,
+    "matches": [
+      {
+        "buyer": {
+          "id": "luo-logistics",
+          "name": "Luo Logistics Group",
+          "kind": "serial acquirer",
+          "industries": [
+            "49410",
+            "49310",
+            "52100",
+            "52240"
+          ],
+          "minSize": 1000000,
+          "maxSize": 40000000,
+          "evidence": "Merged Huhtala Logistics and Puura-Trans, later adding Weeman. Revenue ~€80M in 2025 and group value more than tripled. Backed by Lease Deal Group.",
+          "source": "Mergero opening deck, roll-up track record"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      }
+    ]
+  },
+  {
+    "company": {
+      "businessId": "2082768-9",
+      "name": "Kuljetus J. Heinonen Oy",
+      "registered": "2006-12-29",
+      "industry": "49410",
+      "industryName": "Tieliikenteen tavarankuljetus",
+      "renames": 0,
+      "postCode": "15240",
+      "city": "LAHTI",
+      "website": null,
+      "employer": false
+    },
+    "financials": {
+      "businessId": "2082768-9",
+      "financialDate": "2025-12-31",
+      "registrationDate": "2026-07-15",
+      "balanceProxy": 2445313.43,
+      "balanceProxyPrev": 2476551.43,
+      "changePct": -1.3,
+      "lineItems": 43
+    },
+    "score": 11,
+    "reasons": [
+      {
+        "label": "20 vuotta vanha",
+        "points": 2
+      },
+      {
+        "label": "Konsolidoituva toimiala: Tieliikenteen tavarankuljetus",
+        "points": 2
+      },
+      {
+        "label": "Tilinpäätös rekisteröity juuri",
+        "points": 3
+      },
+      {
+        "label": "Henkilönimi yhtiön nimessä",
+        "points": 2
+      },
+      {
+        "label": "Ei koskaan nimenmuutosta",
+        "points": 1
+      },
+      {
+        "label": "Pääkaupunkiseudun ulkopuolella",
+        "points": 1
+      }
+    ],
+    "age": 20,
+    "ownerNamed": true,
+    "matches": [
+      {
+        "buyer": {
+          "id": "luo-logistics",
+          "name": "Luo Logistics Group",
+          "kind": "serial acquirer",
+          "industries": [
+            "49410",
+            "49310",
+            "52100",
+            "52240"
+          ],
+          "minSize": 1000000,
+          "maxSize": 40000000,
+          "evidence": "Merged Huhtala Logistics and Puura-Trans, later adding Weeman. Revenue ~€80M in 2025 and group value more than tripled. Backed by Lease Deal Group.",
+          "source": "Mergero opening deck, roll-up track record"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      }
+    ]
+  },
+  {
+    "company": {
+      "businessId": "1784066-3",
+      "name": "Turun Vesicenter Oy",
+      "registered": "2003-03-31",
+      "industry": "43220",
+      "industryName": "LVI-asennus",
+      "renames": 0,
+      "postCode": "20740",
+      "city": "TURKU",
+      "website": null,
+      "employer": false
+    },
+    "financials": {
+      "businessId": "1784066-3",
+      "financialDate": "2025-12-31",
+      "registrationDate": "2026-06-16",
+      "balanceProxy": 2421858.69,
+      "balanceProxyPrev": 2468381.09,
+      "changePct": -1.9,
+      "lineItems": 48
+    },
+    "score": 11,
+    "reasons": [
+      {
+        "label": "23 vuotta vanha",
+        "points": 2
+      },
+      {
+        "label": "Konsolidoituva toimiala: LVI-asennus",
+        "points": 2
+      },
+      {
+        "label": "Tilinpäätös rekisteröity juuri",
+        "points": 3
+      },
+      {
+        "label": "Henkilönimi yhtiön nimessä",
+        "points": 2
+      },
+      {
+        "label": "Ei koskaan nimenmuutosta",
+        "points": 1
+      },
+      {
+        "label": "Pääkaupunkiseudun ulkopuolella",
+        "points": 1
+      }
+    ],
+    "age": 23,
+    "ownerNamed": true,
+    "matches": [
+      {
+        "buyer": {
+          "id": "kotera-group",
+          "name": "Kotera Group",
+          "kind": "serial acquirer",
+          "industries": [
+            "43220",
+            "43210",
+            "43290",
+            "43120",
+            "43991",
+            "33200",
+            "25110"
+          ],
+          "minSize": 1000000,
+          "maxSize": 40000000,
+          "evidence": "16 acquisitions since founding, revenue ~€185M in 2025 and ~€260M forecast for 2026, IPO targeted 2028-29. Buys industrial construction and installation businesses one at a time.",
+          "source": "Mergero opening deck, roll-up track record"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      },
+      {
+        "buyer": {
+          "id": "no-dig-alliance",
+          "name": "No Dig Alliance",
+          "kind": "serial acquirer",
+          "industries": [
+            "43220",
+            "43290",
+            "43120",
+            "43110"
+          ],
+          "minSize": 500000,
+          "maxSize": 20000000,
+          "evidence": "Acquired Suomen Putkisto Palvelu in a Mergero 2026 transaction. Consolidates pipeline services.",
+          "source": "Mergero 2026 transactions"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      }
+    ]
+  },
+  {
+    "company": {
+      "businessId": "0660413-9",
+      "name": "Raikon Konepaja Oy",
+      "registered": "1982-11-04",
+      "industry": "25110",
+      "industryName": "Metallirakenteet",
+      "renames": 1,
+      "postCode": "21280",
+      "city": "RAISIO",
+      "website": null,
+      "employer": false
+    },
+    "financials": {
+      "businessId": "0660413-9",
+      "financialDate": "2026-01-31",
+      "registrationDate": "2026-08-28",
+      "balanceProxy": 2304299.64,
+      "balanceProxyPrev": 2475924.61,
+      "changePct": -6.9,
+      "lineItems": 57
+    },
+    "score": 11,
+    "reasons": [
+      {
+        "label": "44 vuotta vanha",
+        "points": 3
+      },
+      {
+        "label": "Konsolidoituva toimiala: Metallirakenteet",
+        "points": 2
+      },
+      {
+        "label": "Tilinpäätös rekisteröity juuri",
+        "points": 3
+      },
+      {
+        "label": "Henkilönimi yhtiön nimessä",
+        "points": 2
+      },
+      {
+        "label": "Pääkaupunkiseudun ulkopuolella",
+        "points": 1
+      }
+    ],
+    "age": 44,
+    "ownerNamed": true,
+    "matches": [
+      {
+        "buyer": {
+          "id": "sponsor-capital",
+          "name": "Sponsor Capital",
+          "kind": "private equity",
+          "industries": [
+            "81210",
+            "81220",
+            "81291",
+            "81100",
+            "62010",
+            "38110",
+            "38320",
+            "25110",
+            "25620"
+          ],
+          "minSize": 2000000,
+          "maxSize": 100000000,
+          "evidence": "Appears three times in Mergero public material: Saarni Cloud (software), Fluo Group (circular economy) and Fasteo Group (technical wholesale). Buys platforms and builds on them.",
+          "source": "Mergero opening deck, roll-up track record"
+        },
+        "why": "Sijoittaa tähän toimialaan ja kokoluokkaan."
+      },
+      {
+        "buyer": {
+          "id": "kotera-group",
+          "name": "Kotera Group",
+          "kind": "serial acquirer",
+          "industries": [
+            "43220",
+            "43210",
+            "43290",
+            "43120",
+            "43991",
+            "33200",
+            "25110"
+          ],
+          "minSize": 1000000,
+          "maxSize": 40000000,
+          "evidence": "16 acquisitions since founding, revenue ~€185M in 2025 and ~€260M forecast for 2026, IPO targeted 2028-29. Buys industrial construction and installation businesses one at a time.",
+          "source": "Mergero opening deck, roll-up track record"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      },
+      {
+        "buyer": {
+          "id": "teqnion",
+          "name": "Teqnion",
+          "kind": "serial acquirer",
+          "industries": [
+            "25110",
+            "25620",
+            "25730",
+            "25990",
+            "28990",
+            "33120",
+            "33200",
+            "22290",
+            "23610"
+          ],
+          "minSize": 1000000,
+          "maxSize": 30000000,
+          "evidence": "Listed Swedish acquirer of small industrial businesses with an eternal holding period, 36 companies owned. Bought Norband in a Mergero 2026 transaction, its route into Finland.",
+          "source": "Mergero 2026 transactions, Teqnion public reporting"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      }
+    ]
+  },
+  {
+    "company": {
+      "businessId": "2329345-9",
+      "name": "Corredor Oy",
+      "registered": "2010-04-23",
+      "industry": "52100",
+      "industryName": "Varastointi",
+      "renames": 0,
+      "postCode": "60120",
+      "city": "SEINÄJOKI",
+      "website": null,
+      "employer": false
+    },
+    "financials": {
+      "businessId": "2329345-9",
+      "financialDate": "2026-03-31",
+      "registrationDate": "2026-08-04",
+      "balanceProxy": 2254053.96,
+      "balanceProxyPrev": 2753096.78,
+      "changePct": -18.1,
+      "lineItems": 52
+    },
+    "score": 11,
+    "reasons": [
+      {
+        "label": "16 vuotta vanha",
+        "points": 2
+      },
+      {
+        "label": "Konsolidoituva toimiala: Varastointi",
+        "points": 2
+      },
+      {
+        "label": "Tilinpäätös rekisteröity juuri",
+        "points": 3
+      },
+      {
+        "label": "Tase supistui -18 %",
+        "points": 2
+      },
+      {
+        "label": "Ei koskaan nimenmuutosta",
+        "points": 1
+      },
+      {
+        "label": "Pääkaupunkiseudun ulkopuolella",
+        "points": 1
+      }
+    ],
+    "age": 16,
+    "ownerNamed": false,
+    "matches": [
+      {
+        "buyer": {
+          "id": "luo-logistics",
+          "name": "Luo Logistics Group",
+          "kind": "serial acquirer",
+          "industries": [
+            "49410",
+            "49310",
+            "52100",
+            "52240"
+          ],
+          "minSize": 1000000,
+          "maxSize": 40000000,
+          "evidence": "Merged Huhtala Logistics and Puura-Trans, later adding Weeman. Revenue ~€80M in 2025 and group value more than tripled. Backed by Lease Deal Group.",
+          "source": "Mergero opening deck, roll-up track record"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      }
+    ]
+  },
+  {
+    "company": {
+      "businessId": "1098095-4",
+      "name": "Biofire Oy",
+      "registered": "1998-03-11",
+      "industry": "28990",
+      "industryName": "Erikoiskoneet",
+      "renames": 0,
+      "postCode": "61910",
+      "city": "NUMMIJÄRVI",
+      "website": null,
+      "employer": false
+    },
+    "financials": {
+      "businessId": "1098095-4",
+      "financialDate": "2025-12-31",
+      "registrationDate": "2026-07-07",
+      "balanceProxy": 2236024.22,
+      "balanceProxyPrev": 1482337.37,
+      "changePct": 50.8,
+      "lineItems": 50
+    },
+    "score": 11,
+    "reasons": [
+      {
+        "label": "28 vuotta vanha",
+        "points": 3
+      },
+      {
+        "label": "Konsolidoituva toimiala: Erikoiskoneet",
+        "points": 2
+      },
+      {
+        "label": "Tilinpäätös rekisteröity juuri",
+        "points": 3
+      },
+      {
+        "label": "Tase kasvoi 51 %",
+        "points": 1
+      },
+      {
+        "label": "Ei koskaan nimenmuutosta",
+        "points": 1
+      },
+      {
+        "label": "Pääkaupunkiseudun ulkopuolella",
+        "points": 1
+      }
+    ],
+    "age": 28,
+    "ownerNamed": false,
+    "matches": [
+      {
+        "buyer": {
+          "id": "teqnion",
+          "name": "Teqnion",
+          "kind": "serial acquirer",
+          "industries": [
+            "25110",
+            "25620",
+            "25730",
+            "25990",
+            "28990",
+            "33120",
+            "33200",
+            "22290",
+            "23610"
+          ],
+          "minSize": 1000000,
+          "maxSize": 30000000,
+          "evidence": "Listed Swedish acquirer of small industrial businesses with an eternal holding period, 36 companies owned. Bought Norband in a Mergero 2026 transaction, its route into Finland.",
+          "source": "Mergero 2026 transactions, Teqnion public reporting"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      }
+    ]
+  },
+  {
+    "company": {
+      "businessId": "0348780-3",
+      "name": "Sauvon Sähkötarvike Oy",
+      "registered": "1963-07-05",
+      "industry": "43210",
+      "industryName": "Sähköasennus",
+      "renames": 1,
+      "postCode": "21570",
+      "city": "SAUVO",
+      "website": "www.sauvonsahko.fi",
+      "employer": false
+    },
+    "financials": {
+      "businessId": "0348780-3",
+      "financialDate": "2026-01-31",
+      "registrationDate": "2026-09-09",
+      "balanceProxy": 1982930.19,
+      "balanceProxyPrev": 2087632.77,
+      "changePct": -5,
+      "lineItems": 54
+    },
+    "score": 11,
+    "reasons": [
+      {
+        "label": "63 vuotta vanha",
+        "points": 3
+      },
+      {
+        "label": "Konsolidoituva toimiala: Sähköasennus",
+        "points": 2
+      },
+      {
+        "label": "Tilinpäätös rekisteröity juuri",
+        "points": 3
+      },
+      {
+        "label": "Henkilönimi yhtiön nimessä",
+        "points": 2
+      },
+      {
+        "label": "Pääkaupunkiseudun ulkopuolella",
+        "points": 1
+      }
+    ],
+    "age": 63,
+    "ownerNamed": true,
+    "matches": [
+      {
+        "buyer": {
+          "id": "kotera-group",
+          "name": "Kotera Group",
+          "kind": "serial acquirer",
+          "industries": [
+            "43220",
+            "43210",
+            "43290",
+            "43120",
+            "43991",
+            "33200",
+            "25110"
+          ],
+          "minSize": 1000000,
+          "maxSize": 40000000,
+          "evidence": "16 acquisitions since founding, revenue ~€185M in 2025 and ~€260M forecast for 2026, IPO targeted 2028-29. Buys industrial construction and installation businesses one at a time.",
+          "source": "Mergero opening deck, roll-up track record"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      }
+    ]
+  },
+  {
+    "company": {
+      "businessId": "1624575-8",
+      "name": "Ikirauta Oy",
+      "registered": "2000-10-31",
+      "industry": "25990",
+      "industryName": "Metallituotteet",
+      "renames": 1,
+      "postCode": "36220",
+      "city": "KANGASALA",
+      "website": null,
+      "employer": false
+    },
+    "financials": {
+      "businessId": "1624575-8",
+      "financialDate": "2025-09-30",
+      "registrationDate": "2026-06-09",
+      "balanceProxy": 1792890.14,
+      "balanceProxyPrev": 2011438.78,
+      "changePct": -10.9,
+      "lineItems": 51
+    },
+    "score": 11,
+    "reasons": [
+      {
+        "label": "26 vuotta vanha",
+        "points": 3
+      },
+      {
+        "label": "Konsolidoituva toimiala: Metallituotteet",
+        "points": 2
+      },
+      {
+        "label": "Tilinpäätös rekisteröity juuri",
+        "points": 3
+      },
+      {
+        "label": "Tase supistui -11 %",
+        "points": 2
+      },
+      {
+        "label": "Pääkaupunkiseudun ulkopuolella",
+        "points": 1
+      }
+    ],
+    "age": 26,
+    "ownerNamed": false,
+    "matches": [
+      {
+        "buyer": {
+          "id": "teqnion",
+          "name": "Teqnion",
+          "kind": "serial acquirer",
+          "industries": [
+            "25110",
+            "25620",
+            "25730",
+            "25990",
+            "28990",
+            "33120",
+            "33200",
+            "22290",
+            "23610"
+          ],
+          "minSize": 1000000,
+          "maxSize": 30000000,
+          "evidence": "Listed Swedish acquirer of small industrial businesses with an eternal holding period, 36 companies owned. Bought Norband in a Mergero 2026 transaction, its route into Finland.",
+          "source": "Mergero 2026 transactions, Teqnion public reporting"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      }
+    ]
+  },
+  {
+    "company": {
+      "businessId": "2281149-6",
+      "name": "Tarmo palvelut Oy",
+      "registered": "2009-08-20",
+      "industry": "81210",
+      "industryName": "Kiinteistöjen siivous",
+      "renames": 0,
+      "postCode": "33100",
+      "city": "TAMPERE",
+      "website": "www.tarmopalvelut.fi",
+      "employer": false
+    },
+    "financials": {
+      "businessId": "2281149-6",
+      "financialDate": "2025-12-31",
+      "registrationDate": "2026-06-10",
+      "balanceProxy": 1720818.48,
+      "balanceProxyPrev": 2158677.61,
+      "changePct": -20.3,
+      "lineItems": 43
+    },
+    "score": 11,
+    "reasons": [
+      {
+        "label": "17 vuotta vanha",
+        "points": 2
+      },
+      {
+        "label": "Konsolidoituva toimiala: Kiinteistöjen siivous",
+        "points": 2
+      },
+      {
+        "label": "Tilinpäätös rekisteröity juuri",
+        "points": 3
+      },
+      {
+        "label": "Tase supistui -20 %",
+        "points": 2
+      },
+      {
+        "label": "Ei koskaan nimenmuutosta",
+        "points": 1
+      },
+      {
+        "label": "Pääkaupunkiseudun ulkopuolella",
+        "points": 1
+      }
+    ],
+    "age": 17,
+    "ownerNamed": false,
+    "matches": [
+      {
+        "buyer": {
+          "id": "pika-puhtaus",
+          "name": "PiKa Puhtaus",
+          "kind": "serial acquirer",
+          "industries": [
+            "81210",
+            "81220",
+            "81291",
+            "81100"
+          ],
+          "minSize": 500000,
+          "maxSize": 15000000,
+          "evidence": "Acquired Clean-Kalle Ab Oy, a cleaning company founded in 1970, in a Mergero 2026 transaction. Same industry code as its target.",
+          "source": "Mergero 2026 transactions"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      }
+    ]
+  },
+  {
+    "company": {
+      "businessId": "0638603-9",
+      "name": "Helsingin Express Oy",
+      "registered": "1987-04-15",
+      "industry": "49410",
+      "industryName": "Tieliikenteen tavarankuljetus",
+      "renames": 1,
+      "postCode": "64100",
+      "city": "KRISTIINANKAUPUNKI",
+      "website": null,
+      "employer": false
+    },
+    "financials": {
+      "businessId": "0638603-9",
+      "financialDate": "2026-02-28",
+      "registrationDate": "2026-06-24",
+      "balanceProxy": 1717873.15,
+      "balanceProxyPrev": 1764101.77,
+      "changePct": -2.6,
+      "lineItems": 49
+    },
+    "score": 11,
+    "reasons": [
+      {
+        "label": "39 vuotta vanha",
+        "points": 3
+      },
+      {
+        "label": "Konsolidoituva toimiala: Tieliikenteen tavarankuljetus",
+        "points": 2
+      },
+      {
+        "label": "Tilinpäätös rekisteröity juuri",
+        "points": 3
+      },
+      {
+        "label": "Henkilönimi yhtiön nimessä",
+        "points": 2
+      },
+      {
+        "label": "Pääkaupunkiseudun ulkopuolella",
+        "points": 1
+      }
+    ],
+    "age": 39,
+    "ownerNamed": true,
+    "matches": [
+      {
+        "buyer": {
+          "id": "luo-logistics",
+          "name": "Luo Logistics Group",
+          "kind": "serial acquirer",
+          "industries": [
+            "49410",
+            "49310",
+            "52100",
+            "52240"
+          ],
+          "minSize": 1000000,
+          "maxSize": 40000000,
+          "evidence": "Merged Huhtala Logistics and Puura-Trans, later adding Weeman. Revenue ~€80M in 2025 and group value more than tripled. Backed by Lease Deal Group.",
+          "source": "Mergero opening deck, roll-up track record"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      }
+    ]
+  },
+  {
+    "company": {
+      "businessId": "0208809-3",
+      "name": "Kauhajoen Kuljetus Oy",
+      "registered": "1970-09-04",
+      "industry": "49410",
+      "industryName": "Tieliikenteen tavarankuljetus",
+      "renames": 1,
+      "postCode": "61800",
+      "city": "KAUHAJOKI",
+      "website": "www.kauhajoki-ktk.fi",
+      "employer": false
+    },
+    "financials": {
+      "businessId": "0208809-3",
+      "financialDate": "2025-12-31",
+      "registrationDate": "2026-07-25",
+      "balanceProxy": 1671109.26,
+      "balanceProxyPrev": 1673574.65,
+      "changePct": -0.1,
+      "lineItems": 67
+    },
+    "score": 11,
+    "reasons": [
+      {
+        "label": "56 vuotta vanha",
+        "points": 3
+      },
+      {
+        "label": "Konsolidoituva toimiala: Tieliikenteen tavarankuljetus",
+        "points": 2
+      },
+      {
+        "label": "Tilinpäätös rekisteröity juuri",
+        "points": 3
+      },
+      {
+        "label": "Henkilönimi yhtiön nimessä",
+        "points": 2
+      },
+      {
+        "label": "Pääkaupunkiseudun ulkopuolella",
+        "points": 1
+      }
+    ],
+    "age": 56,
+    "ownerNamed": true,
+    "matches": [
+      {
+        "buyer": {
+          "id": "luo-logistics",
+          "name": "Luo Logistics Group",
+          "kind": "serial acquirer",
+          "industries": [
+            "49410",
+            "49310",
+            "52100",
+            "52240"
+          ],
+          "minSize": 1000000,
+          "maxSize": 40000000,
+          "evidence": "Merged Huhtala Logistics and Puura-Trans, later adding Weeman. Revenue ~€80M in 2025 and group value more than tripled. Backed by Lease Deal Group.",
+          "source": "Mergero opening deck, roll-up track record"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      }
+    ]
+  },
+  {
+    "company": {
+      "businessId": "1924704-6",
+      "name": "Kuljetusliike Sami Lehtinen Oy",
+      "registered": "2004-10-27",
+      "industry": "49410",
+      "industryName": "Tieliikenteen tavarankuljetus",
+      "renames": 1,
+      "postCode": "21530",
+      "city": "PAIMIO",
+      "website": null,
+      "employer": false
+    },
+    "financials": {
+      "businessId": "1924704-6",
+      "financialDate": "2026-04-30",
+      "registrationDate": "2026-09-02",
+      "balanceProxy": 1628585.1,
+      "balanceProxyPrev": 1239887.52,
+      "changePct": 31.3,
+      "lineItems": 48
+    },
+    "score": 11,
+    "reasons": [
+      {
+        "label": "22 vuotta vanha",
+        "points": 2
+      },
+      {
+        "label": "Konsolidoituva toimiala: Tieliikenteen tavarankuljetus",
+        "points": 2
+      },
+      {
+        "label": "Tilinpäätös rekisteröity juuri",
+        "points": 3
+      },
+      {
+        "label": "Tase kasvoi 31 %",
+        "points": 1
+      },
+      {
+        "label": "Henkilönimi yhtiön nimessä",
+        "points": 2
+      },
+      {
+        "label": "Pääkaupunkiseudun ulkopuolella",
+        "points": 1
+      }
+    ],
+    "age": 22,
+    "ownerNamed": true,
+    "matches": [
+      {
+        "buyer": {
+          "id": "luo-logistics",
+          "name": "Luo Logistics Group",
+          "kind": "serial acquirer",
+          "industries": [
+            "49410",
+            "49310",
+            "52100",
+            "52240"
+          ],
+          "minSize": 1000000,
+          "maxSize": 40000000,
+          "evidence": "Merged Huhtala Logistics and Puura-Trans, later adding Weeman. Revenue ~€80M in 2025 and group value more than tripled. Backed by Lease Deal Group.",
+          "source": "Mergero opening deck, roll-up track record"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      }
+    ]
+  },
+  {
+    "company": {
+      "businessId": "2165855-7",
+      "name": "IVT Center Turku Oy",
+      "registered": "2008-01-11",
+      "industry": "43220",
+      "industryName": "LVI-asennus",
+      "renames": 0,
+      "postCode": "20520",
+      "city": "TURKU",
+      "website": "www.ivtturku.fi",
+      "employer": false
+    },
+    "financials": {
+      "businessId": "2165855-7",
+      "financialDate": "2025-12-31",
+      "registrationDate": "2026-07-11",
+      "balanceProxy": 1541225.84,
+      "balanceProxyPrev": 2381918.89,
+      "changePct": -35.3,
+      "lineItems": 49
+    },
+    "score": 11,
+    "reasons": [
+      {
+        "label": "18 vuotta vanha",
+        "points": 2
+      },
+      {
+        "label": "Konsolidoituva toimiala: LVI-asennus",
+        "points": 2
+      },
+      {
+        "label": "Tilinpäätös rekisteröity juuri",
+        "points": 3
+      },
+      {
+        "label": "Tase supistui -35 %",
+        "points": 2
+      },
+      {
+        "label": "Ei koskaan nimenmuutosta",
+        "points": 1
+      },
+      {
+        "label": "Pääkaupunkiseudun ulkopuolella",
+        "points": 1
+      }
+    ],
+    "age": 18,
+    "ownerNamed": false,
+    "matches": [
+      {
+        "buyer": {
+          "id": "kotera-group",
+          "name": "Kotera Group",
+          "kind": "serial acquirer",
+          "industries": [
+            "43220",
+            "43210",
+            "43290",
+            "43120",
+            "43991",
+            "33200",
+            "25110"
+          ],
+          "minSize": 1000000,
+          "maxSize": 40000000,
+          "evidence": "16 acquisitions since founding, revenue ~€185M in 2025 and ~€260M forecast for 2026, IPO targeted 2028-29. Buys industrial construction and installation businesses one at a time.",
+          "source": "Mergero opening deck, roll-up track record"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      },
+      {
+        "buyer": {
+          "id": "no-dig-alliance",
+          "name": "No Dig Alliance",
+          "kind": "serial acquirer",
+          "industries": [
+            "43220",
+            "43290",
+            "43120",
+            "43110"
+          ],
+          "minSize": 500000,
+          "maxSize": 20000000,
+          "evidence": "Acquired Suomen Putkisto Palvelu in a Mergero 2026 transaction. Consolidates pipeline services.",
+          "source": "Mergero 2026 transactions"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      }
+    ]
+  },
+  {
+    "company": {
+      "businessId": "1839304-1",
+      "name": "Kantojärven Metalli Oy",
+      "registered": "2003-07-08",
+      "industry": "25110",
+      "industryName": "Metallirakenteet",
+      "renames": 1,
+      "postCode": "95450",
+      "city": "TORNIO",
+      "website": "www.kjm.fi",
+      "employer": false
+    },
+    "financials": {
+      "businessId": "1839304-1",
+      "financialDate": "2025-12-31",
+      "registrationDate": "2026-06-10",
+      "balanceProxy": 18955331.12,
+      "balanceProxyPrev": 21007147.26,
+      "changePct": -9.8,
+      "lineItems": 63
+    },
+    "score": 10,
+    "reasons": [
+      {
+        "label": "23 vuotta vanha",
+        "points": 2
+      },
+      {
+        "label": "Konsolidoituva toimiala: Metallirakenteet",
+        "points": 2
+      },
+      {
+        "label": "Tilinpäätös rekisteröity juuri",
+        "points": 3
+      },
+      {
+        "label": "Henkilönimi yhtiön nimessä",
+        "points": 2
+      },
+      {
+        "label": "Pääkaupunkiseudun ulkopuolella",
+        "points": 1
+      }
+    ],
+    "age": 23,
+    "ownerNamed": true,
+    "matches": [
+      {
+        "buyer": {
+          "id": "sponsor-capital",
+          "name": "Sponsor Capital",
+          "kind": "private equity",
+          "industries": [
+            "81210",
+            "81220",
+            "81291",
+            "81100",
+            "62010",
+            "38110",
+            "38320",
+            "25110",
+            "25620"
+          ],
+          "minSize": 2000000,
+          "maxSize": 100000000,
+          "evidence": "Appears three times in Mergero public material: Saarni Cloud (software), Fluo Group (circular economy) and Fasteo Group (technical wholesale). Buys platforms and builds on them.",
+          "source": "Mergero opening deck, roll-up track record"
+        },
+        "why": "Sijoittaa tähän toimialaan ja kokoluokkaan."
+      },
+      {
+        "buyer": {
+          "id": "kotera-group",
+          "name": "Kotera Group",
+          "kind": "serial acquirer",
+          "industries": [
+            "43220",
+            "43210",
+            "43290",
+            "43120",
+            "43991",
+            "33200",
+            "25110"
+          ],
+          "minSize": 1000000,
+          "maxSize": 40000000,
+          "evidence": "16 acquisitions since founding, revenue ~€185M in 2025 and ~€260M forecast for 2026, IPO targeted 2028-29. Buys industrial construction and installation businesses one at a time.",
+          "source": "Mergero opening deck, roll-up track record"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      },
+      {
+        "buyer": {
+          "id": "teqnion",
+          "name": "Teqnion",
+          "kind": "serial acquirer",
+          "industries": [
+            "25110",
+            "25620",
+            "25730",
+            "25990",
+            "28990",
+            "33120",
+            "33200",
+            "22290",
+            "23610"
+          ],
+          "minSize": 1000000,
+          "maxSize": 30000000,
+          "evidence": "Listed Swedish acquirer of small industrial businesses with an eternal holding period, 36 companies owned. Bought Norband in a Mergero 2026 transaction, its route into Finland.",
+          "source": "Mergero 2026 transactions, Teqnion public reporting"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      }
+    ]
+  },
+  {
+    "company": {
+      "businessId": "0933207-9",
+      "name": "Kemas Oy",
+      "registered": "1993-09-01",
+      "industry": "25990",
+      "industryName": "Metallituotteet",
+      "renames": 1,
+      "postCode": "46860",
+      "city": "KELTAKANGAS",
+      "website": null,
+      "employer": false
+    },
+    "financials": {
+      "businessId": "0933207-9",
+      "financialDate": "2026-04-30",
+      "registrationDate": "2026-07-25",
+      "balanceProxy": 9812776.93,
+      "balanceProxyPrev": 7262568.04,
+      "changePct": 35.1,
+      "lineItems": 57
+    },
+    "score": 10,
+    "reasons": [
+      {
+        "label": "33 vuotta vanha",
+        "points": 3
+      },
+      {
+        "label": "Konsolidoituva toimiala: Metallituotteet",
+        "points": 2
+      },
+      {
+        "label": "Tilinpäätös rekisteröity juuri",
+        "points": 3
+      },
+      {
+        "label": "Tase kasvoi 35 %",
+        "points": 1
+      },
+      {
+        "label": "Pääkaupunkiseudun ulkopuolella",
+        "points": 1
+      }
+    ],
+    "age": 33,
+    "ownerNamed": false,
+    "matches": [
+      {
+        "buyer": {
+          "id": "teqnion",
+          "name": "Teqnion",
+          "kind": "serial acquirer",
+          "industries": [
+            "25110",
+            "25620",
+            "25730",
+            "25990",
+            "28990",
+            "33120",
+            "33200",
+            "22290",
+            "23610"
+          ],
+          "minSize": 1000000,
+          "maxSize": 30000000,
+          "evidence": "Listed Swedish acquirer of small industrial businesses with an eternal holding period, 36 companies owned. Bought Norband in a Mergero 2026 transaction, its route into Finland.",
+          "source": "Mergero 2026 transactions, Teqnion public reporting"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      }
+    ]
+  },
+  {
+    "company": {
+      "businessId": "2358798-3",
+      "name": "Kuljetusliike Savoline Oy",
+      "registered": "2010-10-01",
+      "industry": "49410",
+      "industryName": "Tieliikenteen tavarankuljetus",
+      "renames": 0,
+      "postCode": "70840",
+      "city": "KUOPIO",
+      "website": null,
+      "employer": false
+    },
+    "financials": {
+      "businessId": "2358798-3",
+      "financialDate": "2026-02-28",
+      "registrationDate": "2026-09-01",
+      "balanceProxy": 4750945.18,
+      "balanceProxyPrev": 2568642.37,
+      "changePct": 85,
+      "lineItems": 49
+    },
+    "score": 10,
+    "reasons": [
+      {
+        "label": "16 vuotta vanha",
+        "points": 2
+      },
+      {
+        "label": "Konsolidoituva toimiala: Tieliikenteen tavarankuljetus",
+        "points": 2
+      },
+      {
+        "label": "Tilinpäätös rekisteröity juuri",
+        "points": 3
+      },
+      {
+        "label": "Tase kasvoi 85 %",
+        "points": 1
+      },
+      {
+        "label": "Ei koskaan nimenmuutosta",
+        "points": 1
+      },
+      {
+        "label": "Pääkaupunkiseudun ulkopuolella",
+        "points": 1
+      }
+    ],
+    "age": 16,
+    "ownerNamed": false,
+    "matches": [
+      {
+        "buyer": {
+          "id": "luo-logistics",
+          "name": "Luo Logistics Group",
+          "kind": "serial acquirer",
+          "industries": [
+            "49410",
+            "49310",
+            "52100",
+            "52240"
+          ],
+          "minSize": 1000000,
+          "maxSize": 40000000,
+          "evidence": "Merged Huhtala Logistics and Puura-Trans, later adding Weeman. Revenue ~€80M in 2025 and group value more than tripled. Backed by Lease Deal Group.",
+          "source": "Mergero opening deck, roll-up track record"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      }
+    ]
+  },
+  {
+    "company": {
+      "businessId": "2428432-7",
+      "name": "JO-Sähkö Oy",
+      "registered": "2011-10-01",
+      "industry": "43210",
+      "industryName": "Sähköasennus",
+      "renames": 0,
+      "postCode": "04660",
+      "city": "NUMMINEN",
+      "website": null,
+      "employer": false
+    },
+    "financials": {
+      "businessId": "2428432-7",
+      "financialDate": "2025-06-30",
+      "registrationDate": "2026-08-22",
+      "balanceProxy": 3963213.54,
+      "balanceProxyPrev": 3041317.5,
+      "changePct": 30.3,
+      "lineItems": 50
+    },
+    "score": 10,
+    "reasons": [
+      {
+        "label": "15 vuotta vanha",
+        "points": 2
+      },
+      {
+        "label": "Konsolidoituva toimiala: Sähköasennus",
+        "points": 2
+      },
+      {
+        "label": "Tilinpäätös rekisteröity juuri",
+        "points": 3
+      },
+      {
+        "label": "Tase kasvoi 30 %",
+        "points": 1
+      },
+      {
+        "label": "Ei koskaan nimenmuutosta",
+        "points": 1
+      },
+      {
+        "label": "Pääkaupunkiseudun ulkopuolella",
+        "points": 1
+      }
+    ],
+    "age": 15,
+    "ownerNamed": false,
+    "matches": [
+      {
+        "buyer": {
+          "id": "kotera-group",
+          "name": "Kotera Group",
+          "kind": "serial acquirer",
+          "industries": [
+            "43220",
+            "43210",
+            "43290",
+            "43120",
+            "43991",
+            "33200",
+            "25110"
+          ],
+          "minSize": 1000000,
+          "maxSize": 40000000,
+          "evidence": "16 acquisitions since founding, revenue ~€185M in 2025 and ~€260M forecast for 2026, IPO targeted 2028-29. Buys industrial construction and installation businesses one at a time.",
+          "source": "Mergero opening deck, roll-up track record"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      }
+    ]
+  },
+  {
+    "company": {
+      "businessId": "2189035-6",
+      "name": "Paakkunainen Group Oy",
+      "registered": "2008-04-30",
+      "industry": "43120",
+      "industryName": "Maarakennus",
+      "renames": 1,
+      "postCode": "64770",
+      "city": "ÄYSTÖ",
+      "website": "www.paakkunainengroup.fi",
+      "employer": false
+    },
+    "financials": {
+      "businessId": "2189035-6",
+      "financialDate": "2026-02-28",
+      "registrationDate": "2026-08-22",
+      "balanceProxy": 3050879.43,
+      "balanceProxyPrev": 2999636.08,
+      "changePct": 1.7,
+      "lineItems": 56
+    },
+    "score": 10,
+    "reasons": [
+      {
+        "label": "18 vuotta vanha",
+        "points": 2
+      },
+      {
+        "label": "Konsolidoituva toimiala: Maarakennus",
+        "points": 2
+      },
+      {
+        "label": "Tilinpäätös rekisteröity juuri",
+        "points": 3
+      },
+      {
+        "label": "Henkilönimi yhtiön nimessä",
+        "points": 2
+      },
+      {
+        "label": "Pääkaupunkiseudun ulkopuolella",
+        "points": 1
+      }
+    ],
+    "age": 18,
+    "ownerNamed": true,
+    "matches": [
+      {
+        "buyer": {
+          "id": "kotera-group",
+          "name": "Kotera Group",
+          "kind": "serial acquirer",
+          "industries": [
+            "43220",
+            "43210",
+            "43290",
+            "43120",
+            "43991",
+            "33200",
+            "25110"
+          ],
+          "minSize": 1000000,
+          "maxSize": 40000000,
+          "evidence": "16 acquisitions since founding, revenue ~€185M in 2025 and ~€260M forecast for 2026, IPO targeted 2028-29. Buys industrial construction and installation businesses one at a time.",
+          "source": "Mergero opening deck, roll-up track record"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      },
+      {
+        "buyer": {
+          "id": "no-dig-alliance",
+          "name": "No Dig Alliance",
+          "kind": "serial acquirer",
+          "industries": [
+            "43220",
+            "43290",
+            "43120",
+            "43110"
+          ],
+          "minSize": 500000,
+          "maxSize": 20000000,
+          "evidence": "Acquired Suomen Putkisto Palvelu in a Mergero 2026 transaction. Consolidates pipeline services.",
+          "source": "Mergero 2026 transactions"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      }
+    ]
+  },
+  {
+    "company": {
+      "businessId": "0163459-0",
+      "name": "Maanrakennus Suortti Oy",
+      "registered": "1959-02-27",
+      "industry": "43120",
+      "industryName": "Maarakennus",
+      "renames": 1,
+      "postCode": "49400",
+      "city": "HAMINA",
+      "website": null,
+      "employer": false
+    },
+    "financials": {
+      "businessId": "0163459-0",
+      "financialDate": "2026-02-28",
+      "registrationDate": "2026-09-01",
+      "balanceProxy": 2975214.9,
+      "balanceProxyPrev": 2439328.46,
+      "changePct": 22,
+      "lineItems": 50
+    },
+    "score": 10,
+    "reasons": [
+      {
+        "label": "67 vuotta vanha",
+        "points": 3
+      },
+      {
+        "label": "Konsolidoituva toimiala: Maarakennus",
+        "points": 2
+      },
+      {
+        "label": "Tilinpäätös rekisteröity juuri",
+        "points": 3
+      },
+      {
+        "label": "Tase kasvoi 22 %",
+        "points": 1
+      },
+      {
+        "label": "Pääkaupunkiseudun ulkopuolella",
+        "points": 1
+      }
+    ],
+    "age": 67,
+    "ownerNamed": false,
+    "matches": [
+      {
+        "buyer": {
+          "id": "kotera-group",
+          "name": "Kotera Group",
+          "kind": "serial acquirer",
+          "industries": [
+            "43220",
+            "43210",
+            "43290",
+            "43120",
+            "43991",
+            "33200",
+            "25110"
+          ],
+          "minSize": 1000000,
+          "maxSize": 40000000,
+          "evidence": "16 acquisitions since founding, revenue ~€185M in 2025 and ~€260M forecast for 2026, IPO targeted 2028-29. Buys industrial construction and installation businesses one at a time.",
+          "source": "Mergero opening deck, roll-up track record"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      },
+      {
+        "buyer": {
+          "id": "no-dig-alliance",
+          "name": "No Dig Alliance",
+          "kind": "serial acquirer",
+          "industries": [
+            "43220",
+            "43290",
+            "43120",
+            "43110"
+          ],
+          "minSize": 500000,
+          "maxSize": 20000000,
+          "evidence": "Acquired Suomen Putkisto Palvelu in a Mergero 2026 transaction. Consolidates pipeline services.",
+          "source": "Mergero 2026 transactions"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      }
+    ]
+  },
+  {
+    "company": {
+      "businessId": "0848416-9",
+      "name": "Asennuspalvelu Vainionpää Oy",
+      "registered": "1991-09-11",
+      "industry": "33200",
+      "industryName": "Teollinen asennus",
+      "renames": 1,
+      "postCode": "64700",
+      "city": "TEUVA",
+      "website": null,
+      "employer": false
+    },
+    "financials": {
+      "businessId": "0848416-9",
+      "financialDate": "2025-12-31",
+      "registrationDate": "2026-07-07",
+      "balanceProxy": 2145682.68,
+      "balanceProxyPrev": 1693125.3,
+      "changePct": 26.7,
+      "lineItems": 52
+    },
+    "score": 10,
+    "reasons": [
+      {
+        "label": "35 vuotta vanha",
+        "points": 3
+      },
+      {
+        "label": "Konsolidoituva toimiala: Teollinen asennus",
+        "points": 2
+      },
+      {
+        "label": "Tilinpäätös rekisteröity juuri",
+        "points": 3
+      },
+      {
+        "label": "Tase kasvoi 27 %",
+        "points": 1
+      },
+      {
+        "label": "Pääkaupunkiseudun ulkopuolella",
+        "points": 1
+      }
+    ],
+    "age": 35,
+    "ownerNamed": false,
+    "matches": [
+      {
+        "buyer": {
+          "id": "kotera-group",
+          "name": "Kotera Group",
+          "kind": "serial acquirer",
+          "industries": [
+            "43220",
+            "43210",
+            "43290",
+            "43120",
+            "43991",
+            "33200",
+            "25110"
+          ],
+          "minSize": 1000000,
+          "maxSize": 40000000,
+          "evidence": "16 acquisitions since founding, revenue ~€185M in 2025 and ~€260M forecast for 2026, IPO targeted 2028-29. Buys industrial construction and installation businesses one at a time.",
+          "source": "Mergero opening deck, roll-up track record"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      },
+      {
+        "buyer": {
+          "id": "teqnion",
+          "name": "Teqnion",
+          "kind": "serial acquirer",
+          "industries": [
+            "25110",
+            "25620",
+            "25730",
+            "25990",
+            "28990",
+            "33120",
+            "33200",
+            "22290",
+            "23610"
+          ],
+          "minSize": 1000000,
+          "maxSize": 30000000,
+          "evidence": "Listed Swedish acquirer of small industrial businesses with an eternal holding period, 36 companies owned. Bought Norband in a Mergero 2026 transaction, its route into Finland.",
+          "source": "Mergero 2026 transactions, Teqnion public reporting"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      }
+    ]
+  },
+  {
+    "company": {
+      "businessId": "1606803-4",
+      "name": "G C West Fastigheter Ab",
+      "registered": "2000-07-28",
+      "industry": "81100",
+      "industryName": "Kiinteistöpalvelu",
+      "renames": 0,
+      "postCode": "65380",
+      "city": "VAASA",
+      "website": null,
+      "employer": false
+    },
+    "financials": {
+      "businessId": "1606803-4",
+      "financialDate": "2025-12-31",
+      "registrationDate": "2026-06-10",
+      "balanceProxy": 2097705.85,
+      "balanceProxyPrev": 2118257.53,
+      "changePct": -1,
+      "lineItems": 54
+    },
+    "score": 10,
+    "reasons": [
+      {
+        "label": "26 vuotta vanha",
+        "points": 3
+      },
+      {
+        "label": "Konsolidoituva toimiala: Kiinteistöpalvelu",
+        "points": 2
+      },
+      {
+        "label": "Tilinpäätös rekisteröity juuri",
+        "points": 3
+      },
+      {
+        "label": "Ei koskaan nimenmuutosta",
+        "points": 1
+      },
+      {
+        "label": "Pääkaupunkiseudun ulkopuolella",
+        "points": 1
+      }
+    ],
+    "age": 26,
+    "ownerNamed": false,
+    "matches": [
+      {
+        "buyer": {
+          "id": "sponsor-capital",
+          "name": "Sponsor Capital",
+          "kind": "private equity",
+          "industries": [
+            "81210",
+            "81220",
+            "81291",
+            "81100",
+            "62010",
+            "38110",
+            "38320",
+            "25110",
+            "25620"
+          ],
+          "minSize": 2000000,
+          "maxSize": 100000000,
+          "evidence": "Appears three times in Mergero public material: Saarni Cloud (software), Fluo Group (circular economy) and Fasteo Group (technical wholesale). Buys platforms and builds on them.",
+          "source": "Mergero opening deck, roll-up track record"
+        },
+        "why": "Sijoittaa tähän toimialaan ja kokoluokkaan."
+      },
+      {
+        "buyer": {
+          "id": "pika-puhtaus",
+          "name": "PiKa Puhtaus",
+          "kind": "serial acquirer",
+          "industries": [
+            "81210",
+            "81220",
+            "81291",
+            "81100"
+          ],
+          "minSize": 500000,
+          "maxSize": 15000000,
+          "evidence": "Acquired Clean-Kalle Ab Oy, a cleaning company founded in 1970, in a Mergero 2026 transaction. Same industry code as its target.",
+          "source": "Mergero 2026 transactions"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      }
+    ]
+  },
+  {
+    "company": {
+      "businessId": "1708099-1",
+      "name": "Ena's Transport Ab",
+      "registered": "2001-07-25",
+      "industry": "49410",
+      "industryName": "Tieliikenteen tavarankuljetus",
+      "renames": 1,
+      "postCode": "68800",
+      "city": "KOLPPI",
+      "website": null,
+      "employer": false
+    },
+    "financials": {
+      "businessId": "1708099-1",
+      "financialDate": "2025-12-31",
+      "registrationDate": "2026-06-18",
+      "balanceProxy": 1833897.91,
+      "balanceProxyPrev": 1485266.53,
+      "changePct": 23.5,
+      "lineItems": 57
+    },
+    "score": 10,
+    "reasons": [
+      {
+        "label": "25 vuotta vanha",
+        "points": 3
+      },
+      {
+        "label": "Konsolidoituva toimiala: Tieliikenteen tavarankuljetus",
+        "points": 2
+      },
+      {
+        "label": "Tilinpäätös rekisteröity juuri",
+        "points": 3
+      },
+      {
+        "label": "Tase kasvoi 24 %",
+        "points": 1
+      },
+      {
+        "label": "Pääkaupunkiseudun ulkopuolella",
+        "points": 1
+      }
+    ],
+    "age": 25,
+    "ownerNamed": false,
+    "matches": [
+      {
+        "buyer": {
+          "id": "luo-logistics",
+          "name": "Luo Logistics Group",
+          "kind": "serial acquirer",
+          "industries": [
+            "49410",
+            "49310",
+            "52100",
+            "52240"
+          ],
+          "minSize": 1000000,
+          "maxSize": 40000000,
+          "evidence": "Merged Huhtala Logistics and Puura-Trans, later adding Weeman. Revenue ~€80M in 2025 and group value more than tripled. Backed by Lease Deal Group.",
+          "source": "Mergero opening deck, roll-up track record"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      }
+    ]
+  },
+  {
+    "company": {
+      "businessId": "0825847-9",
+      "name": "Kymppisähkö Oy",
+      "registered": "1991-03-13",
+      "industry": "43210",
+      "industryName": "Sähköasennus",
+      "renames": 1,
+      "postCode": "33960",
+      "city": "PIRKKALA",
+      "website": null,
+      "employer": false
+    },
+    "financials": {
+      "businessId": "0825847-9",
+      "financialDate": "2025-12-31",
+      "registrationDate": "2026-06-26",
+      "balanceProxy": 1752282.85,
+      "balanceProxyPrev": 943089.51,
+      "changePct": 85.8,
+      "lineItems": 52
+    },
+    "score": 10,
+    "reasons": [
+      {
+        "label": "35 vuotta vanha",
+        "points": 3
+      },
+      {
+        "label": "Konsolidoituva toimiala: Sähköasennus",
+        "points": 2
+      },
+      {
+        "label": "Tilinpäätös rekisteröity juuri",
+        "points": 3
+      },
+      {
+        "label": "Tase kasvoi 86 %",
+        "points": 1
+      },
+      {
+        "label": "Pääkaupunkiseudun ulkopuolella",
+        "points": 1
+      }
+    ],
+    "age": 35,
+    "ownerNamed": false,
+    "matches": [
+      {
+        "buyer": {
+          "id": "kotera-group",
+          "name": "Kotera Group",
+          "kind": "serial acquirer",
+          "industries": [
+            "43220",
+            "43210",
+            "43290",
+            "43120",
+            "43991",
+            "33200",
+            "25110"
+          ],
+          "minSize": 1000000,
+          "maxSize": 40000000,
+          "evidence": "16 acquisitions since founding, revenue ~€185M in 2025 and ~€260M forecast for 2026, IPO targeted 2028-29. Buys industrial construction and installation businesses one at a time.",
+          "source": "Mergero opening deck, roll-up track record"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      }
+    ]
+  },
+  {
+    "company": {
+      "businessId": "2413382-8",
+      "name": "Sähkö Jeesi Oy",
+      "registered": "2011-06-23",
+      "industry": "43210",
+      "industryName": "Sähköasennus",
+      "renames": 0,
+      "postCode": "00550",
+      "city": "HELSINKI",
+      "website": "www.sahkojeesi.fi",
+      "employer": false
+    },
+    "financials": {
+      "businessId": "2413382-8",
+      "financialDate": "2025-12-31",
+      "registrationDate": "2026-08-15",
+      "balanceProxy": 1626875.59,
+      "balanceProxyPrev": 3885994.41,
+      "changePct": -58.1,
+      "lineItems": 51
+    },
+    "score": 10,
+    "reasons": [
+      {
+        "label": "15 vuotta vanha",
+        "points": 2
+      },
+      {
+        "label": "Konsolidoituva toimiala: Sähköasennus",
+        "points": 2
+      },
+      {
+        "label": "Tilinpäätös rekisteröity juuri",
+        "points": 3
+      },
+      {
+        "label": "Tase supistui -58 %",
+        "points": 2
+      },
+      {
+        "label": "Ei koskaan nimenmuutosta",
+        "points": 1
+      }
+    ],
+    "age": 15,
+    "ownerNamed": false,
+    "matches": [
+      {
+        "buyer": {
+          "id": "kotera-group",
+          "name": "Kotera Group",
+          "kind": "serial acquirer",
+          "industries": [
+            "43220",
+            "43210",
+            "43290",
+            "43120",
+            "43991",
+            "33200",
+            "25110"
+          ],
+          "minSize": 1000000,
+          "maxSize": 40000000,
+          "evidence": "16 acquisitions since founding, revenue ~€185M in 2025 and ~€260M forecast for 2026, IPO targeted 2028-29. Buys industrial construction and installation businesses one at a time.",
+          "source": "Mergero opening deck, roll-up track record"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      }
+    ]
+  },
+  {
+    "company": {
+      "businessId": "0750154-5",
+      "name": "Euro-neliö Oy",
+      "registered": "1978-03-17",
+      "industry": "43120",
+      "industryName": "Maarakennus",
+      "renames": 1,
+      "postCode": "94450",
+      "city": "KEMINMAA",
+      "website": "www.em2.fi",
+      "employer": false
+    },
+    "financials": {
+      "businessId": "0750154-5",
+      "financialDate": "2025-12-31",
+      "registrationDate": "2026-08-26",
+      "balanceProxy": 8567139.09,
+      "balanceProxyPrev": 8509291.25,
+      "changePct": 0.7,
+      "lineItems": 59
+    },
+    "score": 9,
+    "reasons": [
+      {
+        "label": "48 vuotta vanha",
+        "points": 3
+      },
+      {
+        "label": "Konsolidoituva toimiala: Maarakennus",
+        "points": 2
+      },
+      {
+        "label": "Tilinpäätös rekisteröity juuri",
+        "points": 3
+      },
+      {
+        "label": "Pääkaupunkiseudun ulkopuolella",
+        "points": 1
+      }
+    ],
+    "age": 48,
+    "ownerNamed": false,
+    "matches": [
+      {
+        "buyer": {
+          "id": "kotera-group",
+          "name": "Kotera Group",
+          "kind": "serial acquirer",
+          "industries": [
+            "43220",
+            "43210",
+            "43290",
+            "43120",
+            "43991",
+            "33200",
+            "25110"
+          ],
+          "minSize": 1000000,
+          "maxSize": 40000000,
+          "evidence": "16 acquisitions since founding, revenue ~€185M in 2025 and ~€260M forecast for 2026, IPO targeted 2028-29. Buys industrial construction and installation businesses one at a time.",
+          "source": "Mergero opening deck, roll-up track record"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      },
+      {
+        "buyer": {
+          "id": "no-dig-alliance",
+          "name": "No Dig Alliance",
+          "kind": "serial acquirer",
+          "industries": [
+            "43220",
+            "43290",
+            "43120",
+            "43110"
+          ],
+          "minSize": 500000,
+          "maxSize": 20000000,
+          "evidence": "Acquired Suomen Putkisto Palvelu in a Mergero 2026 transaction. Consolidates pipeline services.",
+          "source": "Mergero 2026 transactions"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      }
+    ]
+  },
+  {
+    "company": {
+      "businessId": "2047672-7",
+      "name": "Maansiirto Veljekset Rinta Oy",
+      "registered": "2006-08-01",
+      "industry": "43120",
+      "industryName": "Maarakennus",
+      "renames": 0,
+      "postCode": "60760",
+      "city": "POJANLUOMA",
+      "website": null,
+      "employer": false
+    },
+    "financials": {
+      "businessId": "2047672-7",
+      "financialDate": "2026-03-31",
+      "registrationDate": "2026-07-15",
+      "balanceProxy": 8508639.33,
+      "balanceProxyPrev": 9199832.44,
+      "changePct": -7.5,
+      "lineItems": 53
+    },
+    "score": 9,
+    "reasons": [
+      {
+        "label": "20 vuotta vanha",
+        "points": 2
+      },
+      {
+        "label": "Konsolidoituva toimiala: Maarakennus",
+        "points": 2
+      },
+      {
+        "label": "Tilinpäätös rekisteröity juuri",
+        "points": 3
+      },
+      {
+        "label": "Ei koskaan nimenmuutosta",
+        "points": 1
+      },
+      {
+        "label": "Pääkaupunkiseudun ulkopuolella",
+        "points": 1
+      }
+    ],
+    "age": 20,
+    "ownerNamed": false,
+    "matches": [
+      {
+        "buyer": {
+          "id": "kotera-group",
+          "name": "Kotera Group",
+          "kind": "serial acquirer",
+          "industries": [
+            "43220",
+            "43210",
+            "43290",
+            "43120",
+            "43991",
+            "33200",
+            "25110"
+          ],
+          "minSize": 1000000,
+          "maxSize": 40000000,
+          "evidence": "16 acquisitions since founding, revenue ~€185M in 2025 and ~€260M forecast for 2026, IPO targeted 2028-29. Buys industrial construction and installation businesses one at a time.",
+          "source": "Mergero opening deck, roll-up track record"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      },
+      {
+        "buyer": {
+          "id": "no-dig-alliance",
+          "name": "No Dig Alliance",
+          "kind": "serial acquirer",
+          "industries": [
+            "43220",
+            "43290",
+            "43120",
+            "43110"
+          ],
+          "minSize": 500000,
+          "maxSize": 20000000,
+          "evidence": "Acquired Suomen Putkisto Palvelu in a Mergero 2026 transaction. Consolidates pipeline services.",
+          "source": "Mergero 2026 transactions"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      }
+    ]
+  },
+  {
+    "company": {
+      "businessId": "0855592-4",
+      "name": "TP-Tools Oy",
+      "registered": "1991-08-14",
+      "industry": "25110",
+      "industryName": "Metallirakenteet",
+      "renames": 1,
+      "postCode": "37100",
+      "city": "NOKIA",
+      "website": null,
+      "employer": false
+    },
+    "financials": {
+      "businessId": "0855592-4",
+      "financialDate": "2025-12-31",
+      "registrationDate": "2026-06-26",
+      "balanceProxy": 6255633.23,
+      "balanceProxyPrev": 6477392.53,
+      "changePct": -3.4,
+      "lineItems": 51
+    },
+    "score": 9,
+    "reasons": [
+      {
+        "label": "35 vuotta vanha",
+        "points": 3
+      },
+      {
+        "label": "Konsolidoituva toimiala: Metallirakenteet",
+        "points": 2
+      },
+      {
+        "label": "Tilinpäätös rekisteröity juuri",
+        "points": 3
+      },
+      {
+        "label": "Pääkaupunkiseudun ulkopuolella",
+        "points": 1
+      }
+    ],
+    "age": 35,
+    "ownerNamed": false,
+    "matches": [
+      {
+        "buyer": {
+          "id": "sponsor-capital",
+          "name": "Sponsor Capital",
+          "kind": "private equity",
+          "industries": [
+            "81210",
+            "81220",
+            "81291",
+            "81100",
+            "62010",
+            "38110",
+            "38320",
+            "25110",
+            "25620"
+          ],
+          "minSize": 2000000,
+          "maxSize": 100000000,
+          "evidence": "Appears three times in Mergero public material: Saarni Cloud (software), Fluo Group (circular economy) and Fasteo Group (technical wholesale). Buys platforms and builds on them.",
+          "source": "Mergero opening deck, roll-up track record"
+        },
+        "why": "Sijoittaa tähän toimialaan ja kokoluokkaan."
+      },
+      {
+        "buyer": {
+          "id": "kotera-group",
+          "name": "Kotera Group",
+          "kind": "serial acquirer",
+          "industries": [
+            "43220",
+            "43210",
+            "43290",
+            "43120",
+            "43991",
+            "33200",
+            "25110"
+          ],
+          "minSize": 1000000,
+          "maxSize": 40000000,
+          "evidence": "16 acquisitions since founding, revenue ~€185M in 2025 and ~€260M forecast for 2026, IPO targeted 2028-29. Buys industrial construction and installation businesses one at a time.",
+          "source": "Mergero opening deck, roll-up track record"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      },
+      {
+        "buyer": {
+          "id": "teqnion",
+          "name": "Teqnion",
+          "kind": "serial acquirer",
+          "industries": [
+            "25110",
+            "25620",
+            "25730",
+            "25990",
+            "28990",
+            "33120",
+            "33200",
+            "22290",
+            "23610"
+          ],
+          "minSize": 1000000,
+          "maxSize": 30000000,
+          "evidence": "Listed Swedish acquirer of small industrial businesses with an eternal holding period, 36 companies owned. Bought Norband in a Mergero 2026 transaction, its route into Finland.",
+          "source": "Mergero 2026 transactions, Teqnion public reporting"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      }
+    ]
+  },
+  {
+    "company": {
+      "businessId": "2346391-3",
+      "name": "Maarakennus Velj. Jussila Oy",
+      "registered": "2011-03-31",
+      "industry": "43120",
+      "industryName": "Maarakennus",
+      "renames": 0,
+      "postCode": "61300",
+      "city": "KURIKKA",
+      "website": null,
+      "employer": false
+    },
+    "financials": {
+      "businessId": "2346391-3",
+      "financialDate": "2026-03-31",
+      "registrationDate": "2026-08-26",
+      "balanceProxy": 3436285.49,
+      "balanceProxyPrev": 3756881.78,
+      "changePct": -8.5,
+      "lineItems": 58
+    },
+    "score": 9,
+    "reasons": [
+      {
+        "label": "15 vuotta vanha",
+        "points": 2
+      },
+      {
+        "label": "Konsolidoituva toimiala: Maarakennus",
+        "points": 2
+      },
+      {
+        "label": "Tilinpäätös rekisteröity juuri",
+        "points": 3
+      },
+      {
+        "label": "Ei koskaan nimenmuutosta",
+        "points": 1
+      },
+      {
+        "label": "Pääkaupunkiseudun ulkopuolella",
+        "points": 1
+      }
+    ],
+    "age": 15,
+    "ownerNamed": false,
+    "matches": [
+      {
+        "buyer": {
+          "id": "kotera-group",
+          "name": "Kotera Group",
+          "kind": "serial acquirer",
+          "industries": [
+            "43220",
+            "43210",
+            "43290",
+            "43120",
+            "43991",
+            "33200",
+            "25110"
+          ],
+          "minSize": 1000000,
+          "maxSize": 40000000,
+          "evidence": "16 acquisitions since founding, revenue ~€185M in 2025 and ~€260M forecast for 2026, IPO targeted 2028-29. Buys industrial construction and installation businesses one at a time.",
+          "source": "Mergero opening deck, roll-up track record"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      },
+      {
+        "buyer": {
+          "id": "no-dig-alliance",
+          "name": "No Dig Alliance",
+          "kind": "serial acquirer",
+          "industries": [
+            "43220",
+            "43290",
+            "43120",
+            "43110"
+          ],
+          "minSize": 500000,
+          "maxSize": 20000000,
+          "evidence": "Acquired Suomen Putkisto Palvelu in a Mergero 2026 transaction. Consolidates pipeline services.",
+          "source": "Mergero 2026 transactions"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      }
+    ]
+  },
+  {
+    "company": {
+      "businessId": "0198507-5",
+      "name": "Södös gräv o. Transport Ab Oy",
+      "registered": "1976-03-19",
+      "industry": "43120",
+      "industryName": "Maarakennus",
+      "renames": 1,
+      "postCode": "68810",
+      "city": "YTTERESSE",
+      "website": "www.sodos.fi",
+      "employer": false
+    },
+    "financials": {
+      "businessId": "0198507-5",
+      "financialDate": "2026-04-30",
+      "registrationDate": "2026-08-13",
+      "balanceProxy": 3116132.48,
+      "balanceProxyPrev": 3012624.66,
+      "changePct": 3.4,
+      "lineItems": 50
+    },
+    "score": 9,
+    "reasons": [
+      {
+        "label": "50 vuotta vanha",
+        "points": 3
+      },
+      {
+        "label": "Konsolidoituva toimiala: Maarakennus",
+        "points": 2
+      },
+      {
+        "label": "Tilinpäätös rekisteröity juuri",
+        "points": 3
+      },
+      {
+        "label": "Pääkaupunkiseudun ulkopuolella",
+        "points": 1
+      }
+    ],
+    "age": 50,
+    "ownerNamed": false,
+    "matches": [
+      {
+        "buyer": {
+          "id": "kotera-group",
+          "name": "Kotera Group",
+          "kind": "serial acquirer",
+          "industries": [
+            "43220",
+            "43210",
+            "43290",
+            "43120",
+            "43991",
+            "33200",
+            "25110"
+          ],
+          "minSize": 1000000,
+          "maxSize": 40000000,
+          "evidence": "16 acquisitions since founding, revenue ~€185M in 2025 and ~€260M forecast for 2026, IPO targeted 2028-29. Buys industrial construction and installation businesses one at a time.",
+          "source": "Mergero opening deck, roll-up track record"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      },
+      {
+        "buyer": {
+          "id": "no-dig-alliance",
+          "name": "No Dig Alliance",
+          "kind": "serial acquirer",
+          "industries": [
+            "43220",
+            "43290",
+            "43120",
+            "43110"
+          ],
+          "minSize": 500000,
+          "maxSize": 20000000,
+          "evidence": "Acquired Suomen Putkisto Palvelu in a Mergero 2026 transaction. Consolidates pipeline services.",
+          "source": "Mergero 2026 transactions"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      }
+    ]
+  },
+  {
+    "company": {
+      "businessId": "0460433-8",
+      "name": "Oy Acu-Elektro Ab",
+      "registered": "1982-05-20",
+      "industry": "43210",
+      "industryName": "Sähköasennus",
+      "renames": 1,
+      "postCode": "68500",
+      "city": "KRUUNUPYY",
+      "website": "www.acu-elektro.fi",
+      "employer": false
+    },
+    "financials": {
+      "businessId": "0460433-8",
+      "financialDate": "2025-12-31",
+      "registrationDate": "2026-08-06",
+      "balanceProxy": 2873296.75,
+      "balanceProxyPrev": 2600136.82,
+      "changePct": 10.5,
+      "lineItems": 60
+    },
+    "score": 9,
+    "reasons": [
+      {
+        "label": "44 vuotta vanha",
+        "points": 3
+      },
+      {
+        "label": "Konsolidoituva toimiala: Sähköasennus",
+        "points": 2
+      },
+      {
+        "label": "Tilinpäätös rekisteröity juuri",
+        "points": 3
+      },
+      {
+        "label": "Pääkaupunkiseudun ulkopuolella",
+        "points": 1
+      }
+    ],
+    "age": 44,
+    "ownerNamed": false,
+    "matches": [
+      {
+        "buyer": {
+          "id": "kotera-group",
+          "name": "Kotera Group",
+          "kind": "serial acquirer",
+          "industries": [
+            "43220",
+            "43210",
+            "43290",
+            "43120",
+            "43991",
+            "33200",
+            "25110"
+          ],
+          "minSize": 1000000,
+          "maxSize": 40000000,
+          "evidence": "16 acquisitions since founding, revenue ~€185M in 2025 and ~€260M forecast for 2026, IPO targeted 2028-29. Buys industrial construction and installation businesses one at a time.",
+          "source": "Mergero opening deck, roll-up track record"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      }
+    ]
+  },
+  {
+    "company": {
+      "businessId": "2143843-1",
+      "name": "Transport Seppälä Oy",
+      "registered": "2007-10-04",
+      "industry": "49410",
+      "industryName": "Tieliikenteen tavarankuljetus",
+      "renames": 0,
+      "postCode": "62900",
+      "city": "ALAJÄRVI",
+      "website": null,
+      "employer": false
+    },
+    "financials": {
+      "businessId": "2143843-1",
+      "financialDate": "2026-02-28",
+      "registrationDate": "2026-06-19",
+      "balanceProxy": 2525044.02,
+      "balanceProxyPrev": 2301702.11,
+      "changePct": 9.7,
+      "lineItems": 43
+    },
+    "score": 9,
+    "reasons": [
+      {
+        "label": "19 vuotta vanha",
+        "points": 2
+      },
+      {
+        "label": "Konsolidoituva toimiala: Tieliikenteen tavarankuljetus",
+        "points": 2
+      },
+      {
+        "label": "Tilinpäätös rekisteröity juuri",
+        "points": 3
+      },
+      {
+        "label": "Ei koskaan nimenmuutosta",
+        "points": 1
+      },
+      {
+        "label": "Pääkaupunkiseudun ulkopuolella",
+        "points": 1
+      }
+    ],
+    "age": 19,
+    "ownerNamed": false,
+    "matches": [
+      {
+        "buyer": {
+          "id": "luo-logistics",
+          "name": "Luo Logistics Group",
+          "kind": "serial acquirer",
+          "industries": [
+            "49410",
+            "49310",
+            "52100",
+            "52240"
+          ],
+          "minSize": 1000000,
+          "maxSize": 40000000,
+          "evidence": "Merged Huhtala Logistics and Puura-Trans, later adding Weeman. Revenue ~€80M in 2025 and group value more than tripled. Backed by Lease Deal Group.",
+          "source": "Mergero opening deck, roll-up track record"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      }
+    ]
+  },
+  {
+    "company": {
+      "businessId": "2024138-9",
+      "name": "Piharatamo Oy",
+      "registered": "2006-03-09",
+      "industry": "49410",
+      "industryName": "Tieliikenteen tavarankuljetus",
+      "renames": 0,
+      "postCode": "01900",
+      "city": "NURMIJÄRVI",
+      "website": "www.piharatamo.fi",
+      "employer": false
+    },
+    "financials": {
+      "businessId": "2024138-9",
+      "financialDate": "2025-12-31",
+      "registrationDate": "2026-08-21",
+      "balanceProxy": 2460478.85,
+      "balanceProxyPrev": 2659622.42,
+      "changePct": -7.5,
+      "lineItems": 49
+    },
+    "score": 9,
+    "reasons": [
+      {
+        "label": "20 vuotta vanha",
+        "points": 2
+      },
+      {
+        "label": "Konsolidoituva toimiala: Tieliikenteen tavarankuljetus",
+        "points": 2
+      },
+      {
+        "label": "Tilinpäätös rekisteröity juuri",
+        "points": 3
+      },
+      {
+        "label": "Ei koskaan nimenmuutosta",
+        "points": 1
+      },
+      {
+        "label": "Pääkaupunkiseudun ulkopuolella",
+        "points": 1
+      }
+    ],
+    "age": 20,
+    "ownerNamed": false,
+    "matches": [
+      {
+        "buyer": {
+          "id": "luo-logistics",
+          "name": "Luo Logistics Group",
+          "kind": "serial acquirer",
+          "industries": [
+            "49410",
+            "49310",
+            "52100",
+            "52240"
+          ],
+          "minSize": 1000000,
+          "maxSize": 40000000,
+          "evidence": "Merged Huhtala Logistics and Puura-Trans, later adding Weeman. Revenue ~€80M in 2025 and group value more than tripled. Backed by Lease Deal Group.",
+          "source": "Mergero opening deck, roll-up track record"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      }
+    ]
+  },
+  {
+    "company": {
+      "businessId": "0511716-0",
+      "name": "Kuljetusliike Pietilä Oy",
+      "registered": "1983-06-02",
+      "industry": "49410",
+      "industryName": "Tieliikenteen tavarankuljetus",
+      "renames": 1,
+      "postCode": "27800",
+      "city": "SÄKYLÄ",
+      "website": "www.pietila.net",
+      "employer": false
+    },
+    "financials": {
+      "businessId": "0511716-0",
+      "financialDate": "2026-03-31",
+      "registrationDate": "2026-07-04",
+      "balanceProxy": 2448447.84,
+      "balanceProxyPrev": 2226902.41,
+      "changePct": 9.9,
+      "lineItems": 51
+    },
+    "score": 9,
+    "reasons": [
+      {
+        "label": "43 vuotta vanha",
+        "points": 3
+      },
+      {
+        "label": "Konsolidoituva toimiala: Tieliikenteen tavarankuljetus",
+        "points": 2
+      },
+      {
+        "label": "Tilinpäätös rekisteröity juuri",
+        "points": 3
+      },
+      {
+        "label": "Pääkaupunkiseudun ulkopuolella",
+        "points": 1
+      }
+    ],
+    "age": 43,
+    "ownerNamed": false,
+    "matches": [
+      {
+        "buyer": {
+          "id": "luo-logistics",
+          "name": "Luo Logistics Group",
+          "kind": "serial acquirer",
+          "industries": [
+            "49410",
+            "49310",
+            "52100",
+            "52240"
+          ],
+          "minSize": 1000000,
+          "maxSize": 40000000,
+          "evidence": "Merged Huhtala Logistics and Puura-Trans, later adding Weeman. Revenue ~€80M in 2025 and group value more than tripled. Backed by Lease Deal Group.",
+          "source": "Mergero opening deck, roll-up track record"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      }
+    ]
+  },
+  {
+    "company": {
+      "businessId": "2344543-2",
+      "name": "Sähkö Sipa Oy",
+      "registered": "2010-07-26",
+      "industry": "43210",
+      "industryName": "Sähköasennus",
+      "renames": 0,
+      "postCode": "60550",
+      "city": "NURMO",
+      "website": "www.sahkosipa.fi",
+      "employer": false
+    },
+    "financials": {
+      "businessId": "2344543-2",
+      "financialDate": "2025-12-31",
+      "registrationDate": "2026-07-02",
+      "balanceProxy": 2221859.2,
+      "balanceProxyPrev": 1879085.19,
+      "changePct": 18.2,
+      "lineItems": 56
+    },
+    "score": 9,
+    "reasons": [
+      {
+        "label": "16 vuotta vanha",
+        "points": 2
+      },
+      {
+        "label": "Konsolidoituva toimiala: Sähköasennus",
+        "points": 2
+      },
+      {
+        "label": "Tilinpäätös rekisteröity juuri",
+        "points": 3
+      },
+      {
+        "label": "Ei koskaan nimenmuutosta",
+        "points": 1
+      },
+      {
+        "label": "Pääkaupunkiseudun ulkopuolella",
+        "points": 1
+      }
+    ],
+    "age": 16,
+    "ownerNamed": false,
+    "matches": [
+      {
+        "buyer": {
+          "id": "kotera-group",
+          "name": "Kotera Group",
+          "kind": "serial acquirer",
+          "industries": [
+            "43220",
+            "43210",
+            "43290",
+            "43120",
+            "43991",
+            "33200",
+            "25110"
+          ],
+          "minSize": 1000000,
+          "maxSize": 40000000,
+          "evidence": "16 acquisitions since founding, revenue ~€185M in 2025 and ~€260M forecast for 2026, IPO targeted 2028-29. Buys industrial construction and installation businesses one at a time.",
+          "source": "Mergero opening deck, roll-up track record"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      }
+    ]
+  },
+  {
+    "company": {
+      "businessId": "2257740-9",
+      "name": "LT-Sähkö Oy",
+      "registered": "2009-03-26",
+      "industry": "43210",
+      "industryName": "Sähköasennus",
+      "renames": 0,
+      "postCode": "29600",
+      "city": "NOORMARKKU",
+      "website": null,
+      "employer": false
+    },
+    "financials": {
+      "businessId": "2257740-9",
+      "financialDate": "2025-12-31",
+      "registrationDate": "2026-06-18",
+      "balanceProxy": 2049646.87,
+      "balanceProxyPrev": 2187052.19,
+      "changePct": -6.3,
+      "lineItems": 51
+    },
+    "score": 9,
+    "reasons": [
+      {
+        "label": "17 vuotta vanha",
+        "points": 2
+      },
+      {
+        "label": "Konsolidoituva toimiala: Sähköasennus",
+        "points": 2
+      },
+      {
+        "label": "Tilinpäätös rekisteröity juuri",
+        "points": 3
+      },
+      {
+        "label": "Ei koskaan nimenmuutosta",
+        "points": 1
+      },
+      {
+        "label": "Pääkaupunkiseudun ulkopuolella",
+        "points": 1
+      }
+    ],
+    "age": 17,
+    "ownerNamed": false,
+    "matches": [
+      {
+        "buyer": {
+          "id": "kotera-group",
+          "name": "Kotera Group",
+          "kind": "serial acquirer",
+          "industries": [
+            "43220",
+            "43210",
+            "43290",
+            "43120",
+            "43991",
+            "33200",
+            "25110"
+          ],
+          "minSize": 1000000,
+          "maxSize": 40000000,
+          "evidence": "16 acquisitions since founding, revenue ~€185M in 2025 and ~€260M forecast for 2026, IPO targeted 2028-29. Buys industrial construction and installation businesses one at a time.",
+          "source": "Mergero opening deck, roll-up track record"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      }
+    ]
+  },
+  {
+    "company": {
+      "businessId": "0182884-6",
+      "name": "K.I.B. Trans Ab",
+      "registered": "1975-10-17",
+      "industry": "49410",
+      "industryName": "Tieliikenteen tavarankuljetus",
+      "renames": 1,
+      "postCode": "66900",
+      "city": "UUSIKAARLEPYY",
+      "website": "www.nykarlebud.fi",
+      "employer": false
+    },
+    "financials": {
+      "businessId": "0182884-6",
+      "financialDate": "2025-12-31",
+      "registrationDate": "2026-06-27",
+      "balanceProxy": 1952214.87,
+      "balanceProxyPrev": 1950398.16,
+      "changePct": 0.1,
+      "lineItems": 54
+    },
+    "score": 9,
+    "reasons": [
+      {
+        "label": "51 vuotta vanha",
+        "points": 3
+      },
+      {
+        "label": "Konsolidoituva toimiala: Tieliikenteen tavarankuljetus",
+        "points": 2
+      },
+      {
+        "label": "Tilinpäätös rekisteröity juuri",
+        "points": 3
+      },
+      {
+        "label": "Pääkaupunkiseudun ulkopuolella",
+        "points": 1
+      }
+    ],
+    "age": 51,
+    "ownerNamed": false,
+    "matches": [
+      {
+        "buyer": {
+          "id": "luo-logistics",
+          "name": "Luo Logistics Group",
+          "kind": "serial acquirer",
+          "industries": [
+            "49410",
+            "49310",
+            "52100",
+            "52240"
+          ],
+          "minSize": 1000000,
+          "maxSize": 40000000,
+          "evidence": "Merged Huhtala Logistics and Puura-Trans, later adding Weeman. Revenue ~€80M in 2025 and group value more than tripled. Backed by Lease Deal Group.",
+          "source": "Mergero opening deck, roll-up track record"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      }
+    ]
+  },
+  {
+    "company": {
+      "businessId": "0110154-0",
+      "name": "Konekauha Oy",
+      "registered": "1960-11-25",
+      "industry": "43120",
+      "industryName": "Maarakennus",
+      "renames": 0,
+      "postCode": "01760",
+      "city": "VANTAA",
+      "website": null,
+      "employer": false
+    },
+    "financials": {
+      "businessId": "0110154-0",
+      "financialDate": "2026-04-30",
+      "registrationDate": "2026-07-21",
+      "balanceProxy": 1820505.21,
+      "balanceProxyPrev": 1602062.85,
+      "changePct": 13.6,
+      "lineItems": 45
+    },
+    "score": 9,
+    "reasons": [
+      {
+        "label": "66 vuotta vanha",
+        "points": 3
+      },
+      {
+        "label": "Konsolidoituva toimiala: Maarakennus",
+        "points": 2
+      },
+      {
+        "label": "Tilinpäätös rekisteröity juuri",
+        "points": 3
+      },
+      {
+        "label": "Ei koskaan nimenmuutosta",
+        "points": 1
+      }
+    ],
+    "age": 66,
+    "ownerNamed": false,
+    "matches": [
+      {
+        "buyer": {
+          "id": "kotera-group",
+          "name": "Kotera Group",
+          "kind": "serial acquirer",
+          "industries": [
+            "43220",
+            "43210",
+            "43290",
+            "43120",
+            "43991",
+            "33200",
+            "25110"
+          ],
+          "minSize": 1000000,
+          "maxSize": 40000000,
+          "evidence": "16 acquisitions since founding, revenue ~€185M in 2025 and ~€260M forecast for 2026, IPO targeted 2028-29. Buys industrial construction and installation businesses one at a time.",
+          "source": "Mergero opening deck, roll-up track record"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      },
+      {
+        "buyer": {
+          "id": "no-dig-alliance",
+          "name": "No Dig Alliance",
+          "kind": "serial acquirer",
+          "industries": [
+            "43220",
+            "43290",
+            "43120",
+            "43110"
+          ],
+          "minSize": 500000,
+          "maxSize": 20000000,
+          "evidence": "Acquired Suomen Putkisto Palvelu in a Mergero 2026 transaction. Consolidates pipeline services.",
+          "source": "Mergero 2026 transactions"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      }
+    ]
+  },
+  {
+    "company": {
+      "businessId": "2333405-4",
+      "name": "TP-Putki Oy",
+      "registered": "2010-05-20",
+      "industry": "43220",
+      "industryName": "LVI-asennus",
+      "renames": 0,
+      "postCode": "05440",
+      "city": "HYVINKÄÄ",
+      "website": "www.tp-putki.fi",
+      "employer": false
+    },
+    "financials": {
+      "businessId": "2333405-4",
+      "financialDate": "2025-12-31",
+      "registrationDate": "2026-06-30",
+      "balanceProxy": 1691567.56,
+      "balanceProxyPrev": 1490268.64,
+      "changePct": 13.5,
+      "lineItems": 46
+    },
+    "score": 9,
+    "reasons": [
+      {
+        "label": "16 vuotta vanha",
+        "points": 2
+      },
+      {
+        "label": "Konsolidoituva toimiala: LVI-asennus",
+        "points": 2
+      },
+      {
+        "label": "Tilinpäätös rekisteröity juuri",
+        "points": 3
+      },
+      {
+        "label": "Ei koskaan nimenmuutosta",
+        "points": 1
+      },
+      {
+        "label": "Pääkaupunkiseudun ulkopuolella",
+        "points": 1
+      }
+    ],
+    "age": 16,
+    "ownerNamed": false,
+    "matches": [
+      {
+        "buyer": {
+          "id": "kotera-group",
+          "name": "Kotera Group",
+          "kind": "serial acquirer",
+          "industries": [
+            "43220",
+            "43210",
+            "43290",
+            "43120",
+            "43991",
+            "33200",
+            "25110"
+          ],
+          "minSize": 1000000,
+          "maxSize": 40000000,
+          "evidence": "16 acquisitions since founding, revenue ~€185M in 2025 and ~€260M forecast for 2026, IPO targeted 2028-29. Buys industrial construction and installation businesses one at a time.",
+          "source": "Mergero opening deck, roll-up track record"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      },
+      {
+        "buyer": {
+          "id": "no-dig-alliance",
+          "name": "No Dig Alliance",
+          "kind": "serial acquirer",
+          "industries": [
+            "43220",
+            "43290",
+            "43120",
+            "43110"
+          ],
+          "minSize": 500000,
+          "maxSize": 20000000,
+          "evidence": "Acquired Suomen Putkisto Palvelu in a Mergero 2026 transaction. Consolidates pipeline services.",
+          "source": "Mergero 2026 transactions"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      }
+    ]
+  },
+  {
+    "company": {
+      "businessId": "1463754-7",
+      "name": "SK Trans Ab Oy",
+      "registered": "1995-10-04",
+      "industry": "49410",
+      "industryName": "Tieliikenteen tavarankuljetus",
+      "renames": 1,
+      "postCode": "68500",
+      "city": "KRUUNUPYY",
+      "website": null,
+      "employer": false
+    },
+    "financials": {
+      "businessId": "1463754-7",
+      "financialDate": "2025-12-31",
+      "registrationDate": "2026-06-10",
+      "balanceProxy": 1665844.64,
+      "balanceProxyPrev": 1665753.14,
+      "changePct": 0,
+      "lineItems": 53
+    },
+    "score": 9,
+    "reasons": [
+      {
+        "label": "31 vuotta vanha",
+        "points": 3
+      },
+      {
+        "label": "Konsolidoituva toimiala: Tieliikenteen tavarankuljetus",
+        "points": 2
+      },
+      {
+        "label": "Tilinpäätös rekisteröity juuri",
+        "points": 3
+      },
+      {
+        "label": "Pääkaupunkiseudun ulkopuolella",
+        "points": 1
+      }
+    ],
+    "age": 31,
+    "ownerNamed": false,
+    "matches": [
+      {
+        "buyer": {
+          "id": "luo-logistics",
+          "name": "Luo Logistics Group",
+          "kind": "serial acquirer",
+          "industries": [
+            "49410",
+            "49310",
+            "52100",
+            "52240"
+          ],
+          "minSize": 1000000,
+          "maxSize": 40000000,
+          "evidence": "Merged Huhtala Logistics and Puura-Trans, later adding Weeman. Revenue ~€80M in 2025 and group value more than tripled. Backed by Lease Deal Group.",
+          "source": "Mergero opening deck, roll-up track record"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      }
+    ]
+  },
+  {
+    "company": {
+      "businessId": "0288777-6",
+      "name": "Maanrakennusliike Arno Ruusunlehti Oy",
+      "registered": "1975-12-19",
+      "industry": "43120",
+      "industryName": "Maarakennus",
+      "renames": 1,
+      "postCode": "02920",
+      "city": "ESPOO",
+      "website": "https://www.ruusunlehti.fi/",
+      "employer": false
+    },
+    "financials": {
+      "businessId": "0288777-6",
+      "financialDate": "2026-04-30",
+      "registrationDate": "2026-09-22",
+      "balanceProxy": 21901442.72,
+      "balanceProxyPrev": 20093678.98,
+      "changePct": 9,
+      "lineItems": 57
+    },
+    "score": 8,
+    "reasons": [
+      {
+        "label": "51 vuotta vanha",
+        "points": 3
+      },
+      {
+        "label": "Konsolidoituva toimiala: Maarakennus",
+        "points": 2
+      },
+      {
+        "label": "Tilinpäätös rekisteröity juuri",
+        "points": 3
+      }
+    ],
+    "age": 51,
+    "ownerNamed": false,
+    "matches": [
+      {
+        "buyer": {
+          "id": "kotera-group",
+          "name": "Kotera Group",
+          "kind": "serial acquirer",
+          "industries": [
+            "43220",
+            "43210",
+            "43290",
+            "43120",
+            "43991",
+            "33200",
+            "25110"
+          ],
+          "minSize": 1000000,
+          "maxSize": 40000000,
+          "evidence": "16 acquisitions since founding, revenue ~€185M in 2025 and ~€260M forecast for 2026, IPO targeted 2028-29. Buys industrial construction and installation businesses one at a time.",
+          "source": "Mergero opening deck, roll-up track record"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      }
+    ]
+  },
+  {
+    "company": {
+      "businessId": "2115053-4",
+      "name": "Kavika Oy",
+      "registered": "2007-05-14",
+      "industry": "25990",
+      "industryName": "Metallituotteet",
+      "renames": 1,
+      "postCode": "04430",
+      "city": "JÄRVENPÄÄ",
+      "website": "www.kavika.fi",
+      "employer": false
+    },
+    "financials": {
+      "businessId": "2115053-4",
+      "financialDate": "2026-05-31",
+      "registrationDate": "2026-08-22",
+      "balanceProxy": 5647320.5,
+      "balanceProxyPrev": 5525037.01,
+      "changePct": 2.2,
+      "lineItems": 56
+    },
+    "score": 8,
+    "reasons": [
+      {
+        "label": "19 vuotta vanha",
+        "points": 2
+      },
+      {
+        "label": "Konsolidoituva toimiala: Metallituotteet",
+        "points": 2
+      },
+      {
+        "label": "Tilinpäätös rekisteröity juuri",
+        "points": 3
+      },
+      {
+        "label": "Pääkaupunkiseudun ulkopuolella",
+        "points": 1
+      }
+    ],
+    "age": 19,
+    "ownerNamed": false,
+    "matches": [
+      {
+        "buyer": {
+          "id": "teqnion",
+          "name": "Teqnion",
+          "kind": "serial acquirer",
+          "industries": [
+            "25110",
+            "25620",
+            "25730",
+            "25990",
+            "28990",
+            "33120",
+            "33200",
+            "22290",
+            "23610"
+          ],
+          "minSize": 1000000,
+          "maxSize": 30000000,
+          "evidence": "Listed Swedish acquirer of small industrial businesses with an eternal holding period, 36 companies owned. Bought Norband in a Mergero 2026 transaction, its route into Finland.",
+          "source": "Mergero 2026 transactions, Teqnion public reporting"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      }
+    ]
+  },
+  {
+    "company": {
+      "businessId": "2092313-6",
+      "name": "Ilmastointitohtorit Oy",
+      "registered": "2007-02-06",
+      "industry": "81220",
+      "industryName": "Erikoissiivous",
+      "renames": 1,
+      "postCode": "66300",
+      "city": "JURVA",
+      "website": "www.ilmastointitohtorit.fi",
+      "employer": false
+    },
+    "financials": {
+      "businessId": "2092313-6",
+      "financialDate": "2025-12-31",
+      "registrationDate": "2026-06-04",
+      "balanceProxy": 5003366.67,
+      "balanceProxyPrev": 4539041.45,
+      "changePct": 10.2,
+      "lineItems": 61
+    },
+    "score": 8,
+    "reasons": [
+      {
+        "label": "19 vuotta vanha",
+        "points": 2
+      },
+      {
+        "label": "Konsolidoituva toimiala: Erikoissiivous",
+        "points": 2
+      },
+      {
+        "label": "Tilinpäätös rekisteröity juuri",
+        "points": 3
+      },
+      {
+        "label": "Pääkaupunkiseudun ulkopuolella",
+        "points": 1
+      }
+    ],
+    "age": 19,
+    "ownerNamed": false,
+    "matches": [
+      {
+        "buyer": {
+          "id": "sponsor-capital",
+          "name": "Sponsor Capital",
+          "kind": "private equity",
+          "industries": [
+            "81210",
+            "81220",
+            "81291",
+            "81100",
+            "62010",
+            "38110",
+            "38320",
+            "25110",
+            "25620"
+          ],
+          "minSize": 2000000,
+          "maxSize": 100000000,
+          "evidence": "Appears three times in Mergero public material: Saarni Cloud (software), Fluo Group (circular economy) and Fasteo Group (technical wholesale). Buys platforms and builds on them.",
+          "source": "Mergero opening deck, roll-up track record"
+        },
+        "why": "Sijoittaa tähän toimialaan ja kokoluokkaan."
+      },
+      {
+        "buyer": {
+          "id": "pika-puhtaus",
+          "name": "PiKa Puhtaus",
+          "kind": "serial acquirer",
+          "industries": [
+            "81210",
+            "81220",
+            "81291",
+            "81100"
+          ],
+          "minSize": 500000,
+          "maxSize": 15000000,
+          "evidence": "Acquired Clean-Kalle Ab Oy, a cleaning company founded in 1970, in a Mergero 2026 transaction. Same industry code as its target.",
+          "source": "Mergero 2026 transactions"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      }
+    ]
+  },
+  {
+    "company": {
+      "businessId": "2278401-0",
+      "name": "Scanding Oy",
+      "registered": "2009-08-05",
+      "industry": "43210",
+      "industryName": "Sähköasennus",
+      "renames": 1,
+      "postCode": "04320",
+      "city": "TUUSULA",
+      "website": null,
+      "employer": false
+    },
+    "financials": {
+      "businessId": "2278401-0",
+      "financialDate": "2025-12-31",
+      "registrationDate": "2026-06-11",
+      "balanceProxy": 1539735.79,
+      "balanceProxyPrev": 1556263.2,
+      "changePct": -1.1,
+      "lineItems": 56
+    },
+    "score": 8,
+    "reasons": [
+      {
+        "label": "17 vuotta vanha",
+        "points": 2
+      },
+      {
+        "label": "Konsolidoituva toimiala: Sähköasennus",
+        "points": 2
+      },
+      {
+        "label": "Tilinpäätös rekisteröity juuri",
+        "points": 3
+      },
+      {
+        "label": "Pääkaupunkiseudun ulkopuolella",
+        "points": 1
+      }
+    ],
+    "age": 17,
+    "ownerNamed": false,
+    "matches": [
+      {
+        "buyer": {
+          "id": "kotera-group",
+          "name": "Kotera Group",
+          "kind": "serial acquirer",
+          "industries": [
+            "43220",
+            "43210",
+            "43290",
+            "43120",
+            "43991",
+            "33200",
+            "25110"
+          ],
+          "minSize": 1000000,
+          "maxSize": 40000000,
+          "evidence": "16 acquisitions since founding, revenue ~€185M in 2025 and ~€260M forecast for 2026, IPO targeted 2028-29. Buys industrial construction and installation businesses one at a time.",
+          "source": "Mergero opening deck, roll-up track record"
+        },
+        "why": "Ostaa samalta toimialalta toistuvasti ja kokoluokka osuu."
+      }
+    ]
+  }
+]
