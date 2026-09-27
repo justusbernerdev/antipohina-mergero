@@ -532,7 +532,6 @@ export default function Dataflow() {
               ['flow', T.flowNav],
               ['engine', lang === 'fi' ? 'Moottori' : 'Engine'],
               ['countries', lang === 'fi' ? 'Maat' : 'Countries'],
-              ['api', 'API'],
               ['mcp', 'MCP'],
               ['selda', 'Selda'],
             ] as [PageKey, string][]

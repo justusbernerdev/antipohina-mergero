@@ -49,7 +49,12 @@ export const RES = `curl {SITE}/v1/runs/{RUN}/targets?limit=1
   "verify": "https://tietopalvelu.ytj.fi/yritys/0152307-3"
 }`
 
-const MCPCFG = `{
+const MCPCFG = `claude mcp add --transport http originaatio \\
+  {SITE}/mcp \\
+  --header "Authorization: Bearer <avain>"
+
+# tai mikä tahansa MCP-klientti, konfiguraationa:
+{
   "mcpServers": {
     "originaatio": {
       "type": "http",

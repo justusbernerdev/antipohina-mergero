@@ -2,7 +2,7 @@ import { httpRouter } from 'convex/server'
 import { httpAction } from './_generated/server'
 import { internal } from './_generated/api'
 import type { Id } from './_generated/dataModel'
-import { handle, TOOLS } from './mcp'
+import { handle, PROTOCOL, TOOLS } from './mcp'
 import { CONSOLIDATING } from './lib/industries'
 import { DEFAULTS, SUPPORTED } from './lib/criteria'
 
@@ -16,8 +16,10 @@ import { DEFAULTS, SUPPORTED } from './lib/criteria'
 
 const CORS = {
   'access-control-allow-origin': '*',
-  'access-control-allow-methods': 'GET, POST, OPTIONS',
-  'access-control-allow-headers': 'content-type, authorization, mcp-protocol-version, mcp-session-id',
+  'access-control-allow-methods': 'GET, POST, DELETE, OPTIONS',
+  'access-control-allow-headers': 'content-type, authorization, accept, mcp-protocol-version, mcp-session-id, last-event-id',
+  // Without this a browser-based client cannot read the session id it is supposed to echo back.
+  'access-control-expose-headers': 'mcp-session-id, mcp-protocol-version',
   'access-control-max-age': '86400',
 }
 
@@ -208,25 +210,60 @@ http.route({
       const out = (await Promise.all(body.map((m) => handle(ctx, m)))).filter((x) => x !== null)
       return out.length ? json(out) : new Response(null, { status: 202, headers: CORS })
     }
-    const res = await handle(ctx, body as Record<string, unknown>)
-    return res === null ? new Response(null, { status: 202, headers: CORS }) : json(res)
+    const msg = body as Record<string, unknown>
+    const res = await handle(ctx, msg)
+    if (res === null) return new Response(null, { status: 202, headers: CORS })
+
+    /**
+     * A session id on the initialize response, echoed by the client on every later request.
+     *
+     * This server keeps no per-session state, so the value is only an identifier; issuing one
+     * anyway is what several clients look for before they consider the handshake complete.
+     */
+    const extra: Record<string, string> =
+      msg.method === 'initialize'
+        ? { 'mcp-session-id': crypto.randomUUID(), 'mcp-protocol-version': PROTOCOL }
+        : {}
+    return json(res, 200, extra)
   }),
+})
+
+/**
+ * A client opening the server-to-client stream. There is nothing to stream: every reply here is
+ * the direct answer to a request, so the spec's answer is 405 rather than a body the client cannot
+ * parse. Returning JSON to an `Accept: text/event-stream` request is what leaves a client hanging.
+ */
+http.route({
+  path: '/mcp',
+  method: 'DELETE',
+  handler: httpAction(async () => new Response(null, { status: 204, headers: CORS })),
 })
 
 http.route({ path: '/mcp', method: 'OPTIONS', handler: preflight })
 
-/** A GET on the MCP endpoint is a browser or a curious human. Tell them what this is. */
+/**
+ * A GET is either a client opening the notification stream or a human in a browser.
+ *
+ * The first gets 405, because this server never initiates anything and a JSON body in place of an
+ * event stream is worse than a refusal. The second gets told what this endpoint is.
+ */
 http.route({
   path: '/mcp',
   method: 'GET',
-  handler: httpAction(async () =>
-    json({
+  handler: httpAction(async (_ctx, req) => {
+    if ((req.headers.get('accept') ?? '').includes('text/event-stream')) {
+      return new Response('Method Not Allowed: this server does not open a notification stream.', {
+        status: 405,
+        headers: { ...CORS, allow: 'POST, DELETE, OPTIONS' },
+      })
+    }
+    return json({
       name: 'originaatio',
       transport: 'streamable-http',
       usage: 'POST JSON-RPC 2.0 to this URL. Send initialize, then tools/list, then tools/call.',
       tools: TOOLS.map((t) => ({ name: t.name, description: t.description })),
-    }),
-  ),
+    })
+  }),
 })
 
 export default http

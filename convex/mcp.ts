@@ -15,7 +15,7 @@ import { DEFAULTS, SUPPORTED, CURRENCY } from './lib/criteria'
  * Transport is Streamable HTTP — a plain JSON-RPC POST. No SSE, because nothing here streams.
  */
 
-const PROTOCOL = '2025-06-18'
+export const PROTOCOL = '2025-06-18'
 
 const industryList = Object.entries(CONSOLIDATING)
   .map(([code, name]) => `${code} ${name}`)
