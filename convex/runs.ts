@@ -11,12 +11,25 @@ import { normalize } from './lib/criteria'
  * anyone actually use the MCP surface" with a query rather than an opinion.
  */
 
+/**
+ * Everything the working surface touches requires a signed-in person.
+ *
+ * The HTTP API and the MCP endpoint carry bearer keys instead, checked in `http.ts`; they reach
+ * these functions through `ctx.runQuery` from an action, where the check does not apply. Two doors,
+ * two locks, and neither one standing in for the other.
+ */
+async function requireUser(ctx: { auth: { getUserIdentity: () => Promise<unknown> } }) {
+  const identity = await ctx.auth.getUserIdentity()
+  if (!identity) throw new Error('unauthorized')
+}
+
 /** The seven boxes of the diagram, in order. Index 1–4 are the per-country lanes. */
 export const STAGE_KEYS = ['criteria', 'source', 'register', 'filings', 'financials', 'scoring', 'buyers']
 
 export const start = mutation({
   args: { criteria: v.optional(v.any()), source: v.optional(v.string()) },
   handler: async (ctx, args) => {
+    await requireUser(ctx)
     const criteria = normalize(args.criteria)
     const runId = await ctx.db.insert('runs', {
       criteria,
@@ -34,24 +47,33 @@ export const start = mutation({
 
 export const get = query({
   args: { runId: v.id('runs') },
-  handler: async (ctx, { runId }) => await ctx.db.get(runId),
+  handler: async (ctx, { runId }) => {
+    await requireUser(ctx)
+    return await ctx.db.get(runId)
+  },
 })
 
 /** What the diagram subscribes to when nobody has started anything yet. */
 export const latest = query({
   args: {},
-  handler: async (ctx) => await ctx.db.query('runs').withIndex('by_started').order('desc').first(),
+  handler: async (ctx) => {
+    await requireUser(ctx)
+    return await ctx.db.query('runs').withIndex('by_started').order('desc').first()
+  },
 })
 
 export const list = query({
   args: { limit: v.optional(v.number()) },
-  handler: async (ctx, { limit }) =>
-    await ctx.db.query('runs').withIndex('by_started').order('desc').take(Math.min(limit ?? 20, 100)),
+  handler: async (ctx, { limit }) => {
+    await requireUser(ctx)
+    return await ctx.db.query('runs').withIndex('by_started').order('desc').take(Math.min(limit ?? 20, 100))
+  },
 })
 
 export const targets = query({
   args: { runId: v.id('runs'), limit: v.optional(v.number()) },
   handler: async (ctx, { runId, limit }) => {
+    await requireUser(ctx)
     const rows = await ctx.db.query('targets').withIndex('by_run', (q) => q.eq('runId', runId)).collect()
     rows.sort((a, b) => b.score - a.score)
     return rows.slice(0, Math.min(limit ?? 100, 1000))
@@ -61,6 +83,7 @@ export const targets = query({
 export const target = query({
   args: { runId: v.id('runs'), businessId: v.string() },
   handler: async (ctx, { runId, businessId }) => {
+    await requireUser(ctx)
     const rows = await ctx.db.query('targets').withIndex('by_run', (q) => q.eq('runId', runId)).collect()
     return rows.find((r) => r.businessId === businessId) ?? null
   },
@@ -73,6 +96,7 @@ export const target = query({
  * no idea what a run is. The most recent run that contains them is the right answer, because that
  * is the freshest set of figures we have read about them.
  */
+/* Deliberately open: this is the one an owner follows a link into. */
 export const findTarget = query({
   args: { businessId: v.string() },
   handler: async (ctx, { businessId }) => {
@@ -87,6 +111,54 @@ export const findTarget = query({
 })
 
 /* ---------------------------------------------------------------- internal */
+
+/**
+ * The same three reads and the one write, without the session check.
+ *
+ * The HTTP surface authenticates with a bearer key in `http.ts` before it gets here, and an action
+ * carries no Clerk identity to hand on. Rather than weaken the public functions so both paths fit
+ * through one door, the machine path gets its own.
+ */
+export const startInternal = internalMutation({
+  args: { criteria: v.optional(v.any()), source: v.optional(v.string()) },
+  handler: async (ctx, args) => {
+    const criteria = normalize(args.criteria)
+    const runId = await ctx.db.insert('runs', {
+      criteria,
+      status: 'queued',
+      stages: STAGE_KEYS.map((key) => ({ key, in: 0, out: 0, state: 'waiting' })),
+      lanes: criteria.countries.map((country) => ({ country, v: [0, 0, 0, 0], buyers: 0, state: 'waiting' })),
+      source: args.source ?? 'api',
+      startedAt: Date.now(),
+      targetCount: 0,
+    })
+    await ctx.scheduler.runAfter(0, internal.pipeline.run, { runId })
+    return runId
+  },
+})
+
+export const listInternal = internalQuery({
+  args: { limit: v.optional(v.number()) },
+  handler: async (ctx, { limit }) =>
+    await ctx.db.query('runs').withIndex('by_started').order('desc').take(Math.min(limit ?? 20, 100)),
+})
+
+export const targetsInternal = internalQuery({
+  args: { runId: v.id('runs'), limit: v.optional(v.number()) },
+  handler: async (ctx, { runId, limit }) => {
+    const rows = await ctx.db.query('targets').withIndex('by_run', (q) => q.eq('runId', runId)).collect()
+    rows.sort((a, b) => b.score - a.score)
+    return rows.slice(0, Math.min(limit ?? 100, 1000))
+  },
+})
+
+export const targetInternal = internalQuery({
+  args: { runId: v.id('runs'), businessId: v.string() },
+  handler: async (ctx, { runId, businessId }) => {
+    const rows = await ctx.db.query('targets').withIndex('by_run', (q) => q.eq('runId', runId)).collect()
+    return rows.find((r) => r.businessId === businessId) ?? null
+  },
+})
 
 export const getInternal = internalQuery({
   args: { runId: v.id('runs') },

@@ -1,6 +1,6 @@
 import { v } from 'convex/values'
 import { action, internalMutation } from './_generated/server'
-import { api, internal } from './_generated/api'
+import { internal } from './_generated/api'
 import type { Id } from './_generated/dataModel'
 
 /**
@@ -74,10 +74,11 @@ const pick = (o: unknown, ...keys: string[]): string | undefined => {
 export const send = action({
   args: { runId: v.id('runs'), businessId: v.string() },
   handler: async (ctx, { runId, businessId }): Promise<{ ok: boolean; state: string; error?: string }> => {
+    if (!(await ctx.auth.getUserIdentity())) throw new Error('unauthorized')
     const projectId = process.env.SELDA_PROJECT
     if (!projectId) throw new Error('SELDA_PROJECT is not set on this deployment')
 
-    const row = await ctx.runQuery(api.runs.target, { runId, businessId })
+    const row = await ctx.runQuery(internal.runs.targetInternal, { runId, businessId })
     if (!row) throw new Error('not in this run')
 
     await ctx.runMutation(internal.selda.setState, { runId, businessId, patch: { state: 'sending' } })
@@ -148,9 +149,10 @@ export const send = action({
 export const pull = action({
   args: { runId: v.id('runs'), businessId: v.string() },
   handler: async (ctx, { runId, businessId }): Promise<{ ok: boolean; error?: string }> => {
+    if (!(await ctx.auth.getUserIdentity())) throw new Error('unauthorized')
     const projectId = process.env.SELDA_PROJECT
     if (!projectId) throw new Error('SELDA_PROJECT is not set on this deployment')
-    const row = await ctx.runQuery(api.runs.target, { runId, businessId })
+    const row = await ctx.runQuery(internal.runs.targetInternal, { runId, businessId })
     if (!row?.selda?.leadId) return { ok: false, error: 'not sent yet' }
 
     try {

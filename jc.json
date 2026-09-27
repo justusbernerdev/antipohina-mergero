@@ -1,0 +1,1 @@
+{"object":"jwt_template","id":"jtmp_3JuQH46riieTCLqgMAlFqwwIaVk","name":"convex","claims":{},"lifetime":3600,"allowed_clock_skew":5,"custom_signing_key":false,"signing_algorithm":"RS256","created_at":1790508382874,"updated_at":1790508382874}

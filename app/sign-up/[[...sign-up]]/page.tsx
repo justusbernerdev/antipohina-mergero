@@ -1,21 +1,19 @@
 'use client'
 
-import { SignIn } from '@clerk/nextjs'
+import { SignUp } from '@clerk/nextjs'
 
 /**
- * The door, in the same building.
+ * Registration, open for now.
  *
- * Clerk's own component does the work, because what a login must never be is homemade. What it
- * looks like is another matter: an unstyled widget on a white page tells a first-time visitor they
- * have arrived somewhere generic, so the frame, the type and the accent are the engine's.
- *
- * The line under the title is load-bearing. It says which half of this product is gated and which
- * half is not, before anyone has signed in to find out.
+ * Deliberately unrestricted while the engine is being shown around: the cost of a stranger seeing
+ * the list is low, and the cost of a demo blocked on an invitation is not. Narrowing it later is
+ * one rule in the middleware and one setting in Clerk, and the note below says so out loud rather
+ * than leaving anyone to assume this is how it will stay.
  */
 
 const ACC = '#0028ff'
 
-export default function SignInPage() {
+export default function SignUpPage() {
   return (
     <main
       style={{
@@ -71,15 +69,14 @@ export default function SignInPage() {
               margin: '10px 0 14px',
             }}
           >
-            Ketkä omistajat ovat juuri nyt lähellä päätöstä.
+            Luo tunnus ja katso mitä moottori löysi.
           </h1>
           <p style={{ fontSize: 13.5, lineHeight: 1.6, color: '#555', margin: 0, textWrap: 'pretty' }}>
-            Moottori ja sen löydöt ovat kirjautumisen takana, koska ne ovat lista nimettyjä
-            yksityisiä yhtiöitä ja perustelut jokaisen kohdalle. Omistajalle lähtevä sivu on
-            julkinen eikä vaadi tiliä.
+            Rekisteröityminen on toistaiseksi auki kaikille. Sisällä on lista nimettyjä yksityisiä
+            yhtiöitä ja perustelut jokaisen kohdalle, joten rajaus tulee myöhemmin.
           </p>
           <div style={{ marginTop: 20, display: 'grid', gap: 6, fontSize: 12.5, color: '#555' }}>
-            {['Suomi ja Norja ajossa', 'Julkinen data, 0 € hankintahinta', 'Mikään ei lähde ilman ihmistä'].map(
+            {['Sähköposti riittää', 'Suomi ja Norja ajossa', 'Mikään ei lähde ilman ihmistä'].map(
               (line) => (
                 <div key={line} style={{ display: 'flex', gap: 9 }}>
                   <span style={{ color: ACC, fontWeight: 600 }}>✓</span>
@@ -88,17 +85,10 @@ export default function SignInPage() {
               ),
             )}
           </div>
-          <p style={{ marginTop: 18, fontSize: 12.5, color: '#8a8a8a' }}>
-            Ei vielä tunnusta?{' '}
-            <a href="/sign-up" style={{ color: ACC, fontWeight: 600 }}>
-              Rekisteröidy
-            </a>
-            . Auki toistaiseksi kaikille.
-          </p>
         </div>
 
         <div style={{ justifySelf: 'center' }}>
-          <SignIn
+          <SignUp
             appearance={{
               variables: {
                 colorPrimary: ACC,

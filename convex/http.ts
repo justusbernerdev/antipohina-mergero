@@ -1,6 +1,6 @@
 import { httpRouter } from 'convex/server'
 import { httpAction } from './_generated/server'
-import { api, internal } from './_generated/api'
+import { internal } from './_generated/api'
 import type { Id } from './_generated/dataModel'
 import { handle, TOOLS } from './mcp'
 import { CONSOLIDATING } from './lib/industries'
@@ -79,7 +79,7 @@ http.route({
       /* an empty body means "use the defaults", which is a legitimate request */
     }
     try {
-      const runId = await ctx.runMutation(api.runs.start, { criteria: body, source: 'api' })
+      const runId = await ctx.runMutation(internal.runs.startInternal, { criteria: body, source: 'api' })
       const run = await ctx.runQuery(internal.runs.getInternal, { runId })
       return json({ run_id: runId, status: 'queued', criteria: run?.criteria, poll: `/v1/runs/${runId}` }, 202)
     } catch (err) {
@@ -95,7 +95,7 @@ http.route({
   method: 'GET',
   handler: httpAction(async (ctx, req) => {
     if (!(await authed(ctx, req))) return json({ error: 'unauthorized' }, 401)
-    const runs = await ctx.runQuery(api.runs.list, { limit: 20 })
+    const runs = await ctx.runQuery(internal.runs.listInternal, { limit: 20 })
     return json(
       runs.map((r) => ({
         run_id: r._id,
@@ -156,7 +156,7 @@ http.route({
 
     const limit = Number(url.searchParams.get('limit') ?? 100)
     const country = url.searchParams.get('country')
-    let rows = await ctx.runQuery(api.runs.targets, { runId, limit: 1000 })
+    let rows = await ctx.runQuery(internal.runs.targetsInternal, { runId, limit: 1000 })
     if (country) rows = rows.filter((r) => r.country === country.toUpperCase())
     return json({
       run_id: runId,

@@ -82,6 +82,21 @@ export const run = internalAction({
       )
       const kept = perCountry.flatMap((r) => r.rows)
       const totals = (i: number) => perCountry.reduce((s, r) => s + r.counts[i], 0)
+
+      /**
+       * The lanes carry the per-country truth; these are the sums across them. They exist because
+       * the API hands out a `stages` array, and an array of zeros beside lanes full of real numbers
+       * is worse than no array at all.
+       */
+      const spans: [string, number, number][] = [
+        ['register', 0, 1],
+        ['filings', 1, 2],
+        ['financials', 2, 3],
+      ]
+      for (const [key, from, to] of spans) {
+        await ctx.runMutation(internal.runs.setStage, { runId, key, in: totals(from), out: totals(to), state: 'done' })
+      }
+
       await ctx.runMutation(internal.runs.setStage, {
         runId,
         key: 'scoring',

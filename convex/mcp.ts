@@ -1,4 +1,4 @@
-import { api, internal } from './_generated/api'
+import { internal } from './_generated/api'
 import type { ActionCtx } from './_generated/server'
 import type { Id } from './_generated/dataModel'
 import { CONSOLIDATING } from './lib/industries'
@@ -101,7 +101,7 @@ const money = (n: number, c: string) =>
 
 async function call(ctx: ActionCtx, name: string, args: Record<string, unknown>): Promise<string> {
   if (name === 'start_run') {
-    const runId = await ctx.runMutation(api.runs.start, { criteria: args, source: 'mcp' })
+    const runId = await ctx.runMutation(internal.runs.startInternal, { criteria: args, source: 'mcp' })
     const run = await ctx.runQuery(internal.runs.getInternal, { runId })
     return JSON.stringify(
       {
@@ -142,7 +142,7 @@ async function call(ctx: ActionCtx, name: string, args: Record<string, unknown>)
   }
 
   if (name === 'get_targets') {
-    const rows = await ctx.runQuery(api.runs.targets, { runId: args.run as Id<'runs'>, limit: 1000 })
+    const rows = await ctx.runQuery(internal.runs.targetsInternal, { runId: args.run as Id<'runs'>, limit: 1000 })
     let list = rows
     if (args.country) list = list.filter((r) => r.country === String(args.country).toUpperCase())
     if (args.industry) list = list.filter((r) => r.industry === String(args.industry))
@@ -169,7 +169,7 @@ async function call(ctx: ActionCtx, name: string, args: Record<string, unknown>)
   }
 
   if (name === 'explain') {
-    const row = await ctx.runQuery(api.runs.target, {
+    const row = await ctx.runQuery(internal.runs.targetInternal, {
       runId: args.run as Id<'runs'>,
       businessId: String(args.business_id),
     })
