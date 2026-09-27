@@ -11,10 +11,11 @@ export default function SignInPage() {
       style={{ display: 'grid', placeItems: 'center', minHeight: '100vh', gap: 28 }}
     >
       <div style={{ textAlign: 'center' }}>
-        <span className="kick">antipöhinä × Mergero</span>
+        <span className="kick">Originaatio × Mergero</span>
         <h1 style={{ margin: '8px 0 6px' }}>Off-market origination</h1>
         <p className="dim" style={{ margin: 0 }}>
-          Sisäinen näkymä. Omistajalle lähtevä sivu on julkinen eikä vaadi kirjautumista.
+          Moottori ja sen löydöt ovat kirjautumisen takana. Omistajalle lähtevä sivu on julkinen
+          eikä vaadi tiliä.
         </p>
       </div>
       <SignIn />

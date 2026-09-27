@@ -2,32 +2,26 @@ import { clerkMiddleware, createRouteMatcher } from '@clerk/nextjs/server'
 import { NextResponse } from 'next/server'
 
 /**
- * The web views are open; the engine is not.
+ * The engine is behind a login. The page an owner receives is not.
  *
- * Protection sits where the work and the data are — a bearer key on the Convex API and on the MCP
- * endpoint. Putting a second login in front of the pages would protect nothing that matters and
- * would break the two things that have to work without one:
+ * That split is the product decision, not a configuration detail. `/dataflow` shows who is close
+ * to a succession decision, what the buyer book says about them, and what an advisor should ask
+ * next — a list of named private companies and the reasoning behind each. It is Mergero's working
+ * surface and it is gated.
  *
  * `/kohde/*` is the artefact, sent out of the building. An owner who has to create an account to
  * see a figure about their own business will not, and that defeats the entire point of the page.
  *
- * `/dataflow` is the engine itself. Starting a run from it is a browser calling the same mutation
- * the API calls, so if that needs restricting it gets restricted in Convex, not here.
+ * `/api/selda` is the webhook, authenticated with an HMAC signature over the body: the right
+ * mechanism for a machine, where a session cookie is not.
  *
- * `/api/selda` is the webhook, authenticated with an HMAC signature over the body — the right
- * mechanism for a machine; a session cookie is not.
+ * The REST API and the MCP endpoint live on Convex and carry their own bearer keys. A browser
+ * session and a machine key are different problems and neither stands in for the other.
  *
  * When Clerk keys are absent the middleware steps aside entirely, so `git clone && npm run dev`
  * works with nothing to sign up for.
  */
-const isPublic = createRouteMatcher([
-  '/',
-  '/kohde/(.*)',
-  '/dataflow(.*)',
-  '/api/selda',
-  '/sign-in(.*)',
-  '/sign-up(.*)',
-])
+const isPublic = createRouteMatcher(['/kohde/(.*)', '/api/selda', '/sign-in(.*)', '/sign-up(.*)'])
 
 const clerkConfigured = Boolean(
   process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY && process.env.CLERK_SECRET_KEY,
