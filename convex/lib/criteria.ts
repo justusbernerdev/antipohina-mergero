@@ -18,19 +18,29 @@ export type Criteria = {
   limit: number
 }
 
+/**
+ * Countries a run can actually be asked for.
+ *
+ * Denmark is built and tested (`sources/dk.ts`) and is deliberately not here yet. Its stream and
+ * its figures are free and work; its industry code is not in the filing and the free CVR lookup
+ * quota runs out inside one run. One credential away, not one build away, so offering it would
+ * mean offering a run that returns nothing.
+ */
 export const SUPPORTED = ['FI', 'NO'] as const
 
 /** Local currency, because a size threshold stated in the wrong one is worse than none. */
-export const CURRENCY: Record<string, string> = { FI: 'EUR', NO: 'NOK' }
+export const CURRENCY: Record<string, string> = { FI: 'EUR', NO: 'NOK', DK: 'DKK' }
 
 /** Units of local currency per euro, for comparing a target against a buyer book stated in euros. */
-export const PER_EURO: Record<string, number> = { FI: 1, NO: 11.7 }
+export const PER_EURO: Record<string, number> = { FI: 1, NO: 11.7, DK: 7.46 }
 
 export const DEFAULT_MIN_SIZE: Record<string, number> = {
   /** Balance sheet total. A size proxy, not revenue: a Finnish micro company publishes neither. */
   FI: 1_500_000,
   /** Revenue, which Norway publishes directly. Roughly the same company at 11.7 NOK to the euro. */
   NO: 15_000_000,
+  /** Balance sheet total again, since a small Danish company may omit revenue as a Finnish one does. */
+  DK: 11_000_000,
 }
 
 export const DEFAULTS: Criteria = {

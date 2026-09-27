@@ -66,8 +66,8 @@ export const TOOLS = [
   {
     name: 'get_targets',
     description:
-      'The scored owners a finished run produced, highest score first, with the buyers whose criteria they meet ' +
-      'and the draft opening message. Nothing is ever sent: every row is awaiting_human.',
+      'The scored owners a finished run produced, highest score first, with the buyers whose criteria they meet. ' +
+      'Use explain for the full analysis of one company. Nothing is ever sent: every row is awaiting_human.',
     inputSchema: {
       type: 'object',
       properties: {
@@ -82,8 +82,9 @@ export const TOOLS = [
   {
     name: 'explain',
     description:
-      'Why one company surfaced: every scoring reason with its points, the figures read from its own filing, ' +
-      'the matching buyers with the public evidence behind each, and a register link to verify it.',
+      'The full analysis of one company: every figure with the basis it rests on, every scoring reason with its ' +
+      'points, the matching buyers with the public evidence behind each, what public data cannot tell you here, ' +
+      'and the questions still open. Facts only — writing to the owner is the advisor\'s job, not the engine\'s.',
     inputSchema: {
       type: 'object',
       properties: {
@@ -190,9 +191,12 @@ async function call(ctx: ActionCtx, name: string, args: Record<string, unknown>)
           registered_at: row.filedAt,
         },
         score: row.score,
+        headline: row.analysis.headline,
+        findings: row.analysis.facts.map((f) => ({ [f.label]: f.value, basis: f.basis })),
         reasons: row.reasons.map((r) => `${r.label} (+${r.points})`),
         buyers: row.buyers.map((b) => ({ name: b.name, kind: b.kind, why: b.why, evidence: b.evidence, source: b.source })),
-        draft: row.draft,
+        limits: row.analysis.limits,
+        open_questions: row.analysis.open,
         status: row.status,
         verify: row.verifyUrl,
         currency: CURRENCY[row.country],

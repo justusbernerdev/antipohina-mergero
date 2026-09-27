@@ -177,7 +177,7 @@ http.route({
         score: r.score,
         reason: r.reasons.map((x) => x.label),
         buyers: r.buyers.map((b) => b.name),
-        draft: r.draft,
+        analysis: r.analysis,
         status: r.status,
         verify: r.verifyUrl,
       })),

@@ -8,12 +8,13 @@
  * @module
  */
 
+import type * as admin from "../admin.js";
 import type * as http from "../http.js";
 import type * as keys from "../keys.js";
+import type * as lib_analysis from "../lib/analysis.js";
 import type * as lib_buyers from "../lib/buyers.js";
 import type * as lib_consolidation from "../lib/consolidation.js";
 import type * as lib_criteria from "../lib/criteria.js";
-import type * as lib_draft from "../lib/draft.js";
 import type * as lib_industries from "../lib/industries.js";
 import type * as lib_net from "../lib/net.js";
 import type * as lib_score from "../lib/score.js";
@@ -22,6 +23,8 @@ import type * as lib_xbrl from "../lib/xbrl.js";
 import type * as mcp from "../mcp.js";
 import type * as pipeline from "../pipeline.js";
 import type * as runs from "../runs.js";
+import type * as selda from "../selda.js";
+import type * as sources_dk from "../sources/dk.js";
 import type * as sources_fi from "../sources/fi.js";
 import type * as sources_no from "../sources/no.js";
 
@@ -32,12 +35,13 @@ import type {
 } from "convex/server";
 
 declare const fullApi: ApiFromModules<{
+  admin: typeof admin;
   http: typeof http;
   keys: typeof keys;
+  "lib/analysis": typeof lib_analysis;
   "lib/buyers": typeof lib_buyers;
   "lib/consolidation": typeof lib_consolidation;
   "lib/criteria": typeof lib_criteria;
-  "lib/draft": typeof lib_draft;
   "lib/industries": typeof lib_industries;
   "lib/net": typeof lib_net;
   "lib/score": typeof lib_score;
@@ -46,6 +50,8 @@ declare const fullApi: ApiFromModules<{
   mcp: typeof mcp;
   pipeline: typeof pipeline;
   runs: typeof runs;
+  selda: typeof selda;
+  "sources/dk": typeof sources_dk;
   "sources/fi": typeof sources_fi;
   "sources/no": typeof sources_no;
 }>;

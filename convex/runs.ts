@@ -134,6 +134,7 @@ export const setLane = internalMutation({
     state: v.optional(v.string()),
     ms: v.optional(v.number()),
     note: v.optional(v.string()),
+    phase: v.optional(v.string()),
   },
   handler: async (ctx, { runId, country, ...rest }) => {
     const run = await ctx.db.get(runId)
@@ -147,6 +148,7 @@ export const setLane = internalMutation({
             state: rest.state ?? l.state,
             ms: rest.ms ?? l.ms,
             note: rest.note ?? l.note,
+            phase: rest.phase ?? l.phase,
           }
         : l,
     )

@@ -78,18 +78,34 @@ export async function companies(
   minAgeYears: number,
   excludeHolding: boolean,
   asOf: Date,
+  /**
+   * Called after every industry, because PRH answers a page in about three seconds and a run over
+   * fifty industries would otherwise show nothing at all for two minutes. A lane that counts up is
+   * the difference between "working" and "broken" to anyone watching.
+   */
+  onProgress?: (universe: number, kept: number, done: number, total: number) => void,
 ): Promise<{ universe: number; rows: Company[] }> {
   const cutoff = `${asOf.getFullYear() - minAgeYears}-12-31`
   let universe = 0
   const rows: Company[] = []
 
   // One industry at a time, but the pages within an industry go out together.
+  let done = 0
   for (const industry of industries) {
     const base = `${YTJ}/companies?mainBusinessLine=${industry}&companyForm=${OY}&registrationDateStart=1900-01-01&registrationDateEnd=${cutoff}`
-    const first = await fetchJson<{ totalResults: number; companies: PrhCompany[] }>(`${base}&page=1`)
+    let first: { totalResults: number; companies: PrhCompany[] }
+    try {
+      first = await fetchJson<{ totalResults: number; companies: PrhCompany[] }>(`${base}&page=1`)
+    } catch {
+      onProgress?.(universe, rows.length, ++done, industries.length)
+      continue
+    }
     const total = first.totalResults ?? 0
     universe += total
-    if (!total) continue
+    if (!total) {
+      onProgress?.(universe, rows.length, ++done, industries.length)
+      continue
+    }
 
     const pages = Math.min(Math.ceil(total / 100), 200)
     const batches: PrhCompany[][] = [first.companies ?? []]
@@ -118,6 +134,7 @@ export async function companies(
         rows.push(company)
       }
     }
+    onProgress?.(universe, rows.length, ++done, industries.length)
   }
 
   return { universe, rows }

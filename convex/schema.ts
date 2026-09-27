@@ -19,6 +19,8 @@ const lane = v.object({
   state: v.string(),
   ms: v.optional(v.number()),
   note: v.optional(v.string()),
+  /** What this lane is doing right now, written while it works so the view is not a blank box. */
+  phase: v.optional(v.string()),
 })
 
 const stage = v.object({
@@ -71,9 +73,31 @@ export default defineSchema({
     score: v.number(),
     reasons: v.array(v.object({ label: v.string(), points: v.number() })),
     buyers: v.array(v.object({ id: v.string(), name: v.string(), kind: v.string(), why: v.string(), evidence: v.string(), source: v.string() })),
-    draft: v.string(),
+    analysis: v.object({
+      headline: v.string(),
+      facts: v.array(v.object({ label: v.string(), value: v.string(), basis: v.optional(v.string()) })),
+      limits: v.array(v.string()),
+      open: v.array(v.string()),
+    }),
     verifyUrl: v.string(),
     status: v.string(),
+    /**
+     * What the contact layer did with this row. Absent until someone hands it over, because the
+     * engine's job ends at "this company, and here is why".
+     */
+    selda: v.optional(
+      v.object({
+        state: v.optional(v.string()),
+        leadId: v.optional(v.string()),
+        sentAt: v.optional(v.number()),
+        contact: v.optional(v.string()),
+        contactTitle: v.optional(v.string()),
+        contactEmail: v.optional(v.string()),
+        draft: v.optional(v.string()),
+        error: v.optional(v.string()),
+        raw: v.optional(v.string()),
+      }),
+    ),
   })
     .index('by_run', ['runId'])
     .index('by_run_score', ['runId', 'score']),

@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect, useRef, useState, type ReactNode } from 'react'
-import { useMutation, useQuery } from 'convex/react'
+import { useAction, useMutation, useQuery } from 'convex/react'
 import { api } from '../../convex/_generated/api'
 import type { Id } from '../../convex/_generated/dataModel'
 import { ACC, CHIPS, COVERAGE, INS, L, LANES, OUTS, fmt } from './data'
@@ -70,6 +70,27 @@ export default function Dataflow() {
   const targets = useQuery(api.runs.targets, run ? { runId: run._id, limit: 300 } : 'skip')
   const history = useQuery(api.runs.list, { limit: 8 })
   const startRun = useMutation(api.runs.start)
+  const seldaSend = useAction(api.selda.send)
+  const seldaPull = useAction(api.selda.pull)
+  const [handing, setHanding] = useState<string | null>(null)
+
+  /**
+   * Hand one lead to the contact layer and read back what it made of it.
+   *
+   * The engine stops at "this company, and here is why". Who to write to and in what words is
+   * Selda's job, and whether anything is sent is a person's. The pull is here so the loop closes on
+   * screen rather than in another tab.
+   */
+  async function handOver(businessId: string) {
+    if (!run) return
+    setHanding(businessId)
+    try {
+      await seldaSend({ runId: run._id, businessId })
+      await seldaPull({ runId: run._id, businessId })
+    } finally {
+      setHanding(null)
+    }
+  }
 
   // The dots keep moving while a run is working; a finished diagram is still.
   const live = run?.status === 'running' || run?.status === 'queued'
@@ -93,7 +114,9 @@ export default function Dataflow() {
   const li = lang === 'fi' ? 0 : 1
 
   /** What the next run will ask for. This object is the API request body, verbatim. */
-  const codes = PRESETS.find((p) => p.key === preset)?.codes ?? []
+  const codes = preset.startsWith('custom:')
+    ? [preset.slice(7)]
+    : (PRESETS.find((p) => p.key === preset)?.codes ?? [])
   const criteria = {
     countries: cs,
     ...(codes.length ? { industries: codes } : {}),
@@ -108,6 +131,23 @@ export default function Dataflow() {
   const CS = live && run ? run.criteria.countries : cs
   const laneOf = (c: string) => run?.lanes.find((l) => l.country === c) ?? null
   const stageOf = (k: string) => run?.stages.find((s) => s.key === k) ?? null
+
+  /**
+   * One target back into criteria.
+   *
+   * This is the loop that makes the engine usable rather than a one-shot: an advisor who finds a
+   * company worth a call wants the other twenty like it, and "like it" means the same industry and
+   * roughly the same size, which are both already on the row.
+   */
+  function iterateFrom(industry: string, country: string, size: number) {
+    setPreset('custom:' + industry)
+    if (!cs.includes(country)) setCs([...cs, country])
+    const floor = Math.max(0, Math.round((size * 0.5) / 1e5) * 1e5)
+    if (country === 'NO') setMinNO(floor)
+    else setMinFI(floor)
+    setPage('flow')
+    setSel(0)
+  }
 
   async function go() {
     setBusy(true)
@@ -144,6 +184,12 @@ export default function Dataflow() {
     const LY = n === 1 ? [190] : n === 2 ? [132, 248] : [78, 190, 302]
     const els: ReactNode[] = []
     const LINE = '#e4e4e4'
+    /**
+     * A box with nothing in it yet. PRH answers a page in about three seconds, so Finland's first
+     * counter can be a minute away while Norway is already finished — and a static dot in that gap
+     * reads as a broken lane rather than a slow register.
+     */
+    const waiting = live ? '·'.repeat(1 + (Math.floor(t * 2.5) % 3)) : '—'
     const fade = (q: number) => Math.max(0, Math.min(1, q * 6, (1 - q) * 6))
     const bz = (q: number, a: number, b: number, c: number, d: number) => {
       const u = 1 - q
@@ -292,7 +338,7 @@ export default function Dataflow() {
       const lane = laneOf(code)
       for (let i = 1; i < 5; i++) {
         const value = lane?.v[i - 1] ?? 0
-        const label = value > 0 ? fmt(value) : lane?.state === 'running' ? '·' : '—'
+        const label = value > 0 ? fmt(value) : lane?.state === 'running' ? waiting : '—'
         const key = `l:${code}:${i}`
         if (!multi) txt('nn' + i, cx(i), ly - LH / 2 - 12, '0' + i)
         els.push(
@@ -311,6 +357,9 @@ export default function Dataflow() {
             multi ? 15 : null,
           ),
         )
+        if (i === 1 && lane?.state === 'running' && lane.phase) {
+          txt('ph' + code, cx(i), ly + LH / 2 + 17, lane.phase, 13, ACC)
+        }
         if (i > 1 && lane && lane.v[i - 2] > 0 && lane.v[i - 1] > 0) {
           const dr = '−' + fmt(lane.v[i - 2] - lane.v[i - 1])
           if (multi) txt('dt' + key, cx(i), ly + LH / 2 + 17, dr, 14)
@@ -400,7 +449,7 @@ export default function Dataflow() {
       s2 === 0
         ? [
             `${T.cc}: ${CS.map((c) => LANES[c]?.name[li] ?? c).join(', ')}`,
-            `${lang === 'fi' ? 'Toimialat' : 'Industries'}: ${PRESETS.find((p) => p.key === preset)?.[lang] ?? ''}`,
+            `${lang === 'fi' ? 'Toimialat' : 'Industries'}: ${preset.startsWith('custom:') ? preset.slice(7) : (PRESETS.find((p) => p.key === preset)?.[lang] ?? '')}`,
             `${lang === 'fi' ? 'Ikä vähintään' : 'At least'} ${minAge} ${lang === 'fi' ? 'vuotta' : 'years'}`,
             `${lang === 'fi' ? 'Kokoraja' : 'Size floor'}: ${(minFI / 1e6).toFixed(1)} M€ · ${(minNO / 1e6).toFixed(0)} M kr`,
             `${lang === 'fi' ? 'Tilinpäätös viimeisen' : 'Filing within'} ${windowDays} ${lang === 'fi' ? 'päivän ajalta' : 'days'}`,
@@ -578,6 +627,11 @@ export default function Dataflow() {
                   {p[lang]}
                 </option>
               ))}
+              {preset.startsWith('custom:') && (
+                <option value={preset}>
+                  {(lang === 'fi' ? 'Yksi toimiala · ' : 'One industry · ') + preset.slice(7)}
+                </option>
+              )}
             </select>
 
             <label style={{ fontSize: 12, color: '#555' }}>
@@ -737,181 +791,333 @@ export default function Dataflow() {
                   <span style={{ color: ACC, fontWeight: 600 }}>{l.buyers > 0 ? fmt(l.buyers) : '·'}</span>
                   <span style={{ fontSize: 11, color: '#8a8a8a' }}> {lang === 'fi' ? 'ostajaosumaa' : 'with a buyer'}</span>
                 </div>
+                {l.state === 'running' && l.phase && (
+                  <div style={{ fontSize: 11.5, color: ACC, marginTop: 4 }}>
+                    {l.phase}
+                    <span style={{ opacity: 0.6 }}>{'·'.repeat(1 + (Math.floor(t * 2.5) % 3))}</span>
+                  </div>
+                )}
                 {l.note && <div style={{ fontSize: 11, color: '#c46a00', marginTop: 4 }}>{l.note}</div>}
               </div>
             ))}
           </div>
 
-          {/* the feed itself, and whichever row is open */}
-          <div style={{ display: 'grid', gridTemplateColumns: 'minmax(0,1.1fr) minmax(0,1fr)', gap: 22, minHeight: 0, flex: 1 }}>
-            <div style={{ minHeight: 0, display: 'flex', flexDirection: 'column' }}>
-              <div style={{ ...lab, marginBottom: 6 }}>
-                {lang === 'fi' ? 'Kohteet · korkein pistemäärä ensin' : 'Targets · highest score first'}
-                {live ? (lang === 'fi' ? ' · päivittyy ajon aikana' : ' · filling as it runs') : ''}
-              </div>
-              <div style={{ overflowY: 'auto', minHeight: 0, border: '1px solid rgba(0,0,0,.08)', borderRadius: 4 }}>
-                {!targets?.length && (
-                  <div style={{ padding: '18px 14px', fontSize: 12.5, color: '#8a8a8a' }}>
-                    {live
-                      ? lang === 'fi' ? 'Ensimmäinen maa kirjoittaa rivinsä kun sen kaista valmistuu.' : 'The first country writes its rows when its lane completes.'
-                      : lang === 'fi' ? 'Ei kohteita. Aja moottori dataflow-välilehdeltä.' : 'No targets. Run the engine from the dataflow tab.'}
-                  </div>
-                )}
-                {(targets ?? []).map((r) => {
-                  const on = (pick ?? targets?.[0]?.businessId) === r.businessId
-                  return (
-                    <button
-                      key={r._id}
-                      onClick={() => setPick(r.businessId)}
-                      style={{
-                        display: 'grid',
-                        gridTemplateColumns: '28px minmax(0,1fr) auto auto',
-                        gap: 10,
-                        alignItems: 'baseline',
-                        width: '100%',
-                        textAlign: 'left',
-                        border: 0,
-                        borderBottom: '1px solid rgba(0,0,0,.06)',
-                        borderLeft: '3px solid ' + (on ? ACC : 'transparent'),
-                        background: on ? 'rgba(0,40,255,.05)' : '#fff',
-                        padding: '8px 12px',
-                        cursor: 'pointer',
-                        color: '#111',
-                      }}
-                    >
-                      <span style={{ fontSize: 11, fontWeight: 600, color: '#8a8a8a' }}>{r.country}</span>
-                      <span style={{ minWidth: 0 }}>
-                        <span style={{ display: 'block', fontSize: 13, fontWeight: 500, whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
-                          {r.name}
-                        </span>
-                        <span style={{ display: 'block', fontSize: 11, color: '#8a8a8a', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
-                          {r.industryName} · {r.city ?? '—'} · {r.age} v
-                        </span>
-                      </span>
-                      <span style={{ fontSize: 12, color: '#555', fontVariantNumeric: 'tabular-nums', whiteSpace: 'nowrap' }}>{money(r.size, r.currency)}</span>
-                      <span style={{ fontSize: 12.5, fontWeight: 600, color: r.buyers.length ? ACC : '#c9c9c9', whiteSpace: 'nowrap' }}>
-                        {r.score} p · {r.buyers.length}
-                      </span>
-                    </button>
-                  )
-                })}
-              </div>
-              <div style={{ ...lab, marginTop: 10, marginBottom: 6 }}>{lang === 'fi' ? 'Aiemmat ajot' : 'Earlier runs'}</div>
-              <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap' }}>
-                {(history ?? []).map((h) => (
-                  <button
-                    key={h._id}
-                    onClick={() => setRunId(h._id)}
-                    style={{
-                      border: '1px solid ' + (run?._id === h._id ? ACC : 'rgba(0,0,0,.12)'),
-                      background: run?._id === h._id ? 'rgba(0,40,255,.06)' : '#fff',
-                      borderRadius: 4,
-                      padding: '3px 9px',
-                      fontSize: 11,
-                      cursor: 'pointer',
-                      color: '#111',
-                    }}
-                  >
-                    {h.criteria.countries.join('+')} · {h.targetCount} · {h.status}
-                  </button>
-                ))}
-              </div>
+          {/* one card per lead; the detail is a modal, not a second column */}
+          <div style={{ ...lab, marginBottom: 2 }}>
+            {lang === 'fi' ? 'Liidit · korkein pistemäärä ensin' : 'Leads · highest score first'}
+            {live ? (lang === 'fi' ? ' · lista kasvaa ajon aikana' : ' · the list grows as it runs') : ''}
+          </div>
+
+          {!targets?.length && (
+            <div style={{ padding: '22px 18px', fontSize: 13, color: '#8a8a8a', border: '1px dashed rgba(0,0,0,.15)', borderRadius: 4 }}>
+              {live
+                ? lang === 'fi'
+                  ? 'Ensimmäinen maa kirjoittaa liidinsä kun sen kaista valmistuu.'
+                  : 'The first country writes its leads when its lane completes.'
+                : lang === 'fi'
+                  ? 'Ei liidejä. Aja moottori dataflow-välilehdeltä.'
+                  : 'No leads. Run the engine from the dataflow tab.'}
             </div>
+          )}
 
-            <div style={{ minHeight: 0, overflowY: 'auto' }}>
-              {(() => {
-                const r = targets?.find((x) => x.businessId === (pick ?? targets?.[0]?.businessId))
-                if (!r) return null
-                return (
-                  <div style={{ display: 'grid', gap: 14 }}>
-                    <div>
-                      <div style={{ fontSize: 19, fontWeight: 600, letterSpacing: '-.01em' }}>{r.name}</div>
-                      <div style={{ fontSize: 12, color: '#8a8a8a', marginTop: 2 }}>
-                        {r.businessId} · {r.industry} {r.industryName} · {r.city ?? '—'} ·{' '}
-                        {lang === 'fi' ? 'perustettu' : 'registered'} {r.registered.slice(0, 4)}
-                      </div>
-                    </div>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill,minmax(300px,1fr))', gap: 10, overflowY: 'auto', minHeight: 0, paddingBottom: 4 }}>
+            {(targets ?? []).map((r) => (
+              <button
+                key={r._id}
+                onClick={() => setPick(r.businessId)}
+                style={{
+                  textAlign: 'left',
+                  border: '1px solid rgba(0,0,0,.1)',
+                  borderRadius: 4,
+                  background: '#fff',
+                  padding: '12px 14px',
+                  cursor: 'pointer',
+                  color: '#111',
+                  display: 'grid',
+                  gap: 8,
+                  alignContent: 'start',
+                }}
+              >
+                <div style={{ display: 'flex', justifyContent: 'space-between', gap: 10, alignItems: 'baseline' }}>
+                  <span style={{ fontSize: 10.5, letterSpacing: '.08em', color: '#8a8a8a' }}>
+                    {r.country} · {r.industry}
+                  </span>
+                  <span style={{ fontSize: 13, fontWeight: 600, color: r.buyers.length ? ACC : '#c9c9c9' }}>{r.score} p</span>
+                </div>
+                <div style={{ fontSize: 14.5, fontWeight: 600, lineHeight: 1.25 }}>{r.name}</div>
+                <div style={{ fontSize: 11.5, color: '#8a8a8a' }}>
+                  {r.industryName} · {r.city ?? '—'} · {r.age} v
+                </div>
+                <div style={{ display: 'flex', justifyContent: 'space-between', gap: 8, fontSize: 12.5, borderTop: '1px solid rgba(0,0,0,.06)', paddingTop: 8 }}>
+                  <span style={{ fontWeight: 600 }}>{money(r.size, r.currency)}</span>
+                  <span style={{ color: r.buyers.length ? ACC : '#8a8a8a' }}>
+                    {r.buyers.length} {lang === 'fi' ? (r.buyers.length === 1 ? 'ostaja' : 'ostajaa') : r.buyers.length === 1 ? 'buyer' : 'buyers'}
+                  </span>
+                </div>
+                <div style={{ fontSize: 11, color: '#777', lineHeight: 1.4 }}>{r.reasons.slice(0, 2).map((x) => x.label).join(' · ')}</div>
+              </button>
+            ))}
+          </div>
 
-                    <div style={{ display: 'flex', flexWrap: 'wrap', gap: '4px 20px', fontSize: 12.5 }}>
-                      <span>
-                        <span style={{ color: '#8a8a8a' }}>{r.currency === 'NOK' ? (lang === 'fi' ? 'Liikevaihto' : 'Revenue') : lang === 'fi' ? 'Tase' : 'Balance'}</span>{' '}
-                        <b>{money(r.size, r.currency)}</b>
-                      </span>
-                      {r.changePct !== null && (
-                        <span>
-                          <span style={{ color: '#8a8a8a' }}>{lang === 'fi' ? 'Muutos' : 'Change'}</span>{' '}
-                          <b style={{ color: r.changePct < 0 ? '#d6334f' : '#0f9d63' }}>
-                            {r.changePct > 0 ? '+' : '−'}
-                            {Math.abs(Math.round(r.changePct))} %
-                          </b>
-                        </span>
-                      )}
-                      <span>
-                        <span style={{ color: '#8a8a8a' }}>{lang === 'fi' ? 'Tilinpäätös' : 'Filing'}</span>{' '}
-                        <b>{r.filedAt || r.financialDate}</b>
-                      </span>
-                      <span>
-                        <span style={{ color: '#8a8a8a' }}>{lang === 'fi' ? 'Pisteet' : 'Score'}</span> <b>{r.score}</b>
-                      </span>
-                      <a href={r.verifyUrl} target="_blank" rel="noreferrer" style={{ color: ACC, fontWeight: 600 }}>
-                        {lang === 'fi' ? 'Tarkista rekisteristä →' : 'Verify in the register →'}
-                      </a>
-                    </div>
-
-                    <div>
-                      <div style={{ ...lab, marginBottom: 6 }}>{lang === 'fi' ? 'Miksi juuri nyt' : 'Why now'}</div>
-                      <div style={{ display: 'flex', flexWrap: 'wrap', gap: 5 }}>
-                        {r.reasons.map((x) => (
-                          <span key={x.label} style={{ fontSize: 11.5, border: '1px solid rgba(0,0,0,.1)', borderRadius: 3, padding: '2px 8px' }}>
-                            {x.label} <b style={{ color: ACC }}>+{x.points}</b>
-                          </span>
-                        ))}
-                      </div>
-                    </div>
-
-                    <div>
-                      <div style={{ ...lab, marginBottom: 6 }}>{lang === 'fi' ? 'Ketkä ostaisivat' : 'Who would buy'}</div>
-                      {r.buyers.length === 0 ? (
-                        <div style={{ fontSize: 12.5, color: '#8a8a8a' }}>
-                          {lang === 'fi' ? 'Yksikään ostajakriteeri ei täyty.' : 'No buyer criteria are met.'}
-                        </div>
-                      ) : (
-                        <div style={{ display: 'grid', gap: 5 }}>
-                          {r.buyers.map((b) => (
-                            <div key={b.id} style={{ border: '1px solid rgba(0,0,0,.08)', borderRadius: 4, padding: '8px 11px' }}>
-                              <div style={{ fontSize: 13, fontWeight: 600 }}>
-                                {b.name} <span style={{ fontWeight: 400, color: '#8a8a8a', fontSize: 11.5 }}>{b.kind}</span>
-                              </div>
-                              <div style={{ fontSize: 11.5, color: '#555', marginTop: 3 }}>{b.evidence}</div>
-                              <div style={{ fontSize: 11, color: '#8a8a8a', marginTop: 2 }}>{lang === 'fi' ? 'Lähde' : 'Source'}: {b.source}</div>
-                            </div>
-                          ))}
-                        </div>
-                      )}
-                    </div>
-
-                    <div>
-                      <div style={{ ...lab, marginBottom: 6, color: ACC }}>
-                        {lang === 'fi' ? 'Luonnos · odottaa ihmistä' : 'Draft · awaiting human'}
-                      </div>
-                      <div style={{ whiteSpace: 'pre-line', fontSize: 12.5, lineHeight: 1.6, border: '1px solid rgba(0,0,0,.08)', borderRadius: 4, padding: '12px 14px' }}>
-                        {r.draft}
-                      </div>
-                    </div>
-                  </div>
-                )
-              })()}
-            </div>
+          <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap', alignItems: 'center', borderTop: '1px solid rgba(0,0,0,.07)', paddingTop: 10 }}>
+            <span style={lab}>{lang === 'fi' ? 'Aiemmat ajot' : 'Earlier runs'}</span>
+            {(history ?? []).map((h) => (
+              <button
+                key={h._id}
+                onClick={() => setRunId(h._id)}
+                style={{
+                  border: '1px solid ' + (run?._id === h._id ? ACC : 'rgba(0,0,0,.12)'),
+                  background: run?._id === h._id ? 'rgba(0,40,255,.06)' : '#fff',
+                  borderRadius: 4,
+                  padding: '3px 9px',
+                  fontSize: 11,
+                  cursor: 'pointer',
+                  color: '#111',
+                }}
+              >
+                {h.criteria.countries.join('+')} · {h.targetCount} · {h.status}
+              </button>
+            ))}
           </div>
         </main>
       )}
+
+      {/* one lead, everything we read about it and everything we did not */}
+      {(() => {
+        const r = pick ? targets?.find((x) => x.businessId === pick) : null
+        if (!r) return null
+        return (
+          <div
+            onClick={() => setPick(null)}
+            style={{
+              position: 'fixed',
+              inset: 0,
+              background: 'rgba(17,17,17,.35)',
+              display: 'flex',
+              alignItems: 'flex-start',
+              justifyContent: 'center',
+              padding: '5vh 20px',
+              zIndex: 50,
+            }}
+          >
+            <div
+              onClick={(e) => e.stopPropagation()}
+              style={{
+                background: '#fff',
+                borderRadius: 6,
+                width: 'min(760px,100%)',
+                maxHeight: '90vh',
+                overflowY: 'auto',
+                boxShadow: '0 24px 60px rgba(0,0,0,.22)',
+                padding: '22px 26px 26px',
+                display: 'grid',
+                gap: 16,
+              }}
+            >
+              <div style={{ display: 'flex', alignItems: 'flex-start', gap: 14 }}>
+                <div style={{ minWidth: 0 }}>
+                  <div style={{ ...lab }}>
+                    {r.country} · {r.industry} {r.industryName}
+                  </div>
+                  <div style={{ fontSize: 22, fontWeight: 600, letterSpacing: '-.01em', marginTop: 2 }}>{r.name}</div>
+                  <div style={{ fontSize: 12.5, color: '#8a8a8a', marginTop: 3 }}>
+                    {r.businessId} · {r.city ?? '—'} · {lang === 'fi' ? 'perustettu' : 'registered'} {r.registered.slice(0, 4)}
+                  </div>
+                </div>
+                <span style={{ marginLeft: 'auto', fontSize: 14, fontWeight: 600, color: ACC, whiteSpace: 'nowrap' }}>{r.score} p</span>
+                <button
+                  onClick={() => setPick(null)}
+                  aria-label="close"
+                  style={{ border: 0, background: 'transparent', fontSize: 20, lineHeight: 1, cursor: 'pointer', color: '#8a8a8a', padding: 0 }}
+                >
+                  ×
+                </button>
+              </div>
+
+              <div style={{ fontFamily: 'var(--d-serif),Georgia,serif', fontSize: 16.5, lineHeight: 1.45, textWrap: 'pretty' }}>
+                {r.analysis.headline}
+              </div>
+
+              <div>
+                <div style={{ ...lab, marginBottom: 6 }}>{lang === 'fi' ? 'Mihin luvut perustuvat' : 'What the figures rest on'}</div>
+                <div style={{ border: '1px solid rgba(0,0,0,.08)', borderRadius: 4, overflow: 'hidden' }}>
+                  {r.analysis.facts.map((f) => (
+                    <div key={f.label} style={{ padding: '9px 12px', borderBottom: '1px solid rgba(0,0,0,.05)' }}>
+                      <div style={{ display: 'flex', justifyContent: 'space-between', gap: 12, fontSize: 12.5 }}>
+                        <span style={{ color: '#8a8a8a' }}>{f.label}</span>
+                        <span style={{ fontWeight: 600, textAlign: 'right' }}>{f.value}</span>
+                      </div>
+                      {f.basis && <div style={{ fontSize: 11.5, color: '#777', marginTop: 3, textWrap: 'pretty' }}>{f.basis}</div>}
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              <div>
+                <div style={{ ...lab, marginBottom: 6 }}>{lang === 'fi' ? 'Miksi juuri nyt' : 'Why now'}</div>
+                <div style={{ display: 'flex', flexWrap: 'wrap', gap: 5 }}>
+                  {r.reasons.map((x) => (
+                    <span key={x.label} style={{ fontSize: 11.5, border: '1px solid rgba(0,0,0,.1)', borderRadius: 3, padding: '2px 8px' }}>
+                      {x.label} <b style={{ color: ACC }}>+{x.points}</b>
+                    </span>
+                  ))}
+                </div>
+              </div>
+
+              <div>
+                <div style={{ ...lab, marginBottom: 6 }}>{lang === 'fi' ? 'Ketkä ostaisivat' : 'Who would buy'}</div>
+                {r.buyers.length === 0 ? (
+                  <div style={{ fontSize: 12.5, color: '#8a8a8a' }}>
+                    {lang === 'fi' ? 'Yksikään ostajakriteeri ei täyty tässä kokoluokassa.' : 'No buyer criteria are met at this size.'}
+                  </div>
+                ) : (
+                  <div style={{ display: 'grid', gap: 5 }}>
+                    {r.buyers.map((b) => (
+                      <div key={b.id} style={{ border: '1px solid rgba(0,0,0,.08)', borderRadius: 4, padding: '9px 12px' }}>
+                        <div style={{ fontSize: 13, fontWeight: 600 }}>
+                          {b.name} <span style={{ fontWeight: 400, color: '#8a8a8a', fontSize: 11.5 }}>{b.kind}</span>
+                        </div>
+                        <div style={{ fontSize: 11.5, color: '#555', marginTop: 3 }}>{b.evidence}</div>
+                        <div style={{ fontSize: 11, color: '#8a8a8a', marginTop: 2 }}>
+                          {lang === 'fi' ? 'Lähde' : 'Source'}: {b.source}
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </div>
+
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(240px,1fr))', gap: 16 }}>
+                <div>
+                  <div style={{ ...lab, marginBottom: 6, color: '#c46a00' }}>
+                    {lang === 'fi' ? 'Mitä julkinen data ei kerro' : 'What public data cannot tell you'}
+                  </div>
+                  <ul style={{ margin: 0, paddingLeft: 16, fontSize: 12, color: '#555', lineHeight: 1.5 }}>
+                    {r.analysis.limits.map((x) => (
+                      <li key={x} style={{ marginBottom: 4 }}>
+                        {x}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                <div>
+                  <div style={{ ...lab, marginBottom: 6, color: ACC }}>
+                    {lang === 'fi' ? 'Auki, ihmisen selvitettäväksi' : 'Open, for a human to establish'}
+                  </div>
+                  <ul style={{ margin: 0, paddingLeft: 16, fontSize: 12, color: '#555', lineHeight: 1.5 }}>
+                    {r.analysis.open.map((x) => (
+                      <li key={x} style={{ marginBottom: 4 }}>
+                        {x}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+
+              <div style={{ borderTop: '1px solid rgba(0,0,0,.07)', paddingTop: 14 }}>
+                <div style={{ ...lab, marginBottom: 6 }}>
+                  {lang === 'fi' ? 'Kontaktointi · Selda' : 'Contact layer · Selda'}
+                </div>
+                {!r.selda?.state && (
+                  <div style={{ display: 'flex', gap: 12, alignItems: 'center', flexWrap: 'wrap' }}>
+                    <button
+                      onClick={() => handOver(r.businessId)}
+                      disabled={handing === r.businessId}
+                      style={{
+                        border: '1px solid ' + ACC,
+                        background: '#fff',
+                        color: ACC,
+                        padding: '6px 14px',
+                        fontSize: 12.5,
+                        fontWeight: 600,
+                        borderRadius: 4,
+                        cursor: handing === r.businessId ? 'default' : 'pointer',
+                      }}
+                    >
+                      {handing === r.businessId
+                        ? lang === 'fi' ? 'Lähetetään…' : 'Handing over…'
+                        : lang === 'fi' ? 'Vie Seldaan' : 'Hand to Selda'}
+                    </button>
+                    <span style={{ fontSize: 11.5, color: '#8a8a8a', maxWidth: '46ch' }}>
+                      {lang === 'fi'
+                        ? 'Selda hakee päättäjän ja kirjoittaa avauksen tästä analyysistä, ei tyhjästä. Luonnos jää Seldaan odottamaan ihmisen hyväksyntää.'
+                        : 'Selda finds the decision maker and writes the opening from this analysis rather than from scratch. The draft waits in Selda for a person to approve.'}
+                    </span>
+                  </div>
+                )}
+                {r.selda?.state && (
+                  <div style={{ display: 'grid', gap: 8 }}>
+                    <div style={{ display: 'flex', gap: 14, flexWrap: 'wrap', fontSize: 12.5, alignItems: 'baseline' }}>
+                      <span style={{ fontWeight: 600, color: r.selda.state === 'error' ? '#d6334f' : ACC }}>{r.selda.state}</span>
+                      {r.selda.contact && (
+                        <span>
+                          <span style={{ color: '#8a8a8a' }}>{lang === 'fi' ? 'Päättäjä' : 'Contact'}</span> <b>{r.selda.contact}</b>
+                          {r.selda.contactTitle ? `, ${r.selda.contactTitle}` : ''}
+                        </span>
+                      )}
+                      {r.selda.contactEmail && <span style={{ color: '#555' }}>{r.selda.contactEmail}</span>}
+                      <button
+                        onClick={() => handOver(r.businessId)}
+                        disabled={handing === r.businessId}
+                        style={{ marginLeft: 'auto', border: 0, background: 'transparent', color: ACC, fontSize: 12, fontWeight: 600, cursor: 'pointer', padding: 0 }}
+                      >
+                        {lang === 'fi' ? 'Päivitä' : 'Refresh'}
+                      </button>
+                    </div>
+                    {r.selda.error && <div style={{ fontSize: 12, color: '#d6334f' }}>{r.selda.error}</div>}
+                    {r.selda.draft && (
+                      <div style={{ whiteSpace: 'pre-line', fontSize: 12.5, lineHeight: 1.6, border: '1px solid rgba(0,40,255,.25)', background: 'rgba(0,40,255,.03)', borderRadius: 4, padding: '12px 14px' }}>
+                        {r.selda.draft}
+                      </div>
+                    )}
+                    <div style={{ fontSize: 11.5, color: '#c46a00' }}>
+                      {lang === 'fi'
+                        ? 'Odottaa hyväksyntää Seldassa. Mikään ei lähde tältä sivulta.'
+                        : 'Awaiting approval inside Selda. Nothing is sent from this page.'}
+                    </div>
+                  </div>
+                )}
+              </div>
+
+              <div style={{ display: 'flex', gap: 12, alignItems: 'center', flexWrap: 'wrap', borderTop: '1px solid rgba(0,0,0,.07)', paddingTop: 14 }}>
+                <button
+                  onClick={() => {
+                    iterateFrom(r.industry, r.country, r.size)
+                    setPick(null)
+                  }}
+                  disabled={live}
+                  style={{
+                    border: 0,
+                    background: live ? '#9aa6ff' : ACC,
+                    color: '#fff',
+                    padding: '7px 15px',
+                    fontSize: 12.5,
+                    fontWeight: 600,
+                    borderRadius: 4,
+                    cursor: live ? 'default' : 'pointer',
+                  }}
+                >
+                  {lang === 'fi' ? 'Etsi lisää tämän kaltaisia' : 'Find more like this'}
+                </button>
+                <a href={r.verifyUrl} target="_blank" rel="noreferrer" style={{ fontSize: 12.5, fontWeight: 600, color: ACC }}>
+                  {lang === 'fi' ? 'Tarkista rekisteristä →' : 'Verify in the register →'}
+                </a>
+                <a href={`/kohde/${r.businessId}`} target="_blank" rel="noreferrer" style={{ fontSize: 12.5, color: '#555' }}>
+                  {lang === 'fi' ? 'Omistajan sivu' : 'Owner page'}
+                </a>
+                <span style={{ marginLeft: 'auto', fontSize: 11.5, fontWeight: 600, color: '#c46a00' }}>{r.status}</span>
+              </div>
+            </div>
+          </div>
+        )
+      })()}
 
       {page === 'countries' && (
         <main style={{ flex: 1, padding: '0 44px 48px', maxWidth: 1180, width: '100%', margin: '0 auto', display: 'flex', flexDirection: 'column', gap: 18 }}>
           <div style={{ fontFamily: 'var(--d-serif),Georgia,serif', fontSize: 'clamp(18px,1.9vw,24px)', maxWidth: '58ch', textWrap: 'pretty' }}>
             {lang === 'fi'
-              ? 'Kaksi maata ajaa. Muissa tiedetään tarkalleen mitä saa ja mikä maksaa — jokainen rivi tarkistettu oikealla kutsulla, ei luettu dokumentaatiosta.'
-              : 'Two countries run. For the rest we know exactly what is available and what costs money — every line checked with a real call, not read off a documentation page.'}
+              ? 'Kaksi maata ajaa. Muissa tiedetään tarkalleen mitä saa ja mikä maksaa. Jokainen rivi on tarkistettu oikealla kutsulla, ei luettu dokumentaatiosta.'
+              : 'Two countries run. For the rest we know exactly what is available and what costs money. Every line was checked with a real call, not read off a documentation page.'}
           </div>
 
           <div style={{ border: '1px solid rgba(0,0,0,.08)', borderRadius: 4, overflow: 'hidden' }}>
@@ -979,7 +1185,7 @@ export default function Dataflow() {
                     {c.status === 'live'
                       ? lang === 'fi' ? 'Ajossa nyt.' : 'Running now.'
                       : c.status === 'ready'
-                        ? lang === 'fi' ? 'Sama koodi, eri osoite — lähdeadapteri per maa.' : 'Same code, different address — one source adapter per country.'
+                        ? lang === 'fi' ? 'Sama koodi, eri osoite: yksi lähdeadapteri per maa.' : 'Same code, different address: one source adapter per country.'
                         : c.status === 'mapped'
                           ? lang === 'fi' ? 'Kartoitettu, ei kytketty.' : 'Mapped, not wired.'
                           : lang === 'fi' ? 'Ostopäätös, ei rakennusprojekti.' : 'A purchase decision, not a build.'}
@@ -1010,6 +1216,52 @@ export default function Dataflow() {
               </div>
             )}
           </div>
+
+          {page === 'selda' && (
+            <div style={{ display: 'grid', gap: 10 }}>
+              <div style={lab}>{lang === 'fi' ? 'Viedyt liidit' : 'Leads handed over'}</div>
+              {!(targets ?? []).some((r) => r.selda?.state) && (
+                <div style={{ fontSize: 12.5, color: '#8a8a8a', border: '1px dashed rgba(0,0,0,.15)', borderRadius: 4, padding: '14px 16px' }}>
+                  {lang === 'fi'
+                    ? 'Ei vielä yhtään. Avaa liidi Moottori-välilehdeltä ja paina Vie Seldaan.'
+                    : 'None yet. Open a lead on the Engine tab and hand it over.'}
+                </div>
+              )}
+              {(targets ?? [])
+                .filter((r) => r.selda?.state)
+                .map((r) => (
+                  <div key={r._id} style={{ border: '1px solid rgba(0,0,0,.08)', borderRadius: 4, padding: '11px 14px', display: 'grid', gap: 6 }}>
+                    <div style={{ display: 'flex', gap: 12, alignItems: 'baseline', flexWrap: 'wrap' }}>
+                      <span style={{ fontWeight: 600, fontSize: 13.5 }}>{r.name}</span>
+                      <span style={{ fontSize: 11.5, color: '#8a8a8a' }}>
+                        {r.country} · {r.businessId} · {r.score} p
+                      </span>
+                      <span style={{ marginLeft: 'auto', fontSize: 12, fontWeight: 600, color: r.selda?.state === 'error' ? '#d6334f' : ACC }}>
+                        {r.selda?.state}
+                      </span>
+                    </div>
+                    {r.selda?.contact && (
+                      <div style={{ fontSize: 12, color: '#555' }}>
+                        {r.selda.contact}
+                        {r.selda.contactTitle ? `, ${r.selda.contactTitle}` : ''}
+                        {r.selda.contactEmail ? ` · ${r.selda.contactEmail}` : ''}
+                      </div>
+                    )}
+                    {r.selda?.draft && (
+                      <div style={{ whiteSpace: 'pre-line', fontSize: 12, lineHeight: 1.55, background: '#fafafa', borderRadius: 4, padding: '10px 12px' }}>
+                        {r.selda.draft}
+                      </div>
+                    )}
+                    {r.selda?.error && <div style={{ fontSize: 11.5, color: '#d6334f' }}>{r.selda.error}</div>}
+                  </div>
+                ))}
+              <div style={{ fontSize: 11.5, color: '#c46a00' }}>
+                {lang === 'fi'
+                  ? 'Kaikki odottavat hyväksyntää Seldassa. Tämä sivu ei lähetä mitään.'
+                  : 'All of these await approval inside Selda. This page sends nothing.'}
+              </div>
+            </div>
+          )}
 
           {pg.steps.map(([title, body, code], k) => (
             <div key={title} style={{ display: 'grid', gridTemplateColumns: '32px minmax(0,1fr)', gap: '4px 14px' }}>

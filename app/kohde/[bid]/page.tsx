@@ -152,15 +152,31 @@ export default function Kohde({ params }: { params: Promise<{ bid: string }> }) 
           ))}
         </div>
 
-        <h2>Mitä tästä lähtisi</h2>
-        <pre className="opener">{t.draft}</pre>
-        <p className="dim">
-          Ei hintaa, ei liitettä, ei tapaamispyyntöä. Yksi tarkistettava havainto ja yksi kysymys.
-          Mikään ei ole lähtenyt: luonnos odottaa ihmisen hyväksyntää.
-        </p>
+        <h2>Mihin tämä perustuu</h2>
+        <p className="lede">{t.analysis.headline}</p>
+        {t.analysis.facts.map((f) => (
+          <div className="card" key={f.label}>
+            <h3>
+              {f.label}: {f.value}
+            </h3>
+            {f.basis && (
+              <p className="dim" style={{ margin: 0 }}>
+                {f.basis}
+              </p>
+            )}
+          </div>
+        ))}
+
+        <h2>Mitä julkinen data ei kerro</h2>
+        <ul className="lede" style={{ paddingLeft: 20 }}>
+          {t.analysis.limits.map((x) => (
+            <li key={x}>{x}</li>
+          ))}
+        </ul>
 
         <div className="caveat">
-          <b>Rajoite auki kirjoitettuna.</b>{' '}
+          <b>Mikään ei ole lähtenyt kenellekään.</b> Tämä sivu on koottu julkisesta datasta, ja jos
+          keskustelu alkaa, sen aloittaa ihminen eikä kone.{' '}
           {isNO
             ? 'Liikevaihto luetaan rekisteröidystä tilinpäätöksestä suoraan. Käyttökatetta ei julkaista, eikä sitä arvata.'
             : 'Taseen loppusumma ei ole liikevaihto eikä käyttökate. Pieni suomalainen yhtiö ei ole velvollinen julkaisemaan kumpaakaan, joten luku on kokoluokan arvio julkisesta tilinpäätöksestä.'}{' '}

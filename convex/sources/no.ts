@@ -83,13 +83,16 @@ export async function companies(
   minAgeYears: number,
   excludeHolding: boolean,
   asOf: Date,
+  onProgress?: (universe: number, kept: number, done: number, total: number) => void,
 ): Promise<{ universe: number; rows: Company[]; lastFiled: Map<string, string> }> {
   const cutoff = `${asOf.getFullYear() - minAgeYears}-12-31`
   let universe = 0
   const rows: Company[] = []
   const lastFiled = new Map<string, string>()
 
-  for (const [prefix, industry] of byPrefix(industries)) {
+  const groups = byPrefix(industries)
+  let done = 0
+  for (const [prefix, industry] of groups) {
     const base =
       `${ENHET}/enheter?naeringskode=${prefix}&organisasjonsform=AS` +
       `&tilRegistreringsdatoEnhetsregisteret=${cutoff}&size=100`
@@ -97,6 +100,7 @@ export async function companies(
     try {
       first = await fetchJson<Page>(`${base}&page=0`)
     } catch {
+      onProgress?.(universe, rows.length, ++done, groups.length)
       continue
     }
     const total = first.page?.totalElements ?? 0
@@ -147,6 +151,7 @@ export async function companies(
         })
       }
     }
+    onProgress?.(universe, rows.length, ++done, groups.length)
   }
 
   return { universe, rows, lastFiled }
