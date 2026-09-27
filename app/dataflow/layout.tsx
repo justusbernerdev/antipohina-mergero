@@ -1,5 +1,5 @@
 import { Lora, Poppins } from 'next/font/google'
-import Provider from './provider'
+import Provider, { Gate } from './provider'
 import './dataflow.css'
 
 /**
@@ -17,7 +17,9 @@ const lora = Lora({ subsets: ['latin', 'latin-ext'], weight: ['400'], variable: 
 export default function DataflowLayout({ children }: { children: React.ReactNode }) {
   return (
     <div className={`dataflow-scope ${poppins.variable} ${lora.variable}`}>
-      <Provider>{children}</Provider>
+      <Provider>
+        <Gate>{children}</Gate>
+      </Provider>
     </div>
   )
 }
