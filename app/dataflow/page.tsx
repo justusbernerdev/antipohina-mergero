@@ -4,7 +4,7 @@ import { useEffect, useRef, useState, type ReactNode } from 'react'
 import { useMutation, useQuery } from 'convex/react'
 import { api } from '../../convex/_generated/api'
 import type { Id } from '../../convex/_generated/dataModel'
-import { ACC, CHIPS, INS, L, LANES, OUTS, fmt } from './data'
+import { ACC, CHIPS, COVERAGE, INS, L, LANES, OUTS, fmt } from './data'
 
 /**
  * The engine, running.
@@ -18,9 +18,17 @@ import { ACC, CHIPS, INS, L, LANES, OUTS, fmt } from './data'
  */
 
 type Sel = number | string
-type PageKey = 'flow' | 'engine' | 'api' | 'mcp' | 'selda'
+type PageKey = 'flow' | 'engine' | 'countries' | 'api' | 'mcp' | 'selda'
 
 const SITE = process.env.NEXT_PUBLIC_CONVEX_SITE_URL ?? ''
+
+/** Blunt on purpose: two countries run, and the rest is a known amount of work. */
+const STATUS: Record<string, { fi: string; en: string; fg: string }> = {
+  live: { fi: 'Ajossa', en: 'Live', fg: '#0f9d63' },
+  ready: { fi: 'Valmis ajettavaksi', en: 'Ready to wire', fg: ACC },
+  mapped: { fi: 'Kartoitettu', en: 'Mapped', fg: '#c46a00' },
+  buy: { fi: 'Ostettava', en: 'Must be bought', fg: '#d6334f' },
+}
 
 /** Local currency, because a figure shown in the wrong one is worse than no figure. */
 const money = (n: number, c: string) =>
@@ -51,6 +59,7 @@ export default function Dataflow() {
   const [busy, setBusy] = useState(false)
   const [failed, setFailed] = useState<string | null>(null)
   const [pick, setPick] = useState<string | null>(null)
+  const [openCountry, setOpenCountry] = useState('DE')
   const started = useRef<number | null>(null)
 
   const latest = useQuery(api.runs.latest, {})
@@ -423,6 +432,21 @@ export default function Dataflow() {
 
   const pg = page === 'flow' ? null : T.pages[page]
   const lab = { fontSize: 10, letterSpacing: '.12em', textTransform: 'uppercase' as const, color: '#8a8a8a' }
+  const cols: React.CSSProperties = {
+    display: 'grid',
+    gridTemplateColumns: '1.1fr 1.2fr 1.5fr 1.4fr 1.4fr 1.4fr .8fr',
+    gap: 12,
+    alignItems: 'baseline',
+  }
+  const head: React.CSSProperties = {
+    padding: '7px 12px',
+    fontSize: 10,
+    letterSpacing: '.06em',
+    textTransform: 'uppercase',
+    color: '#8a8a8a',
+    background: '#fafafa',
+    borderBottom: '1px solid rgba(0,0,0,.08)',
+  }
   const pre: React.CSSProperties = {
     margin: 0,
     fontFamily: 'ui-monospace,Menlo,Consolas,monospace',
@@ -458,6 +482,7 @@ export default function Dataflow() {
             [
               ['flow', T.flowNav],
               ['engine', lang === 'fi' ? 'Moottori' : 'Engine'],
+              ['countries', lang === 'fi' ? 'Maat' : 'Countries'],
               ['api', 'API'],
               ['mcp', 'MCP'],
               ['selda', 'Selda'],
@@ -519,9 +544,14 @@ export default function Dataflow() {
               return (
                 <button
                   key={c}
-                  title={known ? '' : T.soon}
-                  disabled={!known || live}
+                  title={known ? '' : lang === 'fi' ? 'Katso mitä tästä maasta saa' : 'See what this country gives'}
+                  disabled={known && live}
                   onClick={() => {
+                    if (!known) {
+                      setOpenCountry(c)
+                      setPage('countries')
+                      return
+                    }
                     const next = on ? cs.filter((x) => x !== c) : [...cs, c]
                     if (next.length) setCs(next)
                   }}
@@ -533,7 +563,7 @@ export default function Dataflow() {
                     fontSize: 12,
                     fontWeight: 600,
                     borderRadius: 4,
-                    cursor: known && !live ? 'pointer' : 'default',
+                    cursor: known && live ? 'default' : 'pointer',
                     opacity: live && !on ? 0.5 : 1,
                   }}
                 >
@@ -873,6 +903,91 @@ export default function Dataflow() {
               })()}
             </div>
           </div>
+        </main>
+      )}
+
+      {page === 'countries' && (
+        <main style={{ flex: 1, padding: '0 44px 48px', maxWidth: 1180, width: '100%', margin: '0 auto', display: 'flex', flexDirection: 'column', gap: 18 }}>
+          <div style={{ fontFamily: 'var(--d-serif),Georgia,serif', fontSize: 'clamp(18px,1.9vw,24px)', maxWidth: '58ch', textWrap: 'pretty' }}>
+            {lang === 'fi'
+              ? 'Kaksi maata ajaa. Muissa tiedetään tarkalleen mitä saa ja mikä maksaa — jokainen rivi tarkistettu oikealla kutsulla, ei luettu dokumentaatiosta.'
+              : 'Two countries run. For the rest we know exactly what is available and what costs money — every line checked with a real call, not read off a documentation page.'}
+          </div>
+
+          <div style={{ border: '1px solid rgba(0,0,0,.08)', borderRadius: 4, overflow: 'hidden' }}>
+            <div style={{ ...cols, ...head }}>
+              <span>{lang === 'fi' ? 'Maa' : 'Country'}</span>
+              <span>{lang === 'fi' ? 'Rekisteri' : 'Register'}</span>
+              <span>{lang === 'fi' ? 'Hinta' : 'Price'}</span>
+              <span>{lang === 'fi' ? 'Tilinpäätösvirta' : 'Filing stream'}</span>
+              <span>{lang === 'fi' ? 'Luvut' : 'Figures'}</span>
+              <span>{lang === 'fi' ? 'Omistaja' : 'Owner'}</span>
+              <span>{lang === 'fi' ? 'Tila' : 'Status'}</span>
+            </div>
+            {COVERAGE.map((c) => {
+              const on = openCountry === c.code
+              return (
+                <button
+                  key={c.code}
+                  onClick={() => setOpenCountry(c.code)}
+                  style={{
+                    ...cols,
+                    width: '100%',
+                    textAlign: 'left',
+                    border: 0,
+                    borderBottom: '1px solid rgba(0,0,0,.06)',
+                    borderLeft: '3px solid ' + (on ? ACC : 'transparent'),
+                    background: on ? 'rgba(0,40,255,.04)' : '#fff',
+                    cursor: 'pointer',
+                    color: '#111',
+                    fontSize: 12.5,
+                    padding: '9px 12px',
+                  }}
+                >
+                  <span style={{ fontWeight: 600 }}>
+                    {c.code} <span style={{ fontWeight: 400, color: '#8a8a8a' }}>{c.name[li]}</span>
+                  </span>
+                  <span>{c.register}</span>
+                  <span style={{ color: c.cost === 'free' ? '#0f9d63' : c.cost === 'key' ? '#c46a00' : '#d6334f' }}>{c.price[li]}</span>
+                  <span>{c.stream[li]}</span>
+                  <span>{c.figures[li]}</span>
+                  <span>{c.owner[li]}</span>
+                  <span style={{ fontWeight: 600, color: STATUS[c.status].fg, whiteSpace: 'nowrap' }}>{STATUS[c.status][lang]}</span>
+                </button>
+              )
+            })}
+          </div>
+
+          {(() => {
+            const c = COVERAGE.find((x) => x.code === openCountry)
+            if (!c) return null
+            return (
+              <div style={{ display: 'grid', gridTemplateColumns: 'minmax(0,1.4fr) minmax(0,1fr)', gap: 32, borderTop: '1px solid rgba(0,0,0,.07)', paddingTop: 18 }}>
+                <div>
+                  <div style={{ ...lab }}>{c.code} · {c.name[li]}</div>
+                  <div style={{ fontFamily: 'var(--d-serif),Georgia,serif', fontSize: 18, lineHeight: 1.5, marginTop: 6, maxWidth: '56ch', textWrap: 'pretty' }}>
+                    {c.note[li]}
+                  </div>
+                </div>
+                <div style={{ display: 'grid', gap: 10, alignContent: 'start' }}>
+                  <div>
+                    <div style={{ ...lab, marginBottom: 4 }}>{lang === 'fi' ? 'Mitä kutsuttiin' : 'What was called'}</div>
+                    <code style={{ fontFamily: 'ui-monospace,Menlo,monospace', fontSize: 11.5, color: '#555', overflowWrap: 'anywhere' }}>{c.checked}</code>
+                  </div>
+                  <div style={{ fontSize: 11.5, color: '#8a8a8a' }}>
+                    {lang === 'fi' ? 'Tarkistettu 27.9.2026.' : 'Checked 27 Sep 2026.'}{' '}
+                    {c.status === 'live'
+                      ? lang === 'fi' ? 'Ajossa nyt.' : 'Running now.'
+                      : c.status === 'ready'
+                        ? lang === 'fi' ? 'Sama koodi, eri osoite — lähdeadapteri per maa.' : 'Same code, different address — one source adapter per country.'
+                        : c.status === 'mapped'
+                          ? lang === 'fi' ? 'Kartoitettu, ei kytketty.' : 'Mapped, not wired.'
+                          : lang === 'fi' ? 'Ostopäätös, ei rakennusprojekti.' : 'A purchase decision, not a build.'}
+                  </div>
+                </div>
+              </div>
+            )
+          })()}
         </main>
       )}
 

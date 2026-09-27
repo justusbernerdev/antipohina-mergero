@@ -429,7 +429,7 @@ export const LANES: Record<string, Lane> = {
   },
 }
 
-export const CHIPS = ['FI', 'NO', 'SE', 'DK', 'EE', 'UK']
+export const CHIPS = ['FI', 'NO', 'DK', 'EE', 'UK', 'SE', 'DE']
 
 /** The ticker at the foot of the diagram: id, name, where it is, fi tag, en tag, dropped. */
 export const EV: [string, string, number | string, string, string, number][] = [
@@ -441,4 +441,147 @@ export const EV: [string, string, number | string, string, string, number][] = [
   ['1045872-3', 'Kiinteistöhuolto Rantanen Oy', 3, '2 kk myöhässä', '2 months late', 0],
   ['2210934-8', 'Maalaamo Heinonen Oy', 3, 'ei tilinpäätöstä ikkunassa', 'no filing in window', 1],
   ['0833901-7', 'Metallityö H. Turunen Oy', 'selda', 'odottaa ihmistä', 'awaiting human', 0],
+]
+
+/**
+ * What each country actually gives, and what it costs.
+ *
+ * Every line here was checked with a real call on 27.9.2026, not read off a documentation page.
+ * That matters because the interesting differences are the ones documentation does not mention:
+ * Norway's fifth industry digit, Estonia's migrated ownership dates, the fact that Germany hands
+ * over the register for free and charges for the filings — the exact inverse of Finland.
+ *
+ * `status` is deliberately blunt. Two countries run; the rest are a known amount of work, and
+ * saying which is which is worth more than implying they all work.
+ */
+export type Coverage = {
+  code: string
+  name: [string, string]
+  register: string
+  /** free · key · paid — the thing a buyer actually wants to know first. */
+  cost: 'free' | 'key' | 'paid'
+  price: [string, string]
+  /** Is there a dated stream of new filings? That is the timing signal the whole engine runs on. */
+  stream: [string, string]
+  figures: [string, string]
+  owner: [string, string]
+  status: 'live' | 'ready' | 'mapped' | 'buy'
+  note: [string, string]
+  /** What was called, so the claim can be rechecked rather than believed. */
+  checked: string
+}
+
+export const COVERAGE: Coverage[] = [
+  {
+    code: 'FI',
+    name: ['Suomi', 'Finland'],
+    register: 'PRH',
+    cost: 'free',
+    price: ['0 €, CC BY 4.0, ei avainta', '€0, CC BY 4.0, no key'],
+    stream: ['Kyllä, päivämäärällä', 'Yes, dated'],
+    figures: ['Vain taseen loppusumma', 'Balance sheet total only'],
+    owner: ['Ei saatavilla', 'Not available'],
+    status: 'live',
+    note: [
+      'Ajoitussignaali on ilmainen ja omistajatieto ostettava. Aputoiminimet paljastavat kuka ostaa — tämä toimii vain täällä.',
+      'The timing signal is free and owner data must be bought. Auxiliary trade names reveal who is acquiring — that works only here.',
+    ],
+    checked: 'opendata-ytj-api/v3/companies · all_financial_statements',
+  },
+  {
+    code: 'NO',
+    name: ['Norja', 'Norway'],
+    register: 'Brønnøysund',
+    cost: 'free',
+    price: ['0 €, NLOD 2.0, ei avainta', '€0, NLOD 2.0, no key'],
+    stream: ['Ei. Viimeisin jätetty tilikausi', 'No. Last financial year filed'],
+    figures: ['Liikevaihto ja liiketulos suoraan', 'Revenue and operating profit directly'],
+    owner: ['Ei nimeä, mutta erIKonsern kertoo onko jo ostettu', 'No name, but erIKonsern says if already acquired'],
+    status: 'live',
+    note: [
+      'Paras yhdistelmä volyymia ja laatua. Mergeron oma käyttökatekriteeri on täällä testattavissa suoraan eikä approksimoitavissa.',
+      'The best mix of volume and quality. Mergero’s own earnings criterion is testable here directly rather than approximated.',
+    ],
+    checked: 'enhetsregisteret/api/enheter · regnskapsregisteret/regnskap',
+  },
+  {
+    code: 'DK',
+    name: ['Tanska', 'Denmark'],
+    register: 'Erhvervsstyrelsen · Virk',
+    cost: 'free',
+    price: ['0 €, avoin Elasticsearch, ei avainta', '€0, open Elasticsearch, no key'],
+    stream: ['Kyllä, reaaliaikainen', 'Yes, real time'],
+    figures: ['XBRL liitteenä jokaisessa julkaisussa', 'XBRL attached to every publication'],
+    owner: ['Ei testattu', 'Not tested'],
+    status: 'ready',
+    note: [
+      'Lähimpänä Suomen putkea ja isompi volyymi: 2 281 julkaisua kuudessa päivässä. Sama koodi, eri osoite.',
+      'Closest to the Finnish pipeline and higher volume: 2,281 publications in six days. Same code, different address.',
+    ],
+    checked: 'distribution.virk.dk/offentliggoerelser/_search · 200, 2 281 osumaa 20.–26.9.',
+  },
+  {
+    code: 'EE',
+    name: ['Viro', 'Estonia'],
+    register: 'e-Äriregister',
+    cost: 'free',
+    price: ['0 €, avoin data, ei avainta', '€0, open data, no key'],
+    stream: ['XBRL pakollinen 2022 alkaen', 'XBRL mandatory since 2022'],
+    figures: ['XBRL:ssä, kattavuus lähes 100 %', 'In XBRL, coverage near 100%'],
+    owner: ['Kyllä — nimi ja omistusosuus', 'Yes — name and shareholding'],
+    status: 'mapped',
+    note: [
+      'Ainoa maa jossa omistaja on nimeltä ilmaiseksi: osanikud 33,9 MB, kasusaajad 27,7 MB. Varaus: omistuksen alkupäivä on valtaosalla 2023, koska rekisteri migratoitiin — omistuksen kestoa ei voi lukea datasta vaikka kenttä näyttää siltä.',
+      'The only country where the owner is named for free: osanikud 33.9 MB, kasusaajad 27.7 MB. Caveat: the ownership start date is 2023 for most rows because the register was migrated — duration cannot be read from it, however much the field suggests otherwise.',
+    ],
+    checked: 'avaandmed.ariregister.rik.ee · kolme aineistoa, 200',
+  },
+  {
+    code: 'UK',
+    name: ['Iso-Britannia', 'United Kingdom'],
+    register: 'Companies House',
+    cost: 'key',
+    price: ['0 €, mutta vaatii ilmaisen avaimen', '€0, but needs a free key'],
+    stream: ['Kyllä, filing history per yhtiö', 'Yes, filing history per company'],
+    figures: ['iXBRL, vaihteleva syvyys', 'iXBRL, varying depth'],
+    owner: ['PSC-rekisteri, merkittävät omistajat', 'PSC register, significant owners'],
+    status: 'mapped',
+    note: [
+      'Ainoa este on rekisteröityminen: ilman avainta rajapinta vastaa 401. Se on lomake, ei ostopäätös.',
+      'The only obstacle is registration: without a key the API answers 401. That is a form, not a purchase.',
+    ],
+    checked: 'api.company-information.service.gov.uk · 401 ilman avainta',
+  },
+  {
+    code: 'SE',
+    name: ['Ruotsi', 'Sweden'],
+    register: 'Bolagsverket',
+    cost: 'paid',
+    price: ['Tilinpäätökset maksullisia', 'Filings are paid'],
+    stream: ['Ei avointa', 'Not open'],
+    figures: ['iXBRL, ostettava', 'iXBRL, must be bought'],
+    owner: ['Ei avoimesti', 'Not openly'],
+    status: 'buy',
+    note: [
+      'Ruotsissa kilpaillaan ostettua dataa vastaan eikä tyhjää vastaan: Datasite osti Valu8:n 5/2026 ja sen mukana 70 miljoonaa eurooppalaista yhtiötä tilinpäätöksineen.',
+      'In Sweden the competition is bought data rather than nothing: Datasite acquired Valu8 in May 2026, and with it 70 million European companies with their filings.',
+    ],
+    checked: 'docs/lahteet.md',
+  },
+  {
+    code: 'DE',
+    name: ['Saksa', 'Germany'],
+    register: 'OffeneRegister · Unternehmensregister',
+    cost: 'paid',
+    price: ['Rekisteri 0 €, tilinpäätökset ostettava', 'Register €0, filings must be bought'],
+    stream: ['Ei avointa. DiRUG siirsi ne 8/2022', 'Not open. DiRUG moved them 8/2022'],
+    figures: ['Ostettava tai kaavittava', 'Bought or scraped'],
+    owner: ['Kyllä — vastuuhenkilöt ilmaiseksi', 'Yes — officers, free'],
+    status: 'buy',
+    note: [
+      'Käänteinen Suomeen nähden: rekisteri ja vastuuhenkilöt ovat ilmaisia, ajoitussignaali maksaa. Se on ostopäätös eikä rakennusprojekti — ja Saksa on heidän tavoitemarkkinansa, joten se kannattaa tietää tarkalleen.',
+      'The inverse of Finland: the register and the officers are free, the timing signal costs money. That is a purchase decision rather than a build — and Germany is their target market, so it is worth knowing exactly.',
+    ],
+    checked: 'daten.offeneregister.de/de_companies_ocdata.jsonl.bz2 · 200',
+  },
 ]
