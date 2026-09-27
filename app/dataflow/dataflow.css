@@ -1,0 +1,21 @@
+.dataflow-scope {
+  font-family: var(--d-sans), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.dataflow-scope button {
+  font-family: inherit;
+}
+
+.dataflow-scope a {
+  color: #0028ff;
+}
+
+.dataflow-scope a:hover {
+  color: #001bb3;
+}
+
+/* The diagram scrolls inside its own container; the page keeps the white the design assumes. */
+body:has(.dataflow-scope) {
+  background: #ffffff;
+}

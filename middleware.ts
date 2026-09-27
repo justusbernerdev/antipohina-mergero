@@ -2,23 +2,28 @@ import { clerkMiddleware, createRouteMatcher } from '@clerk/nextjs/server'
 import { NextResponse } from 'next/server'
 
 /**
- * Everything is behind a login except two things, and both exceptions are deliberate.
+ * The web views are open; the engine is not.
  *
- * `/kohde/*` is the artefact — one page about the owner's own company, built from their own
- * registered filing, sent out of the building. An owner who has to create an account to see a
- * figure about their own business will not, and that would defeat the entire point of the page.
+ * Protection sits where the work and the data are — a bearer key on the Convex API and on the MCP
+ * endpoint. Putting a second login in front of the pages would protect nothing that matters and
+ * would break the two things that have to work without one:
  *
- * `/api/selda` is the webhook. Selda authenticates it with an HMAC signature over the body, which
- * is the right mechanism for a machine; a session cookie is not.
+ * `/kohde/*` is the artefact, sent out of the building. An owner who has to create an account to
+ * see a figure about their own business will not, and that defeats the entire point of the page.
  *
- * Everything else is Mergero's internal view and the console, and those are worth protecting.
+ * `/dataflow` is the engine itself. Starting a run from it is a browser calling the same mutation
+ * the API calls, so if that needs restricting it gets restricted in Convex, not here.
  *
- * When Clerk keys are absent the middleware steps aside entirely. That is not a security hole but
- * the local-development path: a missing optional dependency should not turn every route into a
- * 500, and `git clone && npm run dev` has to show real data with nothing to sign up for.
+ * `/api/selda` is the webhook, authenticated with an HMAC signature over the body — the right
+ * mechanism for a machine; a session cookie is not.
+ *
+ * When Clerk keys are absent the middleware steps aside entirely, so `git clone && npm run dev`
+ * works with nothing to sign up for.
  */
 const isPublic = createRouteMatcher([
+  '/',
   '/kohde/(.*)',
+  '/dataflow(.*)',
   '/api/selda',
   '/sign-in(.*)',
   '/sign-up(.*)',

@@ -19,6 +19,7 @@
   },
   "dependencies": {
     "@clerk/nextjs": "^7.9.7",
+    "convex": "^1.46.0",
     "next": "^15.5.4",
     "react": "^19.1.1",
     "react-dom": "^19.1.1"
