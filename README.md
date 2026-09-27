@@ -4,6 +4,7 @@ Off-market origination for M&A, running on public company registers.
 
 **Live: [mergero.justusberner.com](https://mergero.justusberner.com)**
 · API and MCP: `https://notable-kingfisher-744.eu-west-1.convex.site`
+· Suomeksi: [docs/LUEMINUT.md](docs/LUEMINUT.md)
 
 Mergero's brief names the bottleneck itself: origination is relationship-driven, and that is what
 limits how fast it scales. Screening is not the missing piece, they already do that. The missing
@@ -24,24 +25,29 @@ A run takes two to four minutes and costs nothing.
 
 | | Register | After filter | Filed in window | Passed size | With a buyer |
 |---|---|---|---|---|---|
-| **Finland** `43*` | 10 543 | 5 545 | 84 | 14 | 14 |
-| **Norway** `43*` | 5 401 | 4 395 | 4 395 | 360 | 145 |
+| **Finland** `43*` `81*` | 14 683 | 7 094 | 93 | 9 | 9 |
+| **Norway** `43*` `81*` | 6 206 | 5 060 | 5 060 | 360 | 145 |
 
 Countries run as concurrent lanes and each writes its counters as it goes, so the diagram fills
 while the engine is still working. Targets are written as each country finishes, not all at once at
 the end.
+
+**Finland's yield is thin and there is a reason.** Digital filing coverage is small, so of 14 683
+register units only 93 filed inside the window. Norway carries the volume. That is why there are
+two countries rather than one.
 
 ## Three ways in, one engine behind them
 
 **The page.** [mergero.justusberner.com](https://mergero.justusberner.com) — pick countries,
 industries, age, size floor and filing window, press run, watch it fill. The criteria panel shows
 the exact JSON that `POST /v1/runs` receives, so a client can read it on screen and send it from
-their own system.
+their own system. **Sign-in required**, and registration is open to anyone for now.
 
 **REST.**
 
 ```bash
 curl -X POST https://notable-kingfisher-744.eu-west-1.convex.site/v1/runs \
+  -H 'authorization: Bearer <key>' \
   -H 'content-type: application/json' -d '{
   "countries": ["FI", "NO"],
   "industries": ["43*", "81*"],
@@ -59,7 +65,8 @@ curl -X POST https://notable-kingfisher-744.eu-west-1.convex.site/v1/runs \
 
 ```bash
 claude mcp add --transport http originaatio \
-  https://notable-kingfisher-744.eu-west-1.convex.site/mcp
+  https://notable-kingfisher-744.eu-west-1.convex.site/mcp \
+  --header "Authorization: Bearer <key>"
 ```
 
 | Tool | What it does |
@@ -172,6 +179,18 @@ the decision maker and drafts the opening; the draft waits for a human inside Se
 Nothing in this repository sends anything to anyone, and there is no parameter on either side that
 changes that. Every target carries `status: awaiting_human`.
 
+## What is protected, and by what
+
+| | Lock |
+|---|---|
+| `/` and `/dataflow` | Clerk in the browser **and** the Clerk token verified inside Convex |
+| `/kohde/{id}` | public, by design |
+| `/v1/*` and `/mcp` | bearer key |
+
+A browser session and a machine key are different problems and neither stands in for the other. The
+middleware gate was not enough on its own: without Convex checking the token, anyone holding the
+deployment URL could call the same functions the signed-in page calls.
+
 ## Layout
 
 ```
@@ -197,9 +216,10 @@ npm run dev             # http://localhost:3000/dataflow
 Mint an API key with `npx convex run keys:create '{"label":"Mergero"}'`. Until one exists the API
 is open, and `GET /v1/health` says so — a security posture nobody can see is not one.
 
-For the Selda hand-over:
+Secrets belong to the deployment, never the repository:
 
 ```bash
+npx convex env set CLERK_JWT_ISSUER_DOMAIN https://<instance>.clerk.accounts.dev
 npx convex env set SELDA_KEY sk_live_...
 npx convex env set SELDA_PROJECT <projectId>
 ```

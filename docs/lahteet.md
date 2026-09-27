@@ -185,3 +185,21 @@ Jokainen maa on hyvä eri asiassa, ja se on itse asiassa vahvempi kuin että yks
 Huomaa Suomen ja Saksan käänteisyys. **Suomessa ajoitussignaali on ilmainen ja omistajatieto
 ostettava, Saksassa juuri toisin päin.** Sama moottori, käänteinen kustannusrakenne, ja
 kummassakin se pala joka maksaa on halvempi kuin yhden analyytikon viikko.
+
+---
+
+## Mitä tästä toteutui
+
+Tämä tiedosto oli kartoitus 26.9. Osa siitä on nyt ajossa ja osa osoittautui tarkemmaksi kuin
+kartoitus antoi ymmärtää. Ajantasainen kuva on [LUEMINUT.md](LUEMINUT.md):n kattavuustaulussa ja
+sovelluksen Maat-välilehdellä, jossa jokaisen väitteen vieressä on se päätepiste joka sen tuotti.
+
+Kaksi korjausta jotka löytyivät vasta ajamalla:
+
+**Norjan toimialakoodi.** Kartoitus oletti että Suomen viisinumeroinen koodi kelpaa sellaisenaan.
+Ei kelpaa: `43.220` palauttaa nollan, koska Norjassa sama toimiala on `43.221`. Neljä ensimmäistä
+numeroa ovat yhteistä NACEa ja Brønnøysund hyväksyy etuliitteen, joten haku tehdään sillä.
+
+**Tanskan toimialatieto.** Kartoitus totesi tilinpäätösvirran olevan avoin, ja se pitää paikkansa.
+Se ei maininnut ettei toimialakoodi ole tilinpäätöksessä lainkaan. Ilmainen CVR-haku loppui kesken
+yhden ajon, ja ilman toimialaa ei ole ostajamatchausta.
